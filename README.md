@@ -2,6 +2,12 @@
 Version 1.0 03/03/2017
 
 #### Table of Contents
+- PROTOTYPE URL
+- OVERVIEW
+- INSTALLATION
+- DOCUMENTATION
+- CONTACT INFO
+- COPYRIGHT
 
 ## PROTOTYPE URL
 
@@ -12,8 +18,19 @@ Version 1.0 03/03/2017
 # TECHNICAL APPROACH
 
 #### A. Assigned a team leader.
+Alan Mond, Product Owner
 
 #### B. Team Members (and corresponding ADPQ labor categories)
++ Product Manager: Diana D´Herrera
++ Technical Architect: Rafael Cárdenas
++ Interaction Designer/User Researcher: Diana D´Herrera
++ Visual Designer: Sofía Moya
++ Front End Developer: Isabel Anguiano 
++ Back End Developer: Miguel Morán
++ Dev Ops Engineer: Giovanni Cortés
++ Security Engineer: Rafael Cárdenas
++ Agile Coach: Paulina Bustos
++ Quality Assurance: Juan Pablo Escobar
 
 #### C. User Research
 
