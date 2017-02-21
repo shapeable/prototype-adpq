@@ -1,0 +1,21 @@
+@import "base/base";
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include media(min-width 960px max-width 1199px) {
+    max-width: 960px; padding-left:15px; padding-right:15px;
+
+  }
+  @include media(min-width 780px max-width 959px) {
+    max-width: 780px; padding-left:15px; padding-right:15px;
+
+  }
+  @include media(min-width 640px max-width 779px) {
+    max-width: 640px; padding-left:10px; padding-right:10px;
+
+  }
+  @include media(min-width 320px max-width 639px) {
+    width: 100%; padding-left:10px; padding-right:10px;
+  }
+}
