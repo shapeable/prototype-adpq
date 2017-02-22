@@ -2,7 +2,7 @@ require 'rails/all'
 require_relative '../../app/modules/messages_module'
 
 module MessagesModule
-    MessagesModule.number_cel_from = '+17066230189'
+    MessagesModule.sender_phone_number = '+17066230189'
   class TestClient
   end
 

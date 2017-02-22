@@ -1,3 +1,3 @@
-class ApplicationController < ActionController::Base.send(:include, MessagesModule)
+class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 end
