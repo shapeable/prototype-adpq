@@ -35,6 +35,8 @@ h2 {
 
 p {
   font-size: $base-font-size;
+  margin: 0;
+  padding: 0;
     @include media(min-width 320px max-width 639px) {
           font-size: $small-font-size;
     }
