@@ -1,0 +1,20 @@
+@import 'base/variables';
+
+section.intro {
+  padding: 200px 0 120px 0;
+  background: url(../images/background.png) $gray2 top no-repeat;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+
+  .basic-button {
+    margin: 60px 0 200px 0;
+  }
+  .expander-bottom-up {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}

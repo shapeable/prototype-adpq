@@ -1,4 +1,10 @@
-@import "base/base";
+@import 'neat';
+
+body {
+  margin: 0 !important;
+  padding: 0;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;

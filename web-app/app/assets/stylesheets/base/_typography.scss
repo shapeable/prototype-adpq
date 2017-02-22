@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'neat';
+
+body {
+  color: $base-font-color;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+.main-titles {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  line-height: $heading-line-height;
+  margin:0;
+}
+
+h1{
+  font-size: $title-font-size;
+  font-weight: bold;
+  color: $light-blue;
+  @include media(min-width 320px max-width 639px) {
+    font-size: $subtitle-font-size;
+  }
+}
+h2 {
+    font-size: $subtitle-font-size;
+    font-weight: normal;
+    @include media(min-width 320px max-width 639px) {
+          font-size: $base-font-size;
+    }
+}
+
+p {
+  font-size: $base-font-size;
+    @include media(min-width 320px max-width 639px) {
+          font-size: $small-font-size;
+    }
+}
