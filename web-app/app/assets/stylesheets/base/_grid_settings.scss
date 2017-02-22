@@ -1,7 +1,7 @@
 @import 'neat';
 
 body {
-  margin: 0 !important;
+  margin: 0;
   padding: 0;
 }
 
@@ -11,6 +11,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
   @include media(min-width 960px max-width 1199px) {
     max-width: 960px; padding-left:15px; padding-right:15px;
 

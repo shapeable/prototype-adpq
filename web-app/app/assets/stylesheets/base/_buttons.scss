@@ -8,4 +8,18 @@
   padding: 20px 60px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+  &:hover, &:focus {
+    background-color: $light-blue2;
+  }
+}
+
+.secondary-button {
+  @extend .basic-button;
+  background-color: $white;
+  color: $light-blue;
+  &:hover, &:focus {
+    background-color: $dark-blue;
+  }
+
 }

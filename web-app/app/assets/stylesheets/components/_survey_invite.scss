@@ -1,0 +1,11 @@
+@import 'base/variables';
+
+section.survey-invite {
+  background-color: $bg-light-blue;
+  text-align: center;
+  color: $white;
+  padding-top: 50px;
+  .secondary-button {
+    margin: 35px 0;
+  }
+}
