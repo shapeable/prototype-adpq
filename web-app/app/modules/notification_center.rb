@@ -1,4 +1,4 @@
-module NotificationCenterModule
+module NotificationCenter
     
     def self.send_mail_message(mail, message, subject)
         @mailer = create_mail({:mail => mail, :message => message, :subject => subject})

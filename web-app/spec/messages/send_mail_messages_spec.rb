@@ -1,22 +1,24 @@
 require 'rails/all'
-require_relative '../../app/modules/notification_center_module'
+require_relative '../../app/modules/notification_center'
 require_relative '../../app/mailers/application_mailer'
 
-module NotificationCenterModule
+module NotificationCenter
   class TestMail
-      def deliver
-      end
+    def deliver
+    end
   end
 
   context "Message module" do
+    
+    let(:mail) {"test@mail.com"}
+    let(:message) {"Hello World"}
+    let(:subject) {"Test"}
+    let(:client) {TestMail.new}
+
     it "send mail message" do
-      mail = "test@mail.com"
-      message = "Hello World"
-      subject = "Test"
-      client = TestMail.new
-      mailer = allow(NotificationCenterModule).to receive(:create_mail).with(hash_including(mail: mail, message: message, subject: subject)) { client }
-      allow(NotificationCenterModule).to receive(:deliver) {true}
-      NotificationCenterModule.send_mail_message(mail, message, subject)
+      mailer = allow(NotificationCenter).to receive(:create_mail).with(hash_including(mail: mail, message: message, subject: subject)) { client }
+      allow(NotificationCenter).to receive(:deliver) {true}
+      NotificationCenter.send_mail_message(mail, message, subject)
     end
   end
 end

@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: ENV['SENDER_EMAIL']
+  default from: ENV.fetch("SENDER_EMAIL") { "hello@californiaalert.ca" }
   layout 'mailer'
   
   def send_mail(email, message, subject)
