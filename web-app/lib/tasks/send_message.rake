@@ -15,7 +15,7 @@ namespace :send do
 
   task :mail_message => :environment do
     begin
-       NotificationCenterModule.send_mail_message('mikesaurio@gmail.com', 'Hello World', 'Test')
+       NotificationCenterModule.send_mail_message('test@mail.com', 'Hello World', 'Test')
     rescue Exception => ex
         puts ex.message
     end
