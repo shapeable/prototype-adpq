@@ -1,8 +1,8 @@
 require 'rails/all'
-require_relative '../../app/modules/messages_module'
+require_relative '../../app/modules/notification_center_module'
 
-module MessagesModule
-    MessagesModule.sender_phone_number = '+17066230189'
+module NotificationCenterModule
+    NotificationCenterModule.sender_phone_number = '+17066230189'
   class TestClient
   end
 
@@ -34,10 +34,10 @@ module MessagesModule
       number = "+525530265963"
       msg = "Hello World"
       client = TestClient.new
-      allow(MessagesModule).to receive(:twilio_connection) { client }
+      allow(NotificationCenterModule).to receive(:twilio_connection) { client }
       allow(client).to receive(:create).with(hash_including(from: '+17066230189', to: number, body: msg)){sms_response}
       expect(client).to receive(:create).with(hash_including(from: '+17066230189', to: number, body: msg))
-      MessagesModule.send_SMS_message(number,msg)
+      NotificationCenterModule.send_sms_message(number,msg)
     end
   end
 end
