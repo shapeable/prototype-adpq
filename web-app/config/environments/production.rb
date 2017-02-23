@@ -46,6 +46,13 @@ Rails.application.configure do
   # when problems arise.
   config.log_level = :debug
 
+  #Mail configuration
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: "http://#{ENV['HOST']}" }
+  config.action_mailer.asset_host = "http://#{ENV['HOST']}"
+
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
 

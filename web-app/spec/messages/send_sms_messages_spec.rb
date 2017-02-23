@@ -1,8 +1,10 @@
 require 'rails/all'
-require_relative '../../app/modules/messages_module'
+require_relative '../../app/modules/notification_center'
 
-module MessagesModule
-    MessagesModule.sender_phone_number = '+17066230189'
+module NotificationCenter
+  
+  NotificationCenter.sender_phone_number = '+17066230189'
+  
   class TestClient
   end
 
@@ -29,15 +31,15 @@ module MessagesModule
         "uri": "/2010-04-01/Accounts/ACa392a3db6ddfec3e4c634c3b80a937a4/Messages/SMc728c48b3ad54e28bd0e28b94fd60cd6.json",
         "subresource_uris": {"media": "/2010-04-01/Accounts/ACa392a3db6ddfec3e4c634c3b80a937a4/Messages/SMc728c48b3ad54e28bd0e28b94fd60cd6/Media.json"}
         }'}
+      let(:number) {"+525530265963"}
+      let(:msg) {"Hello World"}
+      let(:client) {TestClient.new}
 
     it "send sms message" do
-      number = "+525530265963"
-      msg = "Hello World"
-      client = TestClient.new
-      allow(MessagesModule).to receive(:twilio_connection) { client }
+      allow(NotificationCenter).to receive(:twilio_connection) { client }
       allow(client).to receive(:create).with(hash_including(from: '+17066230189', to: number, body: msg)){sms_response}
       expect(client).to receive(:create).with(hash_including(from: '+17066230189', to: number, body: msg))
-      MessagesModule.send_SMS_message(number,msg)
+      NotificationCenter.send_sms_message(number,msg)
     end
   end
 end
