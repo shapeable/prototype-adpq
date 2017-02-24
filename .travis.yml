@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.2.0
+  - 2.3.3
 matrix:
   allow_failures:
     - rvm: ruby-head
@@ -10,6 +10,9 @@ notifications:
     recipients:
       - mikesaurio@civica.digital
 before_script:
+  - cd web-app
+  - gem install activesupport -v '5.0.1'
+  - bundle install
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
   - bundle exec rake db:create RAILS_ENV=test
@@ -19,4 +22,5 @@ before_script:
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
+  - rspec spec
 bundler_args: --binstubs=./bundler_stubs
