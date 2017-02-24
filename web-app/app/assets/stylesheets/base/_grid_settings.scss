@@ -4,16 +4,12 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @include media(min-width 960px max-width 1199px) {
-    max-width: 960px; padding-left:15px; padding-right:15px;
-
-  }
   @include media(min-width 780px max-width 959px) {
     max-width: 780px; padding-left:15px; padding-right:15px;
 
