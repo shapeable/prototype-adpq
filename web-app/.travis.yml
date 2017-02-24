@@ -1,0 +1,22 @@
+language: ruby
+rvm:
+  - 2.3.3
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+  fast_finish: true
+notifications:
+  email:
+    recipients:
+      - mikesaurio@civica.digital
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.yml.travis config/database.yml
+  - bundle exec rake db:create RAILS_ENV=test
+  - bundle exec rake db:migrate RAILS_ENV=test
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+script:
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+  - bundle exec rake db:test:prepare
+bundler_args: --binstubs=./bundler_stubs
