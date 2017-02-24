@@ -36,9 +36,14 @@ Alan Mond, Product Owner
 
 #### C. User Research
 
+User research and testing included the following:
+
+
 #### D. Used at least three “human-centered design” techniques or tools
 
 #### E. Created or used a design style guide
+
+A design style guide was created by the designer. It contains the styles, fonts, iconography and typography etc. (Add link)
 
 #### F. Performed usability tests with people
 
@@ -47,6 +52,15 @@ Alan Mond, Product Owner
 #### H. Responsive Design
 
 #### I. Used at least five modern and open-source technologies
+
+This is a list of the open-source technologies and the use given for the creation of the prototype.
++ Docker - Production deployment
++ Swagger - Documentation of the API
++ Ruby on rails - Back end development
++ Rspec - Test
++ PostgreSQL - Database
++ Bourbon (for SCSS) - Style sheets
+
 
 #### J. Deployed the prototype on PaaS
 
