@@ -22,4 +22,5 @@ before_script:
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
+  - rspec spec
 bundler_args: --binstubs=./bundler_stubs
