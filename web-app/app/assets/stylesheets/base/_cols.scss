@@ -1,33 +1,32 @@
 .cols {
   overflow: hidden;
   .half-col{
-    margin-top: 40px;
     width: 50%;
     float: left;
-    padding-right: 20px;
+    padding-right: 25px;
     &:last-child{
       padding-right: 0;
-      padding-left: 20px;
+      padding-left: 25px;
     }
   }
   .seventy-col{
     margin-top:0px;
     width: 70%;
     float: right;
-    padding-right: 20px;
+    padding-right: 25px;
     &:last-child{
       padding-right: 0;
-      padding-left: 20px;
+      padding-left: 25px;
     }
   }
   .thirty-col{
     margin-top:0px;
     width: 30%;
     float: left;
-    padding-right: 20px;
+    padding-right: 25px;
     &:last-child{
       padding-right: 0;
-      padding-left: 20px;
+      padding-left: 25px;
     }
   }
   .grid{
@@ -40,15 +39,15 @@
     margin-top:0px;
     width: 55%;
     float: right;
-    padding-right: 20px;
+    padding-right: 25px;
   }
   .box-small{
     margin-top:0px;
     width: 35%;
     float: right;
-    padding-right: 20px;
+    padding-right: 25px;
   }
-  @media (min-width: 320px) and (max-width: 779px){
+  @media (min-width: 320px) and (max-width: 959px){
     .half-col, .seventy-col, .thirty-col{
       width: 100% !important;
       padding-left: 0!important;
