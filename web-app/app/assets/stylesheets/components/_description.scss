@@ -1,0 +1,27 @@
+section.description {
+  padding: 110px 0 0 0;
+  .main-titles {
+    margin-bottom: 110px;
+  }
+  .side-image {
+    margin-bottom: 100px;
+  }
+
+  .download-options {
+    text-align: center;
+    margin-bottom: 50px;
+    a {
+      text-decoration: none;
+      img {
+        width: 220px;
+        margin-bottom: 15px;
+        height: auto;
+        margin-right: 10px;
+        @include media(min-width 320px max-width 639px) {
+          margin:0;
+        }
+      }
+    }
+  }
+}
+

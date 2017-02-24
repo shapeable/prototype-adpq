@@ -1,0 +1,24 @@
+.side-image {
+  display: flex;
+  .images-wrapper {
+    flex-shrink: 0;
+    border-radius: 50px;
+    padding: 17px;
+    display: inline-block;
+    overflow: hidden;
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  .side-image-content {
+    display: inline-block;
+    h2 {
+      font-weight: bold;
+    }
+  }
+}
+

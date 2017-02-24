@@ -1,0 +1,58 @@
+.cols {
+  overflow: hidden;
+  .half-col{
+    margin-top: 40px;
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+    &:last-child{
+      padding-right: 0;
+      padding-left: 20px;
+    }
+  }
+  .seventy-col{
+    margin-top:0px;
+    width: 70%;
+    float: right;
+    padding-right: 20px;
+    &:last-child{
+      padding-right: 0;
+      padding-left: 20px;
+    }
+  }
+  .thirty-col{
+    margin-top:0px;
+    width: 30%;
+    float: left;
+    padding-right: 20px;
+    &:last-child{
+      padding-right: 0;
+      padding-left: 20px;
+    }
+  }
+  .grid{
+    display:inline-block;
+  }
+  .row{
+    display:inline-block;
+  }
+  .box-wide{
+    margin-top:0px;
+    width: 55%;
+    float: right;
+    padding-right: 20px;
+  }
+  .box-small{
+    margin-top:0px;
+    width: 35%;
+    float: right;
+    padding-right: 20px;
+  }
+  @media (min-width: 320px) and (max-width: 779px){
+    .half-col, .seventy-col, .thirty-col{
+      width: 100% !important;
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+  }
+}
