@@ -11,6 +11,7 @@ notifications:
       - mikesaurio@civica.digital
 before_script:
   - cd web-app
+  - bundle install
   - psql -c 'create database travis_ci_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
   - bundle exec rake db:create RAILS_ENV=test
