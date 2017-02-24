@@ -1,0 +1,110 @@
+%section.enrollment
+  .container
+    .main-titles
+      %h1 Get Started
+      %h2 Fill this form in ordes to get notifications
+    %form.register
+      .register-section
+        %h2 Notifications
+        %p What services do you want to get notified about?
+        .expander
+          .expander-trigger.expander-hidden
+            %h3 Realtime alerts & forecast
+            .expander-content
+              .register-option
+                %p Contingency Planning: Where to donate
+                .custom-switch
+                  %input{type: 'checkbox', id:'contingency', value: 'true'}
+                  %label{for: 'contingency'}
+              .register-option
+                %p Earthquakes
+                .custom-switch
+                  %input{type: 'checkbox', id:'earthquake', value: 'true'}
+                  %label{for: 'earthquake'}
+              .register-option
+                %p Tornado
+                .custom-switch
+                  %input{type: 'checkbox', id:'tornado', value: 'true'}
+                  %label{for: 'tornado'}
+              .register-option
+                %p Tsunami
+                .custom-switch
+                  %input{type: 'checkbox', id:'tsunami', value: 'true'}
+                  %label{for: 'tsunami'}
+        .expander
+          .expander-trigger.expander-hidden
+            %h3 Meeting Points and Collection centers
+            .expander-content
+              .register-option
+                %p Contingency Planning: Where to donate
+                .custom-switch
+                  %input{type: 'checkbox', id:'contingency', value: 'true'}
+                  %label{for: 'contingency'}
+        .expander
+          .expander-trigger.expander-hidden
+            %h3 Important Broadcast
+            .expander-content
+              .register-option
+                %p Contingency Planning: Where to donate
+                .custom-switch
+                  %input{type: 'checkbox', id:'contingency', value: 'true'}
+                  %label{for: 'contingency'}
+      .register-section
+        %h2 Settings
+        %p How do you want to get notified?
+        .register-option
+          .custom-checkbox
+            %p SMS
+            %input{type: 'checkbox', id:'sms', value: 'true'}
+            %label{for: 'sms'}
+          .custom-text-input
+            %input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
+        .register-option
+          .custom-checkbox
+            %p E-mail
+            %input{type: 'checkbox', id:'email', value: 'true'}
+            %label{for: 'email'}
+          .custom-text-input
+            %input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
+        .register-option
+          .custom-checkbox
+            %p Mobile App
+            %p In order to receive these alerts, you'll have to download iPhone or Android app , and allow your phone to receive notifications.
+      .register-section
+        %h2 Additional Information
+        %p Help us understand who is using this service.
+        .register-option
+          Gender:
+          .custom-radio-button
+            %p Male
+            %input{type: 'radio', id:'Female', value: 'true'}
+            %label{for: 'Female'}
+          .custom-radio-button
+            %p Male
+            %input{type: 'radio', id:'Male', value: 'true'}
+            %label{for: 'Male'}
+          .information-hover
+            %p This is important
+        .register-option
+          %p Year of birth:
+          %select
+            %option{value: '1992'} 1992
+            %option{value: '1993'} 1993
+            %option{value: '1994'} 1994
+            %option{value: '1995'} 1995
+          .information-hover
+            %p This is important
+        .register-option
+          %p Preferred language:
+          %select
+            %option English
+            %option Spanish
+          .information-hover
+            %p This is important
+        .register-option
+          %p In case of contigencies where have you donated?
+          %input{type: 'text'}
+          .information-hover
+            %p This is important
+
+        %button.basic-button Save
