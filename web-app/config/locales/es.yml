@@ -1,0 +1,7 @@
+--- 
+es: 
+  mailers: 
+    footer: "Este mensaje es informativo, porfavor no responda este correo."
+    greeting: "Hola"
+    pd: "Gracias por su atención."
+    title: "Una nueva alerta ha sido creado con el siguiente mensaje:"

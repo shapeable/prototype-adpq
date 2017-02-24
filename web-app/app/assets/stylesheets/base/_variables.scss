@@ -1,0 +1,46 @@
+//Colors
+$white: #FFFFFF;
+$red: #FF5536;
+$yellow: #FFB900;
+$light-blue: #00BFE9;
+$light-blue2: #00BBE4;
+$dark-blue: #005D71;
+$aqua: #01C9F5;
+$gray: #5E5E5E;
+$gray2: #E7E7E7;
+
+
+//background-colors
+$bg-red: $red;
+$bg-yellow: $yellow;
+$bg-light-blue: $light-blue;
+
+//Button colors
+$basic-bg-color: $light-blue;
+$basic-bg-hover: $light-blue2;
+$basic-text-color: $white;
+
+$secondary-bg-color: $white;
+$secondary-bg-hover: $dark-blue;
+$secondary-text-color: $light-blue;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$base-font-family: 'Source Sans Pro', sans-serif ;
+
+//Font-color
+$base-font-color: $gray;
+
+// Font Sizes
+$base-font-size: 22px;
+$title-font-size: 86px;
+$title-size-responsive: 72px;
+$subtitle-font-size: 26px;
+$middle-font-size: 20px;
+$small-font-size: 18px;
+$button-font-size: 24px;
+
+//line-height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+

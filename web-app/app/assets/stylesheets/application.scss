@@ -1,0 +1,25 @@
+// -----------------------------------------------
+// SASS structure
+// -----------------------------------------------
+
+@import "bourbon";
+@import "neat";
+
+//base
+@import "base/base";
+@import "base/variables";
+@import "base/typography";
+@import "base/buttons";
+@import "base/grid_settings";
+@import "base/buttons";
+@import "base/cols";
+@import "base/color_classes";
+
+//components
+@import "components/base";
+@import 'components/intro';
+@import 'components/description';
+@import 'components/side_image';
+@import 'components/survey_invite';
+
+
