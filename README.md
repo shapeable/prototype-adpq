@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
+
 # prototype-adpq
 Version 1.0 03/03/2017
 
