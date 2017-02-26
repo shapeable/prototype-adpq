@@ -77,6 +77,20 @@ The prototype is deployed on the Heroku Server platform which allows for quick d
 
 #### N. Developed automated unit tests for their code
 
+#### O. Setup or used a continuous integration system to automate the running of tests and continuously deployed code to IaaS provider
+
+#### P. Setup or used configuration management
+
+#### Q. Setup or used continuous monitoring
+
+#### R. Deployed their software in an open source container, such as Docker (i.e., utilized operating-system-level virtualization);
+
+#### S. Provided sufficient documentation to install and run their prototype on another machine; and
+
+#### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
+
+#### Examples of U.S. Digital Playbook usage
+
 # CONTACT INFO
 
 # COPYRIGHT
