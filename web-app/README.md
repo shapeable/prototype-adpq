@@ -1,6 +1,6 @@
 #California Alerts
 ===
- ([EN ESPAÑOL](/LEEME.md))
+ ([EN ESPAÑOL](./LEEME.md))
 ___
 ​
 Made in [Ruby on Rails](http://rubyonrails.org/) with Rails '5.0.1'
