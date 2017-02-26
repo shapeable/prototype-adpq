@@ -41,7 +41,12 @@ User research and testing included the following:
 
 #### D. Used at least three “human-centered design” techniques or tools
 
-#### E. Created or used a design style guide
+#### E. Used GitHub to document code commits
+
+GitHub was used as the main documentation tool.  User Stories were created under the Issues, a Project was generated to keep track of progress and all commits and comments were stored in the same repository.  All history has been documented.
+
+
+#### F.Created or used a design style guide
 
 A design style guide was created by the designer. It contains the styles, fonts, iconography and typography etc. (Add link)
 
