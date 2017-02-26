@@ -83,7 +83,7 @@ The prototype is deployed on the Heroku Server platform which allows for quick d
 
 #### Q. Setup or used continuous monitoring
 
-#### R. Deployed their software in an open source container, such as Docker (i.e., utilized operating-system-level virtualization);
+#### R. Deployed their software in an open source container, such as Docker
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine; and
 
