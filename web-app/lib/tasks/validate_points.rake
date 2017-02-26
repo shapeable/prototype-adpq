@@ -7,6 +7,7 @@ namespace :query do
     puts "Validating point"
     begin
       GeographicManager.point_in_polygon('-119.417932399','36.778261')
+      GeographicManager.point_in_polygon('-99.4179323','19.778261')
     rescue Exception => ex
         puts ex.message
     end    

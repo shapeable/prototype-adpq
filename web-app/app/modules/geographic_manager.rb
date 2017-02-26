@@ -1,8 +1,18 @@
 module GeographicManager
 
     def self.point_in_polygon(lng, lat)
-        point   = GeoRuby::SimpleFeatures::Point.from_x_y(lng, lat)
-        polygon = GeoRuby::SimpleFeatures::Polygon.from_coordinates([
+        point   = get_point(lng, lat)
+        polygon = get_polygon_california
+        polygon.contains_point?(point)
+    end
+
+    private 
+    def get_point(lng, lat)
+      GeoRuby::SimpleFeatures::Point.from_x_y(lng, lat)
+    end
+
+    def get_polygon_california
+        GeoRuby::SimpleFeatures::Polygon.from_coordinates([
           [
             [
               -123.233256,
@@ -378,7 +388,6 @@ module GeographicManager
             ]
           ]
         ],4326)
-        return polygon.contains_point?(point)
     end
     
 end
