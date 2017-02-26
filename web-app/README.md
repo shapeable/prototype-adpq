@@ -1,24 +1,77 @@
-# README
+#California Alerts
+===
+ ([EN ESPAÑOL](/LEEME.md))
+___
+​
+Made in [Ruby on Rails](http://rubyonrails.org/) with Rails '5.0.1'
+​
+##Dependencies:
+​
+**[Sengrid](https://sendgrid.com/)**: for managing MAIL.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**[Twilio](https://www.twilio.com/)**: for managing SMS.
 
-Things you may want to cover:
+**[Swagger](http://swagger.io/)**: Framework for APIs.
 
-* Ruby version
+===
 
-* System dependencies
+## Database PostgreSQL
 
-* Configuration
 
-* Database creation
+===
+​
+##Environments:
+​
+​The following keys are required:
+​
+###Twilio
 
-* Database initialization
+    FRIENDLY_NAME: ''
+    TWILIO_ACCOUNT_SID: ''
+    TWILIO_AUTH_TOKEN: ''
+    SENDER_PHONE_NUMBER: ''
 
-* How to run the test suite
+###Sengrid
 
-* Services (job queues, cache servers, search engines, etc.)
+    SENDER_EMAIL: ''
+   
+   
+===
 
-* Deployment instructions
+##Instalation:
+​
+You can access the repository in [GitHub](https://github.com) of [California Alerts](https://github.com/shapeable/prototype-web)
 
-* ...
+We clone the repository:
+    
+    git@github.com:shapeable/prototype-web.git
+    
+Enter the folder: 
+
+	cd web-app
+	      
+Install and update the gems:
+    
+    bundle install
+    
+Create the migrations of the databases:
+    
+    rake db:setup
+​
+We start the server:
+    
+    rails s
+    
+
+===
+ 
+##Questions or problems?
+​
+We keep the proyect conversation in our issue page in GitHub [issues](https://github.com/shapeable/prototype-web/issues). If you have any other questions, you can contact us <equipo@civica.digital>.
+
+
+##License
+​
+Licensed under the Apache License, Version 2.0 Read the document [LICENSE](http://www.apache.org/licenses/LICENSE-2.0) for more information
+​
+Created by [Cívica Digital](http://www.civica.digital), 2017.
