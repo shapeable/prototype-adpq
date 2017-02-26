@@ -85,7 +85,7 @@ The prototype is deployed on the Heroku Server platform which allows for quick d
 
 #### R. Deployed their software in an open source container, such as Docker
 
-#### S. Provided sufficient documentation to install and run their prototype on another machine; and
+#### S. Provided sufficient documentation to install and run their prototype on another machine
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
