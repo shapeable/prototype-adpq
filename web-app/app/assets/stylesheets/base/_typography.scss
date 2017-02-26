@@ -19,7 +19,7 @@ h1{
   font-weight: bold;
   color: $light-blue;
   @include media(min-width 320px max-width 639px) {
-    font-size: 72px;
+    font-size: $title-size-responsive;
   }
 }
 h2 {

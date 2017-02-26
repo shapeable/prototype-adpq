@@ -19,7 +19,7 @@ Version 1.0 03/03/2017
 
 # TECHNICAL APPROACH
 
-#### A. Assigned a team leader.
+#### A. Assigned a team leader
 Alan Mond, Product Owner
 
 #### B. Team Members (and corresponding ADPQ labor categories)
@@ -34,24 +34,33 @@ Alan Mond, Product Owner
 + Agile Coach: Paulina Bustos
 + Quality Assurance: Juan Pablo Escobar
 
-#### C. User Research
+#### C. Understood what people needed.
 
 User research and testing included the following:
+- Surveyed at least 12 California residents to understand current needs for an emergency alert system: [Initial Interview Questions.xlsx](https://github.com/shapeable/prototype-web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx)
 
 
 #### D. Used at least three “human-centered design” techniques or tools
 
-#### E. Created or used a design style guide
+#### E. Used GitHub to document code commits
+
+GitHub was used as the main documentation tool.  User Stories were created under the Issues, a Project was generated to keep track of progress and all commits and comments were stored in the same repository.  All design decision history has been documented in the repo.
+
+#### F. Used Swagger to document the RESTful API, and provided a link to the Swagger API
+
+#### G. Complied with Section 508 of the Americans with Disabilities Act and WCAG 2.0
+
+#### H.Created or used a design style guide
 
 A design style guide was created by the designer. It contains the styles, fonts, iconography and typography etc. (Add link)
 
-#### F. Performed usability tests with people
+#### I. Performed usability tests with people
 
-#### G. Used an iterative approach
+#### J. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
 
-#### H. Responsive Design
+#### K. Created a prototype that works on multiple devices and presents a responsive design
 
-#### I. Used at least five modern and open-source technologies
+#### L. Used at least five modern and open-source technologies
 
 This is a list of the open-source technologies and the use given for the creation of the prototype.
 + Docker - Production deployment
@@ -62,21 +71,25 @@ This is a list of the open-source technologies and the use given for the creatio
 + Bourbon (for SCSS) - Style sheets
 
 
-#### J. Deployed the prototype on PaaS
+#### M. Deployed the prototype on IaaS
 
-#### K. Developed automated unit tests for their code
+The prototype is deployed on the Heroku Server platform which allows for quick deployment to hosted servers.
 
-#### L. Used a continuous integration system
+#### N. Developed automated unit tests for their code
 
-#### M. Used configuration management
+#### O. Setup or used a continuous integration system to automate the running of tests and continuously deployed code to IaaS provider
 
-#### N. Setup or used continuous monitoring
+#### P. Setup or used configuration management
 
-#### O. Deployed their software in a container
+#### Q. Setup or used continuous monitoring
 
-#### P. Provided sufficient documentation to install and run their prototype on another machine
+#### R. Deployed their software in an open source container, such as Docker
 
-#### Q. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
+#### S. Provided sufficient documentation to install and run their prototype on another machine
+
+#### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
+
+#### Examples of U.S. Digital Playbook usage
 
 # CONTACT INFO
 

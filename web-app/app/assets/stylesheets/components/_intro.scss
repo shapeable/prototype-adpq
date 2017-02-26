@@ -1,11 +1,17 @@
 section.intro {
-  padding: 200px 0 120px 0;
+  padding: 300px 0 120px 0;
   background: url(intro-banner.png) top no-repeat;
   text-align: center;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   position: relative;
+  h1 { 
+    color: $white;
+    font-size: 105px;
+    @include media(min-width 320px max-width 639px) {
+      font-size: $title-font-size;
+    }
+  }
   .decor-left {
     float: left;
     display: inline-block;
@@ -16,7 +22,7 @@ section.intro {
   }
 
   .basic-button {
-    margin: 60px 0 200px 0;
+    margin: 70px 0 210px 0;
   }
   .expander-bottom-up {
     position: absolute;

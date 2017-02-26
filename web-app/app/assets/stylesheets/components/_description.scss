@@ -1,19 +1,20 @@
 section.description {
-  padding: 110px 0 0 0;
+  padding: 90px 0 0 0;
+  positon: relative;
   .main-titles {
-    margin-bottom: 110px;
+    margin-bottom: 70px;
   }
   .side-image {
-    margin-bottom: 100px;
+    margin: 60px 0 50px 0;
   }
 
   .download-options {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     a {
       text-decoration: none;
       img {
-        width: 220px;
+        width: 200px;
         margin-bottom: 15px;
         height: auto;
         margin-right: 10px;
@@ -21,6 +22,22 @@ section.description {
           margin:0;
         }
       }
+    }
+  }
+  .crop-image {
+    max-height: 730px;
+    width: 93%;
+    overflow: hidden;
+    margin: auto;
+    img {
+      width: 100%;
+      height: auto;
+      margin:0;
+    }
+    @include media(min-width 320px max-width 959px) {
+      max-height: 535px;
+      width: 300px;
+      text-align: center;
     }
   }
 }
