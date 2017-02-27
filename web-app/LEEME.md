@@ -7,7 +7,7 @@ Realizado en  [Ruby on Rails](http://rubyonrails.org/) con Rails '5.0.1'
 ​
 ##Dependencias:
 ​
-**[Sengrid](https://sendgrid.com/)**: para el manejo de correos.
+**[Sendgrid](https://sendgrid.com/)**: para el manejo de correos.
 
 **[Twilio](https://www.twilio.com/)**: para el manejo de SMS.
 
