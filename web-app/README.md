@@ -16,7 +16,7 @@ Made in [Ruby on Rails](http://rubyonrails.org/) with Rails '5.0.1'
 ===
 
 ## Database PostgreSQL
-
+<img src="https://cdn.rawgit.com/shapeable/prototype-web/dev/diagrams/relational.png" alt="DP" height="300" width="500"/>
 
 ===
 ​
