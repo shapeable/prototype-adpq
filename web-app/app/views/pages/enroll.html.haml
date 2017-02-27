@@ -5,74 +5,77 @@
       %h2 Fill this form in ordes to get notifications
     %form.register
       .register-section
-        %h3 Notifications
-        %p What services do you want to get notified about?
+        .register-section-titles
+          %h3 Notifications
+          %p What services do you want to get notified about?
         .expander
           .expander-trigger.expander-hidden
             %h4 Realtime alerts & forecast
-            .expander-content
-              .register-option
-                %p Contingency Planning: Where to donate
-                .custom-switch
-                  %input{type: 'checkbox', id:'contingency', value: 'true'}
-                  %label{for: 'contingency'}
-              .register-option
-                %p Earthquakes
-                .custom-switch
-                  %input{type: 'checkbox', id:'earthquake', value: 'true'}
-                  %label{for: 'earthquake'}
-              .register-option
-                %p Tornado
-                .custom-switch
-                  %input{type: 'checkbox', id:'tornado', value: 'true'}
-                  %label{for: 'tornado'}
-              .register-option
-                %p Tsunami
-                .custom-switch
-                  %input{type: 'checkbox', id:'tsunami', value: 'true'}
-                  %label{for: 'tsunami'}
+          .expander-content
+            .register-option
+              %p Contingency Planning: Where to donate
+              .custom-switch
+                %input{type: 'checkbox', id:'contingency', value: 'true', checked: 'checked'}
+                %label{for: 'contingency'}
+            .register-option
+              %p Earthquakes
+              .custom-switch
+                %input{type: 'checkbox', id:'earthquake', value: 'true', checked: 'checked'}
+                %label{for: 'earthquake'}
+            .register-option
+              %p Tornado
+              .custom-switch
+                %input{type: 'checkbox', id:'tornado', value: 'true', checked: 'checked'}
+                %label{for: 'tornado'}
+            .register-option
+              %p Tsunami
+              .custom-switch
+                %input{type: 'checkbox', id:'tsunami', value: 'true', checked: 'checked'}
+                %label{for: 'tsunami'}
         .expander
           .expander-trigger.expander-hidden
             %h4 Meeting Points and Collection centers
-            .expander-content
-              .register-option
-                %p Meeting points
-                .custom-switch
-                  %input{type: 'checkbox', id:'meeting', value: 'true'}
-                  %label{for: 'meeting'}
+          .expander-content
+            .register-option
+              %p Meeting points
+              .custom-switch
+                %input{type: 'checkbox', id:'meeting', value: 'true', checked: 'checked'}
+                %label{for: 'meeting'}
         .expander
           .expander-trigger.expander-hidden
             %h4 Important Broadcast
-            .expander-content
-              .register-option
-                %p Risks
-                .custom-switch
-                  %input{type: 'checkbox', id:'risk', value: 'true'}
-                  %label{for: 'risk'}
+          .expander-content
+            .register-option
+              %p Risks
+              .custom-switch
+                %input{type: 'checkbox', id:'risk', value: 'true', checked: 'checked'}
+                %label{for: 'risk'}
       .register-section
-        %h3 Settings
-        %p How do you want to get notified?
+        .register-section-titles
+          %h3 Settings
+          %p How do you want to get notified?
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'sms', value: 'true'}
             %label{for: 'sms'}
-          %p SMS
+          %h4 SMS
           %input.custom-text-input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'email', value: 'true'}
             %label{for: 'email'}
-          %p E-mail
+          %h4 E-mail
           %input.custom-text-input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'app', value: 'true'}
             %label{for: 'app'}
-          %p Mobile App
+          %h4 Mobile App
           %p In order to receive these alerts, you'll have to download iPhone or Android app , and allow your phone to receive notifications.
       .register-section
-        %h3 Additional Information
-        %p Help us understand who is using this service.
+        .register-section-titles
+          %h3 Additional Information
+          %p Help us understand who is using this service.
         .register-option
           %span Gender:
           .custom-radio-input

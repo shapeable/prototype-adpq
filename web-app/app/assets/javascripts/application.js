@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+  $('.expander-trigger').click(function(){
+    $(this).toggleClass("expander-hidden");
+  });
+});

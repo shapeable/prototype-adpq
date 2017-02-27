@@ -4,8 +4,26 @@ section.enrollment {
   }
 
   .register {
-    h3 {
-      color: $light-blue;
+    .register-section-titles {
+      margin: 90px 0 65px 0;
+      h3 {
+        color: $light-blue;
+      }
+    }
+    .register-option {
+      margin: 35px 0;
+      h4 {
+        font-weight: normal;
+        font-size: $base-font-size;
+        display: inline-block;
+      }
+      .custom-switch {
+        float: right;
+        margin-top: 5px;
+      }
+      span {
+        margin-bottom: 20px;
+      }
     }
   }
 }
