@@ -2,6 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 
+[![Test Coverage](https://codeclimate.com/github/shapeable/prototype-web/badges/coverage.svg)](https://codeclimate.com/github/shapeable/prototype-web/coverage)
 
 #California Alerts
 ===
