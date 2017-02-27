@@ -1,3 +1,7 @@
+.center-button {
+  text-align: center;
+}
+
 .basic-button {
   background-color: $basic-bg-color;
   color: $basic-text-color;
@@ -22,9 +26,39 @@
 
 }
 
+.information-button {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $light-gray;
+  border-radius: 50px;
+  position: relative;
+  &::before {
+    content: '!';
+    float: left;
+    margin-left: 9px;
+    font-size: $tiny-font-size;
+    color: $light-gray;
+  }
+  p {
+    position: absolute;
+    top: -5px;
+    left:25px;
+    color: $light-blue;
+    display: none;
+    font-size: $small-font-size;
+  }
+  &:hover, &:focus {
+    cursor: pointer;
+    p {
+      display: block;
+    }
+  }
+}
+
 .custom-switch {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
   label { margin:0;}
   input[type="checkbox"],
   input[type="radio"]{

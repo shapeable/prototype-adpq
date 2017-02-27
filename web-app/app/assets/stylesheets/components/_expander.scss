@@ -6,6 +6,9 @@
   $expander-toggle-margin: 1em;
 
   width: 60%;
+  @include media(min-width 320px max-width 639px) {
+    width: 98%;
+  }
 
   .expander-trigger {
     cursor: pointer;
@@ -18,6 +21,8 @@
       text-decoration: none;
       font-size: $expander-toggle-size;
       color: $expander-font-color;
+      width: 88%;
+      margin-bottom: 0px;
     }
 
     &::before {

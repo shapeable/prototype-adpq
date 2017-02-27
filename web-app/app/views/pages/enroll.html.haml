@@ -59,19 +59,30 @@
             %input{type: 'checkbox', id:'sms', value: 'true'}
             %label{for: 'sms'}
           %h4 SMS
-          %input.custom-text-input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
+          <br>
+          .custom-text-input
+            .required-field *
+            %input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'email', value: 'true'}
             %label{for: 'email'}
           %h4 E-mail
-          %input.custom-text-input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
+          <br>
+          .custom-text-input
+            .required-field *
+            %input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'app', value: 'true'}
             %label{for: 'app'}
           %h4 Mobile App
-          %p In order to receive these alerts, you'll have to download iPhone or Android app , and allow your phone to receive notifications.
+          <br>
+          %span In order to receive these alerts, you'll have to download
+          %a{href:""} iPhone
+          %span or
+          %a{href: ""} Android
+          %span app, and allow your phone to receive notifications.
       .register-section
         .register-section-titles
           %h3 Additional Information
@@ -79,37 +90,40 @@
         .register-option
           %span Gender:
           .custom-radio-input
-            %span Female
             .custom-radio-button
               %input{type: 'radio', name:'gender', id:'female', value: 'true'}
               %label{for: 'female'}
+            %span Female
           .custom-radio-input
-            %span Male
             .custom-radio-button
               %input{type: 'radio', name: 'gender', id:'male', value: 'true'}
               %label{for: 'male'}
-          .information-hover
+            %span Male
+          .information-button
             %p This is important
         .register-option
           %p Year of birth:
-          %select.custom-select
-            %option{value: '1992'} 1992
-            %option{value: '1993'} 1993
-            %option{value: '1994'} 1994
-            %option{value: '1995'} 1995
-          .information-hover
+          .custom-select
+            %select
+              %option{value: '1992'} 1992
+              %option{value: '1993'} 1993
+              %option{value: '1994'} 1994
+              %option{value: '1995'} 1995
+          .information-button
             %p This is important
         .register-option
           %p Preferred language:
-          %select.custom-select
-            %option English
-            %option Spanish
-          .information-hover
+          .custom-select
+            %select
+              %option English
+              %option Spanish
+          .information-button
             %p This is important
         .register-option
-          %p In case of contigencies where have you donated?
-          %input.custom-text-input{type: 'text'}
-          .information-hover
+          %p In case of contigencies, where have you donated?
+          .custom-text-input
+            %input{type: 'text'}
+          .information-button
             %p This is important
-
-        %button.basic-button Save
+        .center-button
+          %button.basic-button Save

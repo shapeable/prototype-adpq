@@ -1,24 +1,37 @@
-
-.custom-text-input {
+.general-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  display: block;
+  display: inline-block;
   border: 1px solid $light-gray;
   border-radius: 8px;
   padding: 5px 15px 5px 15px;
-  width: 800px;
   height: 80px;
   font-weight: normal;
   font-size: $base-font-size;
   color: $base-font-color;
-  @include media(min-width 320px max-width 959px) {
+}
+
+.custom-text-input {
+  width: 710px;
+  display: inline-block;
+  input[type="text"]{
+    @extend .general-input;
+    width: calc(100% - 5px);
+  }
+  @include media(min-width 320px max-width 779px) {
     width: 300px;
   }
 }
-.custom-select{
-  @extend .custom-text-input;
+
+
+.custom-select {
+  display: inline-block;
   width: 180px;
-  background: url('/assets/down-arrow-gray.svg') 90% / 10% no-repeat;
+  select {
+    @extend .general-input;
+    background: url('/assets/down-arrow-gray.svg') 90% / 10% no-repeat;
+    width: 100%;
+  }
 }
 
