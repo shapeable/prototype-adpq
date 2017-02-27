@@ -34,12 +34,14 @@ gem 'jbuilder', '~> 2.5'
 
 #twilio 
 gem 'twilio-ruby', '~> 4.11.1'
-
 gem 'figaro'
 
 gem 'georuby'
-
 gem 'rollbar'
+
+#background asynk
+gem "sidekiq"
+gem 'sinatra', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
