@@ -53,6 +53,7 @@ section.enrollment {
     .required-field {
       color: $red;
       float: right;
+      display: none;
     }
   }
 }

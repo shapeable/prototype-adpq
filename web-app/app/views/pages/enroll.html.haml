@@ -57,21 +57,21 @@
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'sms', value: 'true'}
-            %label{for: 'sms'}
+            %label.js-toggle-required{for: 'sms'}
           %h4 SMS
           <br>
           .custom-text-input
             .required-field *
-            %input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
+            %input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789', disabled: 'disabled'}
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'email', value: 'true'}
-            %label{for: 'email'}
+            %label.js-toggle-required{for: 'email'}
           %h4 E-mail
           <br>
           .custom-text-input
             .required-field *
-            %input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
+            %input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789', disabled: 'disabled'}
         .register-option
           .custom-checkbox
             %input{type: 'checkbox', id:'app', value: 'true'}
