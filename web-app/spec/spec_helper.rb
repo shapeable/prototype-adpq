@@ -14,7 +14,7 @@
 #
 # The `.rspec` file also contains a few flags that are not defaults but that
 
-require "codeclimate-test-reporter"
+require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
 
 require 'capybara/rspec'
