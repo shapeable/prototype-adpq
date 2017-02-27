@@ -1,0 +1,23 @@
+
+.custom-text-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  padding: 5px 15px 5px 15px;
+  width: 800px;
+  height: 80px;
+  font-weight: normal;
+  font-size: $base-font-size;
+  color: $base-font-color;
+  @include media(min-width 320px max-width 959px) {
+    width: 300px;
+  }
+}
+.custom-select{
+  @extend .custom-text-input;
+  width: 180px;
+  background: url('/assets/down-arrow-gray.svg') 90% / 10% no-repeat;
+}
+

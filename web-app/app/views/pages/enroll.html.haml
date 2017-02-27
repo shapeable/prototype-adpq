@@ -5,11 +5,11 @@
       %h2 Fill this form in ordes to get notifications
     %form.register
       .register-section
-        %h2 Notifications
+        %h3 Notifications
         %p What services do you want to get notified about?
         .expander
           .expander-trigger.expander-hidden
-            %h3 Realtime alerts & forecast
+            %h4 Realtime alerts & forecast
             .expander-content
               .register-option
                 %p Contingency Planning: Where to donate
@@ -33,61 +33,63 @@
                   %label{for: 'tsunami'}
         .expander
           .expander-trigger.expander-hidden
-            %h3 Meeting Points and Collection centers
+            %h4 Meeting Points and Collection centers
             .expander-content
               .register-option
-                %p Contingency Planning: Where to donate
+                %p Meeting points
                 .custom-switch
-                  %input{type: 'checkbox', id:'contingency', value: 'true'}
-                  %label{for: 'contingency'}
+                  %input{type: 'checkbox', id:'meeting', value: 'true'}
+                  %label{for: 'meeting'}
         .expander
           .expander-trigger.expander-hidden
-            %h3 Important Broadcast
+            %h4 Important Broadcast
             .expander-content
               .register-option
-                %p Contingency Planning: Where to donate
+                %p Risks
                 .custom-switch
-                  %input{type: 'checkbox', id:'contingency', value: 'true'}
-                  %label{for: 'contingency'}
+                  %input{type: 'checkbox', id:'risk', value: 'true'}
+                  %label{for: 'risk'}
       .register-section
-        %h2 Settings
+        %h3 Settings
         %p How do you want to get notified?
         .register-option
           .custom-checkbox
-            %p SMS
             %input{type: 'checkbox', id:'sms', value: 'true'}
             %label{for: 'sms'}
-          .custom-text-input
-            %input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
+          %p SMS
+          %input.custom-text-input{type: 'text', id:'sms_number', placeholder: 'i.e 123 456 789'}
         .register-option
           .custom-checkbox
-            %p E-mail
             %input{type: 'checkbox', id:'email', value: 'true'}
             %label{for: 'email'}
-          .custom-text-input
-            %input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
+          %p E-mail
+          %input.custom-text-input{type: 'text', id:'email_value', placeholder: 'i.e 123 456 789'}
         .register-option
           .custom-checkbox
-            %p Mobile App
-            %p In order to receive these alerts, you'll have to download iPhone or Android app , and allow your phone to receive notifications.
+            %input{type: 'checkbox', id:'app', value: 'true'}
+            %label{for: 'app'}
+          %p Mobile App
+          %p In order to receive these alerts, you'll have to download iPhone or Android app , and allow your phone to receive notifications.
       .register-section
-        %h2 Additional Information
+        %h3 Additional Information
         %p Help us understand who is using this service.
         .register-option
-          Gender:
-          .custom-radio-button
-            %p Male
-            %input{type: 'radio', id:'Female', value: 'true'}
-            %label{for: 'Female'}
-          .custom-radio-button
-            %p Male
-            %input{type: 'radio', id:'Male', value: 'true'}
-            %label{for: 'Male'}
+          %span Gender:
+          .custom-radio-input
+            %span Female
+            .custom-radio-button
+              %input{type: 'radio', name:'gender', id:'female', value: 'true'}
+              %label{for: 'female'}
+          .custom-radio-input
+            %span Male
+            .custom-radio-button
+              %input{type: 'radio', name: 'gender', id:'male', value: 'true'}
+              %label{for: 'male'}
           .information-hover
             %p This is important
         .register-option
           %p Year of birth:
-          %select
+          %select.custom-select
             %option{value: '1992'} 1992
             %option{value: '1993'} 1993
             %option{value: '1994'} 1994
@@ -96,14 +98,14 @@
             %p This is important
         .register-option
           %p Preferred language:
-          %select
+          %select.custom-select
             %option English
             %option Spanish
           .information-hover
             %p This is important
         .register-option
           %p In case of contigencies where have you donated?
-          %input{type: 'text'}
+          %input.custom-text-input{type: 'text'}
           .information-hover
             %p This is important
 
