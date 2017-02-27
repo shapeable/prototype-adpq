@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
+
+[![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
+
+
 #California Alerts
 ===
  ([EN ESPAÑOL](./LEEME.md))

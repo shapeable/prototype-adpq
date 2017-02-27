@@ -66,6 +66,7 @@ group :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver', '2.52.0'
   gem 'capybara'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
