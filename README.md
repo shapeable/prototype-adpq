@@ -36,9 +36,7 @@ Alan Mond, Product Owner
 
 #### C. Understood what people needed.
 
-User research and testing included the following:
-- Surveyed at least 12 California residents to understand current needs for an emergency alert system: [Initial Interview Questions.xlsx](https://github.com/shapeable/prototype-web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx)
-
+To properly understand some of the user needs for an alert system, we surveyed 12 California residents and recorded their answers on the following spreadsheet: [Initial Interview Questions.xlsx](https://github.com/shapeable/prototype-web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx).  We specifically selected people that were both avid travelers within the state as well as non-travelers that might use alerts to stay informed.
 
 #### D. Used at least three “human-centered design” techniques or tools
 
@@ -71,19 +69,27 @@ This is a list of the open-source technologies and the use given for the creatio
 + Bourbon (for SCSS) - Style sheets
 
 
-#### M. Deployed the prototype on IaaS
+#### M. Deployed the prototype on PaaS
 
-The prototype is deployed on the Heroku Server platform which allows for quick deployment to hosted servers.
+The prototype is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
 
-#### N. Developed automated unit tests for their code
+#### N. Developed automated unit tests
 
-#### O. Setup or used a continuous integration system to automate the running of tests and continuously deployed code to IaaS provider
+After creating unit tests for each feature or functionality, rspec was used as the automated unit tester.  For example to test SMS (text messages) functionality, a specific unit test was created for that purpose: (Send SMS Messages code)[https://github.com/shapeable/prototype-web/blob/master/web-app/spec/modules/send_sms_messages_spec.rb]
+
+Other Unit tests can be found under: (https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules)[https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules]
+
+#### O. Setup or used a continuous integration system to automate the running of tests
+
+We used Travis CI (Continuous Integration) server to run automated tests every time code was deployed to our Heroku instance.  Travis CI is linked directly to the GitHub repo so it checks it automatically for any errors before being merged and deployed to production.
 
 #### P. Setup or used configuration management
 
 #### Q. Setup or used continuous monitoring
 
-#### R. Deployed their software in an open source container, such as Docker
+[Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immmediately alerts the team if there are any errors.
+
+#### R. Deployed their software in an open source container
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
