@@ -24,6 +24,7 @@ The prototype was created by following the playbooks provided as a guide, with t
 # INSTALLATION
 
 # TECHNICAL APPROACH
+A more comprehensive description of our Technical Approach can be found [here]() 
 
 #### A. Assigned a team leader
 Alan Mond, Product Owner
@@ -42,13 +43,39 @@ Alan Mond, Product Owner
 
 #### C. Understood what people needed.
 
-To properly understand some of the user needs for an alert system, we surveyed 12 California residents and recorded their answers on the following spreadsheet: [Initial Interview Questions.xlsx](https://github.com/shapeable/prototype-web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx).  We specifically selected people that were both avid travelers within the state as well as non-travelers that might use alerts to stay informed.
+User research and testing was divided in three main methods present in human-centered design creative approach:
+
+Inspiration phase
++ Research of other platforms that offered similar solutions.
++ Initial interviews with potential users - [Link to interviews](https://github.com/shapeable/prototype-               web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx).
++ Framing the design challenge - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Framing%20your%20design%20challenge.pdf)
+
+Ideation phase
++ Downloading all the insights recollected from the interviews and forms.
++ Team meetings for Brainstorm sessions.
++ Definition of an initial core features list and a customer journey.
+
+Implementation
++ Creation of Mock ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Costumer%20Journey%20mock%20ups.pdf)
++ Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Prototype%20mock%20ups.pdf)
++ Initial [wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Changes from former feedback were incorporated to design a final prototype which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
+
 
 #### D. Used at least three “human-centered design” techniques or tools
+Multiple human-centered design techniques were used in the development of the prototype.
+These included:
++ Creative approach: Inspiration, Ideation and Implementation.
++ Creation of wireframes in Invision - [Link to Wireframes](https://invis.io/6VAJF25EK)
++ Creation of "user stories" in Github issues  - [Link to user stories](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Userstories.pdf) 
++ Creating a Product Backlog list of prioritized "user stories" - Link to product backlog screenshot
++ Design style guide. The official US digital services playbook was used as a reference https://playbook.cio.gov/  - Link to the guide
++ Usability testing of wireframes - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Usability testing of prototypes - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
 #### E. Used GitHub to document code commits
 
-GitHub was used as the main documentation tool.  User Stories were created under the Issues, a Project was generated to keep track of progress and all commits and comments were stored in the same repository.  All design decision history has been documented in the repo.
+GitHub was used as the main documentation tool.  User Stories were created under the Issues to create a Product Backlog, a Project was generated to keep track of progress and all commits and comments were stored in the same repository.  All design decision history has been documented in the repo. - [Link to the master commits record](https://github.com/shapeable/prototype-web/commits/master) .
 
 #### F. Used Swagger to document the RESTful API, and provided a link to the Swagger API
 
@@ -56,13 +83,44 @@ GitHub was used as the main documentation tool.  User Stories were created under
 
 #### H.Created or used a design style guide
 
-A design style guide was created by the designer. It contains the styles, fonts, iconography and typography etc. (Add link)
+A style guide was created by the UI designer with all the design elements present in the prototype. (Download style guide)
 
 #### I. Performed usability tests with people
 
+Usability tests were done in every step of the process.
+
++ Testing of initial concepts - [Link to interviews](https://github.com/shapeable/prototype-               web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx).
++ Testing of initial [wireframes](https://invis.io/6VAJF25EK) - [Link to user testing tasks and interviews](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Testing of final prototype - [Link to user testing tasks and interviews](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
+
+Insights:
+Wireframe testing sugestions
+Prototype testig suggestions
+
 #### J. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
 
+Our iterative approach worked as follows:
++ Set up team collaboration in Slack
++ Use of SCRUM methodology to define sprints for design and development
++ User research and testing
++ Regular team demos for feedback
++ Fast iteration in the design process as feedback was given
++ Single sprint for development
++ Review by Product Owner
+
 #### K. Created a prototype that works on multiple devices and presents a responsive design
+
+Our solution utilizes fluid grids that respond to most common desktop screen and devices, allowing flexible images and text resizing to present the best render according to each device.
+
+We provide a clean interface which is compatible with most common web browsers and looks great in mobile devices.
+
+The core of the responsiveness can be reviewed in these sections:
+
+The grid - (4 tailored layouts)
+https://github.com/shapeable/prototype-web/blob/master/web-app/app/assets/stylesheets/base/_grid_settings.scss
+
+Fluid columns
+https://github.com/shapeable/prototype-web/blob/master/web-app/app/assets/stylesheets/base/_cols.scss
 
 #### L. Used at least five modern and open-source technologies
 
@@ -98,6 +156,8 @@ We used Travis CI (Continuous Integration) server to run automated tests every t
 #### R. Deployed their software in an open source container
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine
+
+The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions are divided by front end and back end requirements.
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
