@@ -5,3 +5,5 @@ es:
     greeting: "Hola"
     pd: "Gracias por su atención."
     title: "Una nueva alerta ha sido creado con el siguiente mensaje:"
+  api:
+    error_params: "Error en parametros"

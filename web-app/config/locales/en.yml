@@ -5,3 +5,5 @@ en:
     greeting: "Hi"
     pd: "Thank you."
     title: "A new alert has been created with the following message:"
+  api:
+    error_params: "Parameter error"
