@@ -31,4 +31,8 @@ $(document).ready(function() {
       currentInput.siblings('.required-field').toggle(100)
     }
   })
+
+  //Nav-bar
+  TopNavbar();
+
 });
