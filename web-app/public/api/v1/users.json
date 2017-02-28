@@ -14,7 +14,7 @@
             {
               "code": 200,
               "responseModel": null,
-              "message": "200"
+              "message": "Success"
             },
             {
               "code": 401,
@@ -29,6 +29,85 @@
           ],
           "nickname": "Api::V1::Users#index",
           "method": "get"
+        }
+      ]
+    },
+    {
+      "path": "/api/users/create",
+      "operations": [
+        {
+          "summary": "Fetches all User items",
+          "notes": "This lists all the active users",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": null,
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "The request you made is not acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "user",
+              "name": "email",
+              "type": "string",
+              "description": "User email",
+              "required": true
+            },
+            {
+              "paramType": "user",
+              "name": "phone_number",
+              "type": "string",
+              "description": "User phone number",
+              "required": true
+            },
+            {
+              "paramType": "user",
+              "name": "gender",
+              "type": "string",
+              "description": "User gender",
+              "required": true
+            },
+            {
+              "paramType": "user",
+              "name": "year_of_birth",
+              "type": "integer",
+              "description": "User year of birth",
+              "required": true
+            },
+            {
+              "paramType": "user",
+              "name": "lenguage",
+              "type": "string",
+              "description": "User lenguage",
+              "required": true
+            },
+            {
+              "paramType": "user",
+              "name": "email_actived",
+              "type": "boolean",
+              "description": "User email actived",
+              "required": true
+            },
+            {
+              "paramType": "user",
+              "name": "sms_actived",
+              "type": "boolean",
+              "description": "User SMS actived",
+              "required": true
+            }
+          ],
+          "nickname": "Api::V1::Users#create",
+          "method": "post"
         }
       ]
     }

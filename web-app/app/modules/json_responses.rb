@@ -1,11 +1,8 @@
 module JsonResponses
   def generate_error(message)
     {
-      data:{
-        answer:{
-          status: :error,
+      error:{
           message: message
-        }
       }
     }.to_json
   end

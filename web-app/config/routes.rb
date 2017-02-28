@@ -9,6 +9,7 @@ Rails.application.routes.draw do
         resources :users do
           collection do
             get 'index'
+            post 'create'
           end
         end
       end
