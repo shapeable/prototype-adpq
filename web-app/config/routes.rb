@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#landing'
   get 'enroll', to: 'pages#enroll'
+  
   resources :users
 
    namespace :api, defaults: { format: 'json' } do
