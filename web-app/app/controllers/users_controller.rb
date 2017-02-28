@@ -17,15 +17,29 @@ class UsersController < ApplicationController
   end
 
   def create
-    raise
     @user = User.new(users_params)
     if @user.save
-    redirect_to users_path, notice: t("user.created")
+      if params['alarm']
+        params['alarm'].keys.each do |alarm_name|
+          if params['alarm'][alarm_name] == '1'
+            UserAlarm.create(user_id: @user.id, alarm_id: Alarm.find_by(name: alarm_name).id)
+          end
+        end
+      end
+    redirect_to root_path, notice: t("user.created")
     end
   end
 
   def update
     if @user.update(users_params)
+      UserAlarm.where(user_id: @user.id).delete_all
+      if params['alarm']
+        params['alarm'].keys.each do |alarm_name|
+          if params['alarm'][alarm_name] == '1'
+            UserAlarm.create(user_id: @user.id, alarm_id: Alarm.find_by(name: alarm_name).id)
+          end
+        end
+      end
         redirect_to users_path, notice: t("user.updated")
     else
         redirect_to users_path, notice: t("user.not_updated")
@@ -33,6 +47,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    UserAlarm.where(user_id: @user.id).delete_all
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_path notice: t("user.deleted") }
