@@ -12,6 +12,8 @@ class UsersController < ApplicationController
 
   def new
       @user = User.new
+      @alarm_categories = AlarmCategory.all
+      @alarms = Alarm.all
   end
 
   def create

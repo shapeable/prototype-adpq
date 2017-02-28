@@ -8,48 +8,18 @@
         .register-section-titles
           %h3 Notifications
           %p What emergency alerts do you want to get notified about?
-        .expander
-          .expander-trigger
-            %h4 Realtime alerts & forecast
-          .expander-content
-            .register-option
-              %p Contingency Planning: Where to donate
-              .custom-switch
-                %input{type: 'checkbox', id:'contingency', value: 'true', checked: 'checked'}
-                %label{for: 'contingency'}
-            .register-option
-              %p Earthquakes
-              .custom-switch
-                %input{type: 'checkbox', id:'earthquake', value: 'true', checked: 'checked'}
-                %label{for: 'earthquake'}
-            .register-option
-              %p Tornado
-              .custom-switch
-                %input{type: 'checkbox', id:'tornado', value: 'true', checked: 'checked'}
-                %label{for: 'tornado'}
-            .register-option
-              %p Tsunami
-              .custom-switch
-                %input{type: 'checkbox', id:'tsunami', value: 'true', checked: 'checked'}
-                %label{for: 'tsunami'}
-        .expander
-          .expander-trigger.expander-hidden
-            %h4 Meeting Points and Collection centers
-          .expander-content
-            .register-option
-              %p Meeting points
-              .custom-switch
-                %input{type: 'checkbox', id:'meeting', value: 'true', checked: 'checked'}
-                %label{for: 'meeting'}
-        .expander
-          .expander-trigger.expander-hidden
-            %h4 Important Broadcast
-          .expander-content
-            .register-option
-              %p Risks
-              .custom-switch
-                %input{type: 'checkbox', id:'risk', value: 'true', checked: 'checked'}
-                %label{for: 'risk'}
+        -@alarm_categories.each_with_index do |alarm_category, index|
+          .expander
+            .expander-trigger{:class=>"#{index!=0 ? 'expander-hidden' : 'none'}"}
+              %h4=alarm_category.name
+            .expander-content
+              -@alarms.where(alarm_category_id: alarm_category.id).each do |alarm|
+                .register-option
+                  %p=alarm.name
+                  .custom-switch
+                    =check_box("alarm", alarm.name, id: alarm.name)
+                    %label{for: "#{alarm.name}"}
+
       .register-section
         .register-section-titles
           %h3 Settings
