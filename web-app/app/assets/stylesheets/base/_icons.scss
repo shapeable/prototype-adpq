@@ -1,0 +1,20 @@
+.nav-icon {
+  height: 4px;
+  width: 30px;
+  border-radius: 20px;
+  background-color: $dark-blue;
+  display: inline-block;
+
+  &::before {
+    @extend .nav-icon;
+    content: '';
+    float: right;
+    margin-top: -8px;
+  }
+  &::after {
+    @extend .nav-icon;
+    content: '';
+    float: left;
+    margin-top: 8px;
+  }
+}
