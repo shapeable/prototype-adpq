@@ -1,6 +1,6 @@
 section.description {
   padding: 90px 0 0 0;
-  positon: relative;
+  position: relative;
   .main-titles {
     margin-bottom: 70px;
   }
@@ -25,16 +25,19 @@ section.description {
     }
   }
   .crop-image {
-    max-height: 730px;
+    max-height: 676px;
     width: 93%;
     overflow: hidden;
     margin: auto;
+    position: absolute;
+    bottom: 0;
     img {
       width: 100%;
       height: auto;
       margin:0;
     }
     @include media(min-width 320px max-width 959px) {
+      position: relative;
       max-height: 535px;
       width: 300px;
       text-align: center;

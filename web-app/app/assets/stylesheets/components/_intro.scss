@@ -1,32 +1,21 @@
 section.intro {
-  padding: 300px 0 120px 0;
+  padding: 15% 0 8% 0;
   background: url(intro-banner.png) top no-repeat;
   text-align: center;
   background-size: cover;
   background-position: center center;
   position: relative;
-  h1 { 
-    color: $white;
-    font-size: 105px;
-    @include media(min-width 320px max-width 639px) {
-      font-size: $title-font-size;
+  .main-titles {
+    margin-top: calc(260px - 15%);
+    h1 {
+      color: $white;
+      font-size: 105px;
+      @include media(min-width 320px max-width 639px) {
+        font-size: $title-font-size;
+      }
     }
   }
-  .decor-left {
-    float: left;
-    display: inline-block;
-  }
-  .decor-right {
-    float: right;
-    display: inline-block;
-  }
-
   .basic-button {
-    margin: 70px 0 210px 0;
-  }
-  .expander-bottom-up {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
+    margin: 38px 0 140px 0;
   }
 }

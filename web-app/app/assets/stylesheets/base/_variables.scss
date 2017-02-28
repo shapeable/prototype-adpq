@@ -9,6 +9,7 @@ $dark-blue2: #0e3740;
 $aqua: #01C9F5;
 $gray: #5E5E5E;
 $gray2: #E7E7E7;
+$light-gray: #C3C3C3;
 
 
 //background-colors
@@ -16,6 +17,9 @@ $bg-red: $red;
 $bg-yellow: $yellow;
 $bg-light-blue: $light-blue;
 $bg-dark-blue: $dark-blue;
+
+//Action colors
+$hover-color: $dark-blue;
 
 //Button colors
 $basic-bg-color: $dark-blue;
@@ -40,6 +44,7 @@ $title-size-responsive: 60px;
 $subtitle-font-size: 26px;
 $middle-font-size: 20px;
 $small-font-size: 18px;
+$tiny-font-size: 16px;
 $button-font-size: 24px;
 
 //line-height

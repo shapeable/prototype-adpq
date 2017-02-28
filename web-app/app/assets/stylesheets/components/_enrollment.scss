@@ -1,0 +1,59 @@
+section.enrollment {
+  .main-titles {
+    margin-bottom: 100px;
+  }
+
+  .register {
+    .register-section-titles {
+      margin: 90px 0 65px 0;
+      h3 {
+        color: $light-blue;
+      }
+    }
+    .register-option {
+      margin: 35px 0;
+      h4 {
+        font-weight: normal;
+        font-size: $base-font-size;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      a {
+        color: $light-blue;
+        font-weight: bold;
+        &:hover, &:focus {
+          color: $dark-blue;
+        }
+      }
+      .custom-switch {
+        float: right;
+        margin-top: 5px;
+      }
+      .custom-checkbox {
+        float: left;
+        margin: 5px 10px 0 0;
+      }
+      .custom-text-input {
+        margin-top: 20px;
+      }
+      .custom-radio-input {
+        margin-left: 10px;
+        display: inline-block;
+        .custom-radio-button {
+          float: left;
+        }
+      }
+      .custom-select {
+        margin-top: 0px;
+      }
+    }
+    .basic-button {
+      margin:  60px 0 52px 0;
+    }
+    .required-field {
+      color: $red;
+      float: right;
+      display: none;
+    }
+  }
+}
