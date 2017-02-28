@@ -14,6 +14,12 @@ Version 1.0 03/03/2017
 ## PROTOTYPE URL
 
 # OVERVIEW
+The website and mobile app are platforms that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
+Government administrator user features include: a dashboard where the administrator may publish alerts, force alerts when needed, and analyze visually the generated notifications data.
+Resident user features include: creating a profile where he/she can choose how to be notified, on the alerts he/she wants to track by filling in a small survey to propose alerts of his/her interest.
+
+The prototype was created by following the playbooks provided as a guide, with the help of tools of user centered design methodology which included regular feedback on the prototype in every stage developed. The prototype was also done following the agile development currently used in our company for all our products. This practices are reflected and detailed within this document.
+
 
 # INSTALLATION
 
