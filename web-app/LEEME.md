@@ -1,9 +1,3 @@
-[![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
-
-[![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
-
-[![Test Coverage](https://codeclimate.com/github/shapeable/prototype-web/badges/coverage.svg)](https://codeclimate.com/github/shapeable/prototype-web/coverage)
-
 #California Alerts
 ===
  ([IN ENGLISH](./README.md))
@@ -22,6 +16,7 @@ Realizado en  [Ruby on Rails](http://rubyonrails.org/) con Rails '5.0.1'
 ===
 
 ## Base de Datos PostgreSQL
+
 <img src="https://cdn.rawgit.com/shapeable/prototype-web/dev/diagrams/relational.png" alt="DP" height="300" width="500"/>
 
 ===
