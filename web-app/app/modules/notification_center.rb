@@ -8,7 +8,7 @@ module NotificationCenter
     def self.send_sms_message(number, message)
         require 'twilio-ruby'
         @client = twilio_connection
-        @message = @client.create({:from => sender_phone_number, :to => number, :body => message})
+        @message = create_sms({:from => sender_phone_number, :to => number, :body => message})
     end 
 
     def self.sender_phone_number=(number)
@@ -17,11 +17,15 @@ module NotificationCenter
 
     private 
 
-    def create_mail(values)
+    def self.create_mail(values)
         ApplicationMailer.send_mail(values[:mail], values[:message], values[:subject])
     end
 
-    def twilio_connection
+    def self.create_sms(values)
+        @client.create(values)
+    end
+
+    def self.twilio_connection
         Twilio::REST::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']).account.sms.messages
     end
 

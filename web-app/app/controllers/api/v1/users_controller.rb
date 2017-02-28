@@ -30,8 +30,8 @@ module Api
             param :user, :lenguage, :string, :required, "User lenguage"
             param :user, :email_actived, :boolean, :required, "User email actived"
             param :user, :sms_actived, :boolean, :required, "User SMS actived"
-            param :alarm, :name, :array, :required, "Array alarms name"
-            param :alarm, :actived, :array, :required, "Array alarms actived"
+            param :alarm, :name, :hash, :required, "Hash alarms name"
+            param :alarm, :actived, :boolean, :required, "Alarms actived"
             response :ok, "Success"
             response :unauthorized
             response :not_acceptable, "The request you made is not acceptable"

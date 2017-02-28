@@ -104,6 +104,20 @@
               "type": "boolean",
               "description": "User SMS actived",
               "required": true
+            },
+            {
+              "paramType": "alarm",
+              "name": "name",
+              "type": "hash",
+              "description": "Hash alarms name",
+              "required": true
+            },
+            {
+              "paramType": "alarm",
+              "name": "actived",
+              "type": "boolean",
+              "description": "Alarms actived",
+              "required": true
             }
           ],
           "nickname": "Api::V1::Users#create",

@@ -7,11 +7,11 @@ module GeographicManager
     end
 
     private 
-    def get_point(lng, lat)
+    def self.get_point(lng, lat)
       GeoRuby::SimpleFeatures::Point.from_x_y(lng, lat)
     end
 
-    def get_polygon_california
+    def self.get_polygon_california
         GeoRuby::SimpleFeatures::Polygon.from_coordinates([
           [
             [

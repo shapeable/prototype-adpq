@@ -52,6 +52,7 @@ class ApiWeatherHazards
                 end_date = feature['attributes']['end_date']
                 start_date = feature['attributes']['start_date']
             end
+            puts "#{value} values"
             feature['geometry']['rings'].each do |ring|
                 ring.each do |coordenate|
                     if  GeographicManager.point_in_polygon(coordenate[0], coordenate[1])
@@ -60,7 +61,7 @@ class ApiWeatherHazards
                         puts "start_date: #{Time.at(start_date/1000)}" unless start_date.nil?
                         puts "end_date: #{Time.at(end_date/1000)}" unless end_date.nil?
                     else
-                    puts "#{value} has values but not in Cali"
+                    #puts "#{value} has values but not in Cali"
                     end
                 end
             end

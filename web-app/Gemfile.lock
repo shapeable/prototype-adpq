@@ -280,6 +280,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver (= 2.52.0)
   sidekiq
+  simplecov
   sinatra
   spring
   spring-watcher-listen (~> 2.0.0)
