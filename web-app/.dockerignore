@@ -1,0 +1,21 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Logfiles and tempfiles.
+log/*.log
+tmp/
+
+# Documentation
+README*
+doc/
+
+# Public folders
+public/system/
+public/assets/
+public/uploads/
