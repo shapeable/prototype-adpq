@@ -32,3 +32,4 @@ services:
     command: bundle exec sidekiq
     depends_on:
       - redis
+      - db
