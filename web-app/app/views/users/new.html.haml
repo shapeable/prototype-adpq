@@ -26,7 +26,7 @@
           %p=t('user.form.settings_description')
         .register-option
           .custom-checkbox
-            =check_box("user", "sms_actived")
+            =check_box("user", "sms_actived", id: "user_sms_actived")
             %label.js-toggle-required{for: 'user_sms_actived'}
           %h4=t('user.form.sms')
           <br>
