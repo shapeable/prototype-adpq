@@ -88,9 +88,6 @@
             =t('user.form.save')
 
 :javascript
-  $(document).ready(function() {
-    //Expander controller
-    $('expander-trigger').click(function(){
-      $(this).toggleClass('expander-hidden');
-    });
+  $('.expander-trigger').click(function(){
+    $(this).toggleClass('expander-hidden');
   });
