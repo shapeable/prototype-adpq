@@ -1,0 +1,30 @@
+.dashboard {
+  margin-top: 150px;
+  border: 1px solid $light-gray;
+  border-radius: 8px;
+  display: flex;
+  nav.sidebar {
+    width: 164px;
+    border-radius: 8px 0 0 8px;
+    border-right: 1px solid $light-gray;
+    padding: 30px 16px;
+    display: inline-block;
+    background-color: $clear-gray;
+    height: 100%;
+    a {
+      font-size: $small-font-size;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 16px;
+      color: $gray;
+      &:hover, &:focus {
+        color: $light-blue;
+        cursor: pointer;
+      }
+    }
+  }
+  .main-content {
+    width: calc(100% - 164px);
+    display: inline-block;
+  }
+}

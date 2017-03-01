@@ -3,4 +3,6 @@ class PagesController < ApplicationController
   end
   def enroll
   end
+  def dashboard
+  end
 end
