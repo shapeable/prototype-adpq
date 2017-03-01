@@ -89,10 +89,10 @@ module TestApiWeatherHazards
     }'}
     
     it "read apis hazards" do
-      allow(TestApiWeatherHazards).to receive(:get_json_from_url).with(url) {json_response}
-      allow(TestApiWeatherHazards).to receive(:get_hazard_keys).with(json_response) {current_value}
-      allow(TestApiWeatherHazards).to receive(:get_json_from_type).with(url_features, "weather") {json_features_response}
-      allow(TestApiWeatherHazards).to receive(:parse_json_value).with(json_features_response, value_test, "weather") {true}
+      allow(worker).to receive(:get_json_from_url).with(url) {json_response}
+      allow(worker).to receive(:get_hazard_keys).with(json_response) {current_value}
+      allow(worker).to receive(:get_json_from_type).with(url_features, "weather") {json_features_response}
+      allow(worker).to receive(:parse_json_value).with(json_features_response, value_test, "weather") {true}
       worker.perform(url, "weather")
     end
   end

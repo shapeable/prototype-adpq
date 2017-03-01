@@ -1,0 +1,7 @@
+--- 
+es: 
+  user: 
+    created: "Usuario creado correctamente"
+    updated: "Usuario actualizado correctamente"
+    not_updated: "Usuario NO actualizado"
+    deleted: "Usuario eliminado correctamente"

@@ -1,0 +1,96 @@
+%section.enrollment
+  .container
+    .main-titles
+      %h1 Get Started
+      %h2 Fill this form and get notified when it matters
+    =form_tag({:controller => "users", :action => "create", :method => "post"},  {:class=> "register"}) do  |f|
+      .register-section
+        .register-section-titles
+          %h3 Notifications
+          %p What emergency alerts do you want to get notified about?
+        -@alarm_categories.each_with_index do |alarm_category, index|
+          .expander
+            .expander-trigger{:class=>"#{index!=0 ? 'expander-hidden' : 'none'}"}
+              %h4=alarm_category.name
+            .expander-content
+              -@alarms.where(alarm_category_id: alarm_category.id).each do |alarm|
+                .register-option
+                  %p=alarm.name
+                  .custom-switch
+                    =check_box("alarm", alarm.name, id: alarm.name)
+                    %label{for: "#{alarm.name}"}
+
+      .register-section
+        .register-section-titles
+          %h3 Settings
+          %p How do you want to get notified?
+        .register-option
+          .custom-checkbox
+            =check_box("user", "sms_actived")
+            %label.js-toggle-required{for: 'user_sms_actived'}
+          %h4 SMS
+          <br>
+          .custom-text-input
+            .required-field *
+            =text_field(:user, :phone_number, size: 20, disabled: 'disabled', placeholder: 'i.e 123 456 789')
+        .register-option
+          .custom-checkbox
+            =check_box("user", "email_actived")
+            %label.js-toggle-required{for: 'user_email_actived'}
+          %h4 E-mail
+          <br>
+          .custom-text-input
+            .required-field *
+            =text_field(:user, :email, size: 20, disabled: 'disabled', placeholder: 'i.e user@admin.com')
+        .register-option
+          .custom-checkbox
+            %input{type: 'checkbox', id:'app', value: 'true'}
+            %label{for: 'app'}
+          %h4 Mobile App
+          <br>
+          %span Download the app for
+          %a{href:""} iPhone
+          %span or
+          %a{href: ""} Android.
+          %span It is completely free!
+      .register-section
+        .register-section-titles
+          %h3 Additional Information (Optional)
+          %p Help us understand who is using this service.
+        .register-option
+          %span Gender:
+          .custom-radio-input
+            .custom-radio-button
+              =radio_button("user", "gender", "female")
+              %label{for: 'user_gender_female'}
+            %span Female
+          .custom-radio-input
+            .custom-radio-button
+              =radio_button("user", "gender", "male")
+              %label{for: 'user_gender_male'}
+            %span Male
+          .information-button
+            %p This is important
+        .register-option
+          %p Year of birth:
+          .custom-select
+            =select("user", "year_of_birth", get_years, selected: "")
+          .information-button
+            %p This is important
+        .register-option
+          %p Preferred language:
+          .custom-select
+            =select("user", "lenguage", get_lenguages, selected: "")
+          .information-button
+            %p This is important
+        .center-button
+          %button.basic-button{:type=>"submit", :class=>"button"}
+            Save
+
+:javascript
+  $(document).ready(function() {
+    //Expander controller
+    $('.expander-trigger').click(function(){
+      $(this).toggleClass("expander-hidden");
+    });
+  });

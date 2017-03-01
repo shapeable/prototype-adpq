@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'twilio-ruby', '~> 4.11.1'
 gem 'figaro'
 
+gem 'swagger-docs'
 gem 'georuby'
 gem 'rollbar'
 
@@ -67,7 +68,11 @@ group :test do
   gem 'selenium-webdriver', '2.52.0'
   gem 'capybara'
   gem 'codeclimate-test-reporter', require: nil
+  gem 'simplecov', :require => false
 end
 
+group :production do
+  gem 'rails_12factor'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

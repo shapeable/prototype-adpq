@@ -4,12 +4,11 @@ require_relative '../../app/modules/notification_center'
 module NotificationCenter
   
   NotificationCenter.sender_phone_number = '+17066230189'
-  
+
   class TestClient
   end
 
   context "Message module" do
-      
     let(:sms_response) {'{"sid": "SMc728c48b3ad54e28bd0e28b94fd60cd6",
         "date_created": "Wed, 22 Feb 2017 16:40:36 +0000",
         "date_updated": "Wed, 22 Feb 2017 16:40:36 +0000",
@@ -37,8 +36,8 @@ module NotificationCenter
 
     it "send sms message" do
       allow(NotificationCenter).to receive(:twilio_connection) { client }
-      allow(client).to receive(:create).with(hash_including(from: '+17066230189', to: number, body: msg)){sms_response}
-      expect(client).to receive(:create).with(hash_including(from: '+17066230189', to: number, body: msg))
+      allow(NotificationCenter).to receive(:create_sms).with(hash_including(from: '+17066230189', to: number, body: msg)){sms_response}
+      expect(NotificationCenter).to receive(:create_sms).with(hash_including(from: '+17066230189', to: number, body: msg))
       NotificationCenter.send_sms_message(number,msg)
     end
   end

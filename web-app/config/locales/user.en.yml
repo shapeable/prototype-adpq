@@ -1,0 +1,7 @@
+--- 
+es: 
+  user: 
+    created: "User created successfully"
+    updated: "User updated successfully"
+    not_updated: "User NOT updated"
+    deleted: "User deleted successfully"
