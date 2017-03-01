@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :set_user, only: [:edit, :update, :destroy]
+  before_action :set_user, only: [:edit, :update, :destroy]
   layout 'user'
   def index
   end
