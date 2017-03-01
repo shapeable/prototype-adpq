@@ -1,7 +1,32 @@
 --- 
-es: 
+en: 
   user: 
     created: "User created successfully"
     updated: "User updated successfully"
     not_updated: "User NOT updated"
     deleted: "User deleted successfully"
+    form:
+      title: "Get Started"
+      subtitle: "Fill this form and get notified when it matters"
+      notifications: "Notifications"
+      notifications_about: "What emergency alerts do you want to get notified about?"
+      settings: "Settings"
+      settings_description: "How do you want to get notified?"
+      sms: "SMS"
+      sms_placeholder: "i.e 123 456 789"
+      email: "E-mail"
+      email_placeholder: "i.e user@admin.com"
+      mobile_app: "Mobile App"
+      download: "Download the app for"
+      its_free: "It is completely free!"
+      information: "Additional Information (Optional)"
+      help_us:  "Help us understand who is using this service."
+      gender: "Gender" 
+      female: "Female"
+      male: "Male"
+      gender_message: "This is important"
+      year: "Year of birth"
+      year_message: "This is important"
+      language: "Preferred language"
+      language_message: "This is important"
+      save: "Save"
