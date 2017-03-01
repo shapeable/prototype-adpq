@@ -33,6 +33,9 @@ $(document).ready(function() {
   })
 
   //Nav-bar
-  TopNavbar();
+  TopNavbar()
+
+  //graph functions
+   donut_graph()
 
 });
