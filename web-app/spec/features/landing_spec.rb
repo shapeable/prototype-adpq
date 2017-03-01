@@ -15,7 +15,7 @@ module NotificationCenter
     it "can create user" do
       visit root_path
       find('#create_user_btn', :visible => false).click
-      expect(page).to have_content "Get Started"
+      expect(page).to have_content I18n.t("landing.buttons.new_user")
       expect(page).to have_content "Fill this form and get notified when it matters"
     end
   end

@@ -11,3 +11,21 @@ en:
     residents: "For residents"
     government: "For government"
     About: "About"
+  landing:
+    title: "California Alerts"
+    subtitle: "Get notified about important alerts in your region"
+    description:
+      title: "The best way to keeping track of your alerts"
+      section_one: 
+        title: "Real time alerts & Forecast"
+        subtitle: "Get informed in advance and prevent risks concerning weather hazards, tsunamis, earthquakes and tornadoes."
+      section_two:
+        title: "Meeting Points & Collection Centers"
+        subtitle: "Know about safe places for emergency and places for helping those in neeed."
+      section_three:
+        title: "Important Broadcast"
+        subtitle: "Receive live instructions to evacuate or breaking news about a contingency."
+    survey: "Did we miss an alert you are not seen? Help us improve with your feedback!"
+    buttons:
+      new_user: "Get started"
+      new_survey: "Take a survey"
