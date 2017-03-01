@@ -49,7 +49,7 @@ User research and testing was divided in three main methods present in human-cen
 
 Inspiration phase
 + Research of other platforms that offered similar solutions.
-+ Initial interviews with potential users - [Link to interviews](https://github.com/shapeable/prototype-               web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx).
++ Initial interviews with potential users - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
 + Framing the design challenge - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Framing%20your%20design%20challenge.pdf)
 
 Ideation phase
@@ -58,9 +58,10 @@ Ideation phase
 + Definition of an initial core features list and a customer journey.
 
 Implementation
-+ Creation of Mock ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Costumer%20Journey%20mock%20ups.pdf)
-+ Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Prototype%20mock%20ups.pdf)
-+ Initial [wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Creation of Mock ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups.pdf)
++ Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V1.pdf)
++ Final mock ups with the implementation of user feedback - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf)
++ [Wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 + Changes from former feedback were incorporated to design a final prototype which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
 
@@ -70,7 +71,7 @@ These included:
 + Creative approach: Inspiration, Ideation and Implementation.
 + Creation of wireframes in Invision - [Link to Wireframes](https://invis.io/6VAJF25EK)
 + Creation of "user stories" in Github issues  - [Link to user stories](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Userstories.pdf) 
-+ Creating a Product Backlog list of prioritized "user stories" - Link to product backlog screenshot
++ Creating a Product Backlog list of prioritized "user stories" - [Link to product backlog](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Product%20Backlog.png)
 + Design style guide. The official US digital services playbook was used as a reference https://playbook.cio.gov/  - Link to the guide
 + Usability testing of wireframes - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 + Usability testing of prototypes - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
@@ -83,21 +84,23 @@ GitHub was used as the main documentation tool.  User Stories were created under
 
 #### G. Complied with Section 508 of the Americans with Disabilities Act and WCAG 2.0
 
+Accessibility Developer tools was used to determine the compliance for the requirements within Section 508. This Chrome extension adds an Accessibility audit, and an Accessibility sidebar pane in the Elements tab, to your Chrome Developer Tools.
+The audit results will appear as a list of rules which are violated by the page (if any), with one or more elements on the page shown as a result for each rule. If the inspected element has any properties relevant to accessibility, those properties will be displayed in the sidebar panel. 
+
+The Section 508 website was consulted as a reference https://www.section508.gov/ 
+
 #### H.Created or used a design style guide
 
-A style guide was created by the UI designer with all the design elements present in the prototype. (Download style guide)
+A style guide was created by the UI designer with all the design elements present in the prototype. - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/styleguide_california.pdf)
 
 #### I. Performed usability tests with people
 
 Usability tests were done in every step of the process.
 
-+ Testing of initial concepts - [Link to interviews](https://github.com/shapeable/prototype-               web/blob/technical_approach/supporting-documents/Initial%20iterview%20questions.xlsx).
-+ Testing of initial [wireframes](https://invis.io/6VAJF25EK) - [Link to user testing tasks and interviews](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
-+ Testing of final prototype - [Link to user testing tasks and interviews](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Testing of initial concepts - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
++ Testing of initial [wireframes](https://invis.io/6VAJF25EK) - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Testing of final prototype - [Link to user testing tasks](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
-Insights:
-Wireframe testing sugestions
-Prototype testig suggestions
 
 #### J. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
 
@@ -106,6 +109,7 @@ Our iterative approach worked as follows:
 + Use of SCRUM methodology
 + Set up of sprints and daily standups
 + Regular team demos for feedback
++ User testing and user feedback
 + Fast iteration in the design process as feedback was given
 + Single sprint for development
 + Review by Product Owner
@@ -122,6 +126,8 @@ https://github.com/shapeable/prototype-web/blob/master/web-app/app/assets/styles
 https://github.com/shapeable/prototype-web/blob/master/web-app/app/assets/stylesheets/base/_cols.scss
 
 #### L. Used at least five modern and open-source technologies
+
+Open-source technologies have been utilized in the development of the prototype complying with the requirements established in the U.S. Digital Services Playbook, which emphasize their widespread adoption and support by successful consumer and enterprise technology companies in the private sector.
 
 This is a list of the open-source technologies and the use given for the creation of the prototype.
 + Docker - Production deployment
@@ -165,10 +171,11 @@ This project is deployed using Docker container technology. Some of the advantag
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
-The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions are divided by front end and back end requirements and can be found here]. ()
+The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
+The prototype is licensed under the MIT License. This license is permissive and free of charge.
 
 #### Examples of U.S. Digital Playbook usage
 
@@ -182,6 +189,10 @@ c:  510-662-6152
 
 # COPYRIGHT
 
-Copyright 2017 [Shapeable](https://www.shapeable.net/). All rights reserved
+Copyright 2017 [Shapeable](https://www.shapeable.net/).
 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
