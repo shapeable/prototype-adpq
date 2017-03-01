@@ -7,3 +7,7 @@ en:
     title: "A new alert has been created with the following message:"
   api:
     error_params: "Parameter error"
+  navbar:
+    residents: "For residents"
+    government: "For government"
+    About: "About"

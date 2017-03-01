@@ -3,7 +3,7 @@
     .main-titles
       %h1 California Alerts
       %h2 Get notified about important alerts in your region
-    =link_to new_user_path do
+    =link_to new_user_path, :id=> "create_user_btn" do
       %button.basic-button Get started
     =link_to '#description-jump' do
       .down-arrow=image_tag 'down-arrow.svg'  

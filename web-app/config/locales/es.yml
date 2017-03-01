@@ -7,3 +7,7 @@ es:
     title: "Una nueva alerta ha sido creado con el siguiente mensaje:"
   api:
     error_params: "Error en parametros"
+  navbar:
+    residents: "Para residentes"
+    government: "Para Gobiernos"
+    About: "Acerca de"
