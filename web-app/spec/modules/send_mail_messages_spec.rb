@@ -17,7 +17,7 @@ module NotificationCenter
 
     it "send mail message" do
       mailer = allow(NotificationCenter).to receive(:create_mail).with(hash_including(mail: mail, message: message, subject: subject)) { client }
-      allow(NotificationCenter).to receive(:deliver) {true}
+      allow(client).to receive(:deliver) {true}
       NotificationCenter.send_mail_message(mail, message, subject)
     end
   end

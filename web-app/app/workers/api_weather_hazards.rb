@@ -60,7 +60,7 @@ class ApiWeatherHazards
                         puts "start_date: #{Time.at(start_date/1000)}" unless start_date.nil?
                         puts "end_date: #{Time.at(end_date/1000)}" unless end_date.nil?
                     else
-                    puts "#{value} has values but not in Cali"
+                      puts "#{value} has values but not in Cali"
                     end
                 end
             end

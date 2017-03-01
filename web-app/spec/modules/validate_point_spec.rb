@@ -7,6 +7,9 @@ module GeographicManager
   end
 
   class Polygon
+    def contains_point?(point)
+      
+    end
   end
   
   context "Message module" do

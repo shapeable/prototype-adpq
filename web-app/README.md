@@ -13,6 +13,8 @@ Made in [Ruby on Rails](http://rubyonrails.org/) with Rails '5.0.1'
 
 **[Swagger](http://swagger.io/)**: Framework for APIs.
 
+**[Sidekiq](http://sidekiq.org/)**: for background jobs.
+
 ===
 
 ## Database PostgreSQL
@@ -60,7 +62,14 @@ Create the migrations of the databases:
 We start the server:
     
     rails s
-    
+
+ We start Redis Server
+
+    redis-server
+
+We start Sidekiq
+
+    bundle exec sidekiq   
 
 ===
  
