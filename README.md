@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
 [![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
-[![Test Coverage](https://codeclimate.com/github/shapeable/prototype-web/badges/coverage.svg)](https://codeclimate.com/github/shapeable/prototype-web/coverage)
+[![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=code-climate)](https://coveralls.io/github/shapeable/prototype-web?branch=code-climate)
 
 # prototype-adpq
 Version 1.0 03/03/2017
