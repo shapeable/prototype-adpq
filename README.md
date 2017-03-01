@@ -103,8 +103,8 @@ Prototype testig suggestions
 
 Our iterative approach worked as follows:
 + Set up team collaboration in Slack
-+ Use of SCRUM methodology to define sprints for design and development
-+ User research and testing
++ Use of SCRUM methodology
++ Set up of sprints and daily standups
 + Regular team demos for feedback
 + Fast iteration in the design process as feedback was given
 + Single sprint for development
@@ -113,15 +113,12 @@ Our iterative approach worked as follows:
 #### K. Created a prototype that works on multiple devices and presents a responsive design
 
 Our solution utilizes fluid grids that respond to most common desktop screen and devices, allowing flexible images and text resizing to present the best render according to each device.
-
 We provide a clean interface which is compatible with most common web browsers and looks great in mobile devices.
 
 The core of the responsiveness can be reviewed in these sections:
-
-The grid - (4 tailored layouts)
++ The grid - (4 tailored layouts)
 https://github.com/shapeable/prototype-web/blob/master/web-app/app/assets/stylesheets/base/_grid_settings.scss
-
-Fluid columns
++ Fluid columns
 https://github.com/shapeable/prototype-web/blob/master/web-app/app/assets/stylesheets/base/_cols.scss
 
 #### L. Used at least five modern and open-source technologies
@@ -156,16 +153,35 @@ We used Travis CI (Continuous Integration) server to run automated tests every t
 [Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immmediately alerts the team if there are any errors.
 
 #### R. Deployed their software in an open source container
+This project is deployed using Docker container technology. Some of the advantages of using Docker are:
+* Simplifying Configuration
+* Code pipeline management
+* Developer Productivity
+* App Isolation
+* Server Consolidation
+* Debugging Capabilities
+* Multi-tenancy
+* Rapid Deployment
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
-The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions are divided by front end and back end requirements.
+The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions are divided by front end and back end requirements and can be found here]. ()
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
+
 
 #### Examples of U.S. Digital Playbook usage
 
 # CONTACT INFO
 
+Shapeable
+2120 University Ave
+Berkeley, CA 94704
+c:  510-662-6152
+
+
 # COPYRIGHT
+
+Copyright 2017 [Shapeable](https://www.shapeable.net/). All rights reserved
+
 
