@@ -6,6 +6,14 @@
     {
       "path": "/api/v1/users.{format}",
       "description": "User Management"
+    },
+    {
+      "path": "/api/v1/alarms.{format}",
+      "description": "Alarm Management"
+    },
+    {
+      "path": "/api/v1/alarm_categories.{format}",
+      "description": "Alarm Category Management"
     }
   ],
   "authorizations": null,
