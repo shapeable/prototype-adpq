@@ -18,6 +18,7 @@ ENV NODE_ENV production
 RUN bundle install --deployment --without test development
 
 COPY . /app
+COPY config/application.yml /app/config/application.yml
 
 ENV SECRET_KEY_BASE $(openssl rand -base64 32)
 RUN rake assets:precompile
