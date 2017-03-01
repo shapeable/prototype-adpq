@@ -17,6 +17,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    raise
     @user = User.new(users_params)
     if @user.save
     create_alarms(params['alarm'])

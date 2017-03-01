@@ -82,4 +82,4 @@ We keep the proyect conversation in our issue page in GitHub [issues](https://gi
 ​
 Licensed under the Apache License, Version 2.0 Read the document [LICENSE](http://www.apache.org/licenses/LICENSE-2.0) for more information
 ​
-Created by [Cívica Digital](http://www.civica.digital), 2017.
+Created by [Shapeable](http://www.shapeable.net), 2017.

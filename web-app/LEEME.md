@@ -84,4 +84,4 @@ Mantenemos la conversación del proyecto en nuestra página de problemas  [issue
 ​
 Licencia: Apache License, Version 2.0 [Lee la documentación](http://www.apache.org/licenses/LICENSE-2.0) para más información.
 ​
-Creado por [Cívica Digital](http://www.civica.digital), 2017.
+Creado por [Shapeable](http://www.shapeable.net), 2017.

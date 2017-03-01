@@ -19,6 +19,14 @@
     @extend .general-input;
     width: calc(100% - 5px);
   }
+  input[type="email"]{
+    @extend .general-input;
+    width: calc(100% - 5px);
+  }
+  input[type="number"]{
+    @extend .general-input;
+    width: calc(100% - 5px);
+  }
   @include media(min-width 320px max-width 779px) {
     width: 300px;
   }
