@@ -14,9 +14,9 @@ module Api
         end
 
         def index
-            comments = Comments.all
+            comments = Comment.all
             respond_to do |format|
-                format.json {render :json => generate_success({:comments=> comments.to_json}), status: :ok} 
+                format.json {render :json => generate_success({:comments=> get_comments(comments)}), status: :ok} 
             end
         end
 
@@ -34,7 +34,7 @@ module Api
                 comment = Comment.new(comments_params)
                 if comment.save
                     respond_to do |format|
-                        format.json {render :json => generate_success({:comment=> comment.to_json}), status: :created} 
+                        format.json {render :json => generate_success({:comment=> get_comment(comment)}), status: :created} 
                     end
                 end
             else
@@ -48,6 +48,21 @@ module Api
         def comments_params
             params.require(:comment).permit(:description)
         end
+
+        def get_comments(comments)
+            return comments.collect do |comment|
+                get_comment(comment)
+            end
+        end 
+
+        def get_comment(comment)
+        return {id: comment.id,
+                description: comment.description,
+                created_at: comment.created_at,
+                updated_at: comment.updated_at,
+                }
+        end
+
 
     end
   end
