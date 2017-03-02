@@ -29,7 +29,7 @@ module LandingCenter
       expect(page).to have_content I18n.t('user.form.title')
     end
 
-    it "i18n page", js: true do
+    it "i18n page" do
       visit root_path
       find('#nav_es', :visible => false).click
       expect(page).to have_content 'Para residentes'
