@@ -13,6 +13,9 @@ ENV SHELL /bin/bash
 RUN mkdir /app
 WORKDIR /app
 
+RUN gem install bundler
+
 COPY Gemfile* /app/
 COPY config/application.yml /app/config/application.yml
 RUN bundle install
+RUN bundle update
