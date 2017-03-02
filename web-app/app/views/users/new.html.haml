@@ -44,15 +44,12 @@
             =email_field(:user, :email, size: 20, disabled: 'disabled', placeholder: t('user.form.email_placeholder'))
         .register-option
           .custom-checkbox
-            %input{type: 'checkbox', id:'app', value: 'true'}
+            %input{type: 'checkbox', id:'app', value: 'true', disabled: 'disabled'}
             %label{for: 'app'}
           %h4=t('user.form.mobile_app')
           <br>
-          %span=t('user.form.download')
-          %a{href:""} iPhone
-          %span or
-          %a{href: ""} Android.
-          %span=t('user.form.its_free')
+          %span
+            %em=t('user.form.wait_for_it')
       .register-section
         .register-section-titles
           %h3=t('user.form.information')
