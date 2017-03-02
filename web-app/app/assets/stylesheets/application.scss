@@ -19,6 +19,7 @@
 @import 'base/graphs';
 @import 'base/plot';
 @import 'base/bar_graph';
+@import 'base/panels';
 
 //components
 @import 'components/base';
@@ -31,3 +32,4 @@
 @import 'components/header';
 @import 'components/dashboard';
 @import 'components/overview';
+@import 'components/dashboard_section';

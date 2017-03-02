@@ -1,6 +1,9 @@
 .center-button {
   text-align: center;
 }
+.button-align-right {
+  float: right;
+}
 
 .basic-button {
   background-color: $basic-bg-color;
@@ -23,9 +26,17 @@
   &:hover, &:focus {
     background-color: $secondary-bg-hover;
   }
-
 }
 
+.third-button {
+  @extend .basic-button;
+  background-color: $third-bg-color;
+  font-size: $small-font-size;
+  padding: 20px 30px;
+  &:hover, &:focus {
+    background-color: $third-bg-hover;
+  }
+}
 .information-button {
   display: inline-block;
   width: 24px;
