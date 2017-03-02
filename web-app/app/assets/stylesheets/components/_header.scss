@@ -97,11 +97,25 @@
       li a {
         color: $gray;
         &:hover, &:focus {
-          color: $hover-color2;
+          border-bottom: 4px solid $light-blue;
+        }
+      }
+      li:nth-last-child(-n+2) {
+        a {
+          &:hover, &:focus {
+            border-bottom:0;
+            color: $hover-color2;
+          }
         }
       }
       li:last-child::before {
         color: $light-gray;
+      }
+      li.lang-active a {
+        color: $hover-color2;
+      }
+      li.active-route a {
+          border-bottom: 4px solid $light-blue;
       }
     }
     @include media(min-width 320px max-width 960px) {
@@ -118,6 +132,7 @@
               color: $light-blue;
               &:hover, &:focus {
                 color: $white;
+                border: 0;
               }
             }
             &:hover, &:focus {
@@ -126,6 +141,9 @@
           }
           li.lang-active a {
             color: $white;
+          }
+          li.active-route a {
+            border-bottom: 0;
           }
         }
       }
