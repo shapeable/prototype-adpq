@@ -1,0 +1,35 @@
+.graph {
+  margin: 30px 0;
+  .graph-title, .grap-svg {
+    text-align: center;
+  }
+}
+
+  #category_text {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: $subtitle-font-size;
+    fill: $light-blue;
+  }
+
+  #num_text {
+    font-family: 'Source Sans Pro';
+    font-size: 42px;
+    fill: gray;
+  }
+
+  #center_text {
+    font-family: 'Source Sans Pro';
+    font-size: $small-font-size;
+    fill: gray;
+  }
+
+  .status_cases {
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    fill: gray;
+  }
+
+  path:hover{
+      fill-opacity:0.5;
+  }

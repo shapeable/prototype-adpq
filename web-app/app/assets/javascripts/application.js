@@ -36,6 +36,6 @@ $(document).ready(function() {
   TopNavbar()
 
   //graph functions
-   donut_graph()
+   usersDonut()
 
 });

@@ -1,22 +1,21 @@
-function donut_graph() {
-
-  var width = 960,
-    height = 800,
+function usersDonut() {
+  var width = 384,
+    height = 320,
     radius = Math.min(width/1.5, height/1.5) / 2;
 
   var arc = d3.svg.arc()
-    .outerRadius(radius - 10)
-    .innerRadius(radius - 120);
+    .outerRadius(radius - 4)
+    .innerRadius(radius - 48);
 
   var pie = d3.layout.pie()
     .sort(null)
     .value(function(d) { return d.count; });
 
-  var svg = d3.select(".users-chart").append("svg")
-    .attr("width", width)
+  var svg = d3.select(".users-graph").append("svg")
+    .attr("width", width - 40)
     .attr("height", height)
     .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    .attr("transform", "translate(" + (width - 40) / 2 + "," + (height -40) / 2 + ")");
 
   d3.csv("data-activity.csv", type, function(error, data) {
     if (error) throw error;
@@ -35,29 +34,26 @@ function donut_graph() {
 
     g.append("text")
       .attr("id", "category_text")
-    //.text;
       .text();
 
     g.append("text")
       .attr("y","1em")
       .attr("id", "num_text")
       .text();
-    //.text;
 
     g.append("text")
       .attr("y","1em")
       .attr("id", "center_text")
       .text();
-    //.text;
 
-    var case_text = "conversaciones"
+    var case_text = "Registered"
     d3.select("#center_text")
       .html(case_text)
-      .attr("x", -20.0*case_text.length/2)
+      .attr("x", -8.0*case_text.length/2)
       .attr("y",1.4*radius)
     d3.select("#category_text")
-      .text(d3.sum(data, function(d) { return d.count; }))
-      .attr("x", -15*(String(d3.max(d3.values(data)).count)).length)
+      .text(d3.format(",")(d3.sum(data, function(d) { return d.count;  })))
+      .attr("x", -8*(String(d3.max(d3.values(data)).count)).length)
       .attr("y",1.2*radius)
 
     g.append("path")
@@ -65,15 +61,14 @@ function donut_graph() {
       .style("fill", function(d) { return color(d.data.status); })
       .on("click", function(d){
         d3.select("#num_text")
-          .text(String(d.data.count)+" resueltas por "+(d.data.status))
-          .attr("y", 1.4*radius)
+          .attr("y",2*radius)
           .attr("x", -75.0*(d3.max(d3.values(data)).status).length/2.5)
       });
 
     g.append("image")
       .attr("transform", function(d,i) {
         if (i>0){
-          distance = -radius*1.2
+          distance = -radius*1.25
         } else {
           distance = radius*1.05
         }
@@ -81,8 +76,8 @@ function donut_graph() {
       .attr("xlink:href",function(d,i){
         return d.data.status + ".svg"
       })
-      .attr("width", 50)
-      .attr("height", 50)
+      .attr("width", 20)
+      .attr("height", 20)
       .attr()
 
   });
@@ -100,7 +95,6 @@ function donut_graph() {
     console.log(output_vector)
     return output_vector
   }
-
 
   function type(d) {
     d.count = +d.count;
