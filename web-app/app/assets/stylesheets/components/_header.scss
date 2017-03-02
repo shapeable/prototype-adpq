@@ -1,5 +1,6 @@
-header {
+.login-header header {
   position: absolute;
+  top: 0;
   width: 100%;
   padding: 33px 85px;
   z-index: 2;
@@ -40,10 +41,14 @@ header {
         margin-right: 5px;
         color:$white;
       }
+      li.lang-active a {
+        color: $hover-color;
+        font-weight: bold;
+      }
     }
   }
   @include media(min-width 320px max-width 960px) {
-  padding: 33px 20px;
+    padding: 33px 20px;
     nav.top-navbar {
       position: absolute;
       right: 20px;
@@ -80,3 +85,50 @@ header {
   }
 }
 
+
+.primary-header {
+  @extend .login-header;
+  header {
+    position: relative !important;
+    margin-bottom: 70px;
+    width: 100%;
+    z-index: 2;
+    nav.top-navbar ul {
+      li a {
+        color: $gray;
+        &:hover, &:focus {
+          color: $hover-color2;
+        }
+      }
+      li:last-child::before {
+        color: $light-gray;
+      }
+    }
+    @include media(min-width 320px max-width 960px) {
+      nav.top-navbar {
+        .nav-js-trigger {
+          .nav-icon, .nav-icon::before, .nav-icon::after {
+            background-color: $light-blue;
+          }
+        }
+        ul {
+          li {
+            background-color:$dark-blue2;
+            a {
+              color: $light-blue;
+              &:hover, &:focus {
+                color: $white;
+              }
+            }
+            &:hover, &:focus {
+              background-color: $dark-blue;
+            }
+          }
+          li.lang-active a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
