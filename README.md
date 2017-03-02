@@ -16,7 +16,7 @@ Version 1.0 03/03/2017
 ## PROTOTYPE URL
 https://california-alerts.shapeable.net/
 
-# OVERVIEW
+# DESCRIPTION
 The California alerts platform is a prototype that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
 Government administrator user features include: a dashboard where the administrator may publish alerts, force alerts when needed, and analyze visually the generated notifications data.
 Resident user features include: Setting their preferences where he/she can choose how to be notified, on the alerts he/she wants to track or filling in a small survey to propose alerts of his/her interest.
@@ -56,7 +56,7 @@ Start Sidekiq
 
 
 # TECHNICAL APPROACH
-A more comprehensive description of our Technical Approach can be found [here]() 
+Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.]()
 
 #### A. Assigned a team leader
 Alan Mond, Product Owner
@@ -176,9 +176,9 @@ The prototype is deployed on a Heroku server which allows for quick deployments 
 
 #### N. Developed automated unit tests
 
-After creating unit tests for each feature or functionality, rspec was used as the automated unit tester.  For example to test SMS (text messages) functionality, a specific unit test was created for that purpose: (Send SMS Messages code)[https://github.com/shapeable/prototype-web/blob/master/web-app/spec/modules/send_sms_messages_spec.rb]
+After creating unit tests for each feature or functionality, rspec was used as the automated unit tester.  For example to test SMS (text messages) functionality, a specific unit test was created for that purpose: [Send SMS Messages code](https://github.com/shapeable/prototype-web/blob/master/web-app/spec/modules/send_sms_messages_spec.rb)
 
-Other Unit tests can be found under: (https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules)[https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules]
+Other Unit tests can be found under: [https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules](https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules)
 
 The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows you to see the relevant coverage, covered and missed lines, and the hits per line for each file.
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
