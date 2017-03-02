@@ -7,7 +7,7 @@ Version 1.0 03/03/2017
 
 #### Table of Contents
 - PROTOTYPE URL
-- OVERVIEW
+- DESCRIPTION
 - INSTALLATION
 - DOCUMENTATION
 - CONTACT INFO
@@ -94,6 +94,10 @@ Implementation
 + The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 + Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
+In the absence of actual government administrator user responsibilities, access, and organization, we worked with the following assumptions:
++ A government administrator doesn´t have to create an account and log in to access all functionality due to the lack of authentication requirement.
++ A government administrator would have access to all alerts.
++ A government administrator can force alerts when needed.
 
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
@@ -172,9 +176,9 @@ This is a list of the open-source technologies and the use given for the creatio
 
 #### M. Deployed the prototype on PaaS
 
-The prototype staging is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
+The staging prototype is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
 
-The prototype in production es deployed on AWS server. The instructions for deployment can be found here.
+The production prototype is deployed on AWS server. The instructions for deployment can be found [here.](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 #### N. Developed automated unit tests
 
@@ -195,6 +199,8 @@ We used Travis CI (Continuous Integration) server to run automated tests every t
 #### Q. Setup or used continuous monitoring
 
 [Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immmediately alerts the team if there are any errors.
+
+Code climate was also integrated for an automated code review. The overall can be consulted [here](https://codeclimate.com/github/shapeable/prototype-web)
 
 #### R. Deployed their software in an open source container
 This project is deployed using Docker container technology. Some of the advantages of using Docker are:
