@@ -1,0 +1,31 @@
+ul.config-panel {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    position: relative;
+    border-bottom: 1px solid $light-gray;
+    padding: 10px 5px;
+    h6 {
+      font-weight: 100;
+      margin: 0;
+    }
+    h5 {
+      font-weight: normal;
+    }
+    .config-controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 5px;
+        img {
+          height: 20px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
