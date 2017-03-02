@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
 [![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
-[![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=code-climate)](https://coveralls.io/github/shapeable/prototype-web?branch=code-climate)
+[![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
 # prototype-adpq
 Version 1.0 03/03/2017
@@ -16,14 +16,43 @@ Version 1.0 03/03/2017
 ## PROTOTYPE URL
 
 # OVERVIEW
-The website and mobile app are platforms that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
+The California alerts platform is a prototype that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
 Government administrator user features include: a dashboard where the administrator may publish alerts, force alerts when needed, and analyze visually the generated notifications data.
-Resident user features include: creating a profile where he/she can choose how to be notified, on the alerts he/she wants to track by filling in a small survey to propose alerts of his/her interest.
+Resident user features include: Setting their preferences where he/she can choose how to be notified, on the alerts he/she wants to track or filling in a small survey to propose alerts of his/her interest.
 
-The prototype was created by following the playbooks provided as a guide, with the help of tools of user centered design methodology which included regular feedback on the prototype in every stage developed. The prototype was also done following the agile development currently used in our company for all our products. This practices are reflected and detailed within this document.
-
+The prototype was created following the playbooks provided as a guide, with the help of tools used in user centered design methodology which included regular feedback on the prototype in every stage developed. The prototype was also done following the agile development currently used in our company for all our products. This practices are reflected and detailed within this document.
 
 # INSTALLATION
+You can access the repository in [GitHub](https://github.com) of [California Alerts](https://github.com/shapeable/prototype-web)
+
+To clone the repository:
+    
+    git clone git@github.com:shapeable/prototype-web.git
+    
+Enter the folder: 
+
+	cd web-app
+	      
+Install and update the gems:
+    
+    bundle install
+    
+Create the migrations of the databases:
+    
+    rake db:setup
+​
+Start rails server:
+    
+    rails s
+
+Start Redis Server
+
+    redis-server
+
+Start Sidekiq
+
+    bundle exec sidekiq   
+
 
 # TECHNICAL APPROACH
 A more comprehensive description of our Technical Approach can be found [here]() 

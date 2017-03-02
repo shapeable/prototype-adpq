@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
   def get_lenguages
-      ['English','Spanish']
+      I18n.locale == :en ?  ['English','Spanish'] : ['Ingles','Español']
   end
 
   def alert_class_for(flash_type)
