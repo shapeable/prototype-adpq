@@ -17,7 +17,7 @@ function usersDonut() {
     .append("g")
     .attr("transform", "translate(" + (width - 40) / 2 + "," + (height -40) / 2 + ")");
 
-  d3.csv("data-activity.csv", type, function(error, data) {
+  d3.csv("users-stats.csv", type, function(error, data) {
     if (error) throw error;
 
     var color = d3.scale.ordinal()
@@ -49,7 +49,7 @@ function usersDonut() {
     var case_text = "Registered"
     d3.select("#center_text")
       .html(case_text)
-      .attr("x", -8.0*case_text.length/2)
+      .attr("x", -7*case_text.length/2)
       .attr("y",1.4*radius)
     d3.select("#category_text")
       .text(d3.format(",")(d3.sum(data, function(d) { return d.count;  })))
