@@ -3,7 +3,7 @@ module GeographicManager
     def self.point_in_polygon(lng, lat)
         point   = get_point(lng, lat)
         polygon = get_polygon_california
-       puts  polygon.contains_point?(point)
+        polygon.contains_point?(point)
     end
 
     private 

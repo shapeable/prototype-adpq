@@ -9,7 +9,7 @@ en:
       title: "Get Started"
       subtitle: "Fill this form and get notified when it matters"
       notifications: "Notifications"
-      notifications_about: "What emergency alerts do you want to get notified about?"
+      notifications_about: "Which emergency alerts do you want to get notified about?"
       settings: "Settings"
       settings_description: "How do you want to get notified?"
       sms: "SMS"
