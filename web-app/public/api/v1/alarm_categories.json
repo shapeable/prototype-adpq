@@ -1,0 +1,37 @@
+{
+  "apiVersion": "1.0",
+  "swaggerVersion": "1.2",
+  "basePath": "",
+  "resourcePath": "/api/alarm_categories",
+  "apis": [
+    {
+      "path": "/api/alarm_categories/index",
+      "operations": [
+        {
+          "summary": "Fetches all Alarm categories items",
+          "notes": "This lists all the alarm categories type",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": null,
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "The request you made is not acceptable"
+            }
+          ],
+          "nickname": "Api::V1::AlarmCategories#index",
+          "method": "get"
+        }
+      ]
+    }
+  ],
+  "authorizations": null
+}

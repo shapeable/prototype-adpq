@@ -1,6 +1,7 @@
 // -----------------------------------------------
 // SASS structure
 // -----------------------------------------------
+//= require toastr
 
 @import 'bourbon';
 @import 'neat';
@@ -20,6 +21,7 @@
 @import 'base/plot';
 @import 'base/bar_graph';
 @import 'base/panels';
+@import 'base/alerts';
 
 //components
 @import 'components/base';
@@ -33,3 +35,4 @@
 @import 'components/dashboard';
 @import 'components/overview';
 @import 'components/dashboard_section';
+@import 'components/modal';

@@ -7,7 +7,6 @@ module TestApiWeatherHazards
   context "Hazard module" do
     let(:worker) {ApiWeatherHazards.new}
     let(:value_test) {"Much Below Normal Temperatures"}
-    let(:current_value){current_value=[]}
     let(:url) {"https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Climate_Outlooks/cpc_weather_hazards/MapServer/4?f=pjson"}
     let(:url_features) {"https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Climate_Outlooks/cpc_weather_hazards/MapServer/1/query?where=&text=#{value_test.to_param}+&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=start_date%2C+end_date&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&f=pjson"}
     let(:json_response) {'{
@@ -90,10 +89,9 @@ module TestApiWeatherHazards
     
     it "read apis hazards" do
       allow(worker).to receive(:get_json_from_url).with(url) {json_response}
-      allow(worker).to receive(:get_hazard_keys).with(json_response) {current_value}
-      allow(worker).to receive(:get_json_from_type).with(url_features, "weather") {json_features_response}
+      allow(worker).to receive(:get_json_from_type).with(value_test, "weather") {json_features_response}
       allow(worker).to receive(:parse_json_value).with(json_features_response, value_test, "weather") {true}
-      worker.perform(url, "weather")
+      worker.perform(url, "weather", value_test)
     end
   end
 end

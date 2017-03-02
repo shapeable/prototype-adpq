@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title WebApp
+    %title California Alerts
     %meta{:charset => 'utf-8'}
     %meta{:content => 'IE=8, IE=9, IE=11 IE=edge, chrome=1', :http => {equiv: 'X-UA-Compatible'}}
     %meta{:name => 'viewport', :content => 'initial-scale=1, maximum-scale=1'}
@@ -12,7 +12,8 @@
     = javascript_include_tag 'application'
 
   %body
-    = render partial: "shared/header_enroll"
+    .primary-header
+      = render partial: 'shared/header', locals: {partial_logo: 'logo-blue.svg'}
     = yield
     :javascript
       window.smartlook||(function(d) {
@@ -21,4 +22,3 @@
       c.charset='utf-8';c.src='//rec.smartlook.com/recorder.js';h.appendChild(c);
       })(document);
       smartlook('init', 'cb3f4a9d51c16c0f0ef4ad8d1f4f1a41c51ce2dd');
-      
