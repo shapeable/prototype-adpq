@@ -11,10 +11,10 @@ d3.select('#headline')
   .style('width',width+'px');
 
 //write out your source text here
-var sourcetext= "Source: XXXXX";
+var sourcetext= "";
 
 // set the type of number here, n is a number with a comma, .2% will get you a percent, .2f will get you 2 decimal points
-var NumbType = d3.format(".0f");
+var NumbType = d3.format("1.0f");
 
 // color array
 var bluescale4 = ["#00BFE9", "#144753", "#E0E0E0"];
@@ -45,7 +45,8 @@ var svg = d3.select(".alerts-timeline-graph").append("svg")
 svg.append("svg:rect")
     .attr("width", width)
     .attr("height", height)
-    .attr("class", "plot");
+    .attr("class", "plot")
+    .attr("fill", "#fff");
 
  //make a clip path for the graph
  var clip = svg.append("svg:clipPath")
@@ -54,7 +55,8 @@ svg.append("svg:rect")
     .attr("x", 0)
     .attr("y", 0)
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .attr("fill", "#fff");
 
 // force data to update when menu is changed
 var menu = d3.select("#menu select")
