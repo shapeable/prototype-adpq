@@ -5,11 +5,11 @@ module ApplicationHelper
     end
   end
 
-  def self.get_years
+  def get_years
     (1930..Date.today.year).to_a.reverse
   end
 
-  def self.get_lenguages
+  def get_lenguages
       I18n.locale == :en ?  ['English','Spanish'] : ['Ingles','Español']
   end
 
