@@ -36,7 +36,8 @@ $(document).ready(function() {
   TopNavbar()
 
   //graph functions
-   usersDonut()
-   alertsDonut()
+  usersDonut()
+  alertsDonut()
+  alertsTimeline()
 
 });
