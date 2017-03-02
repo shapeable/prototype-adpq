@@ -1,5 +1,6 @@
 %section.intro
   .container
+    = render partial: "shared/messages", flash: flash
     .main-titles
       %h1=t("landing.title")
       %h2=t("landing.subtitle")
@@ -39,4 +40,33 @@
 %section.survey-invite
   .container
     %h2=t("landing.survey")
-    %button.secondary-button=t("landing.buttons.new_survey")
+    %button.secondary-button{:onClick=>"open_modal()", :id=> "modal_btn"}
+      =t("landing.buttons.new_survey")
+
+
+
+.modal
+  %input#modal-1.modal-state{:type => "checkbox"}/
+  .modal-fade-screen
+    .modal-inner
+      .modal-close{:for => "modal-1"}
+      .container
+        .register-modal-section
+          %h3=t("landing.modal.title")
+        =form_tag({:controller => "pages", :action => "create", :method => "post"},  {:class=> "register", :id=>"form_modal"}) do  |f|
+          .register-modal-section
+            .custom-text-input.modal-dialog
+              =text_field(:comment, :description, size: 340, placeholder: t("landing.modal.placeholder"), type: "text",class: "modal-input")
+          .register-modal-section
+            .center-button
+              %button.basic-button{:type=>"submit", :class=>"button", :id=> "submit_btn"}
+                =t("landing.modal.button")
+
+:javascript
+  $( "form" ).submit(function( event ) {
+    if ($("#comment_description").val() == ""){
+      toastr.error("#{t('landing.modal.error')}");
+      return false
+    }
+    return true;
+  });

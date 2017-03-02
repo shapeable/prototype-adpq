@@ -8,5 +8,7 @@
         %li=link_to 'For residents', '#'
         %li=link_to 'For government', '#'
         %li=link_to 'About', '#'
-        %li.lang-active=link_to 'EN', '#'
-        %li=link_to 'ES', '#'
+        %li{class: "#{I18n.locale == :en ?  'lang-active' : 'lang'}"}
+          =link_to 'EN', { :locale=>'en' }
+        %li{class: "#{I18n.locale == :es ?  'lang-active' : 'lang'}"}
+          =link_to 'ES', { :locale=>'es' }

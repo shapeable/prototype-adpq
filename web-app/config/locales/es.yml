@@ -29,3 +29,10 @@ es:
     buttons:
       new_user: "Comenzar"
       new_survey: "Participa en una encuesta"
+    modal:
+      title: "Háganos saber que alertas que le interesan:"
+      button: "Enviar"
+      placeholder: "Actividad Volcanica, Vientos fuertes, Tormetas electricas, etc."
+      error: "Escribe un comentario válido"
+  comment:
+    created: "Comentario enviado"
