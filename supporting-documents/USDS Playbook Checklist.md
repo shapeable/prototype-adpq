@@ -5,15 +5,18 @@ The standards set forth in the [U.S. Digital Services Playbook](https://playbook
 ## Play 1
 ### Understand what people need
 
-From the beginning, we included user interviews and feedback in creating our prototype. Early on, we interviewed government administrators and California residents for their valuable feedback. The interviews made to both types of users provided insights to their expectations of an alert system. These are mentioned in the following list. The online form and interviews can be found [here] (https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
+From the beginning, we included user interviews and feedback in creating our prototype. Early on, we interviewed government administrators and California residents for their valuable feedback. The interviews made to both types of users provided insights to their expectations of an alert system. These are mentioned in the following list. The online form and interviews can be found [here.](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
+
 Residents
 * Platforms commonly used to search for emergency alerts.
 * What do they expect of an emergency alert system.
 * What is the most effective way of being notified (SMS, push notification, email).
+
 Government administrators
 * The challenges encountered notifying people in an emergency situation.
 * What elements do alerts should contain.
 * Valuable analytics from data retrieved.
+
 A research of other emergency notification platforms was done and all feedback was used to make iterations that resulted in a list of [user stories](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Userstories.pdf) and a [customer journey] (https://github.com/shapeable/prototype-web/blob/master/supporting-documents/CustomerJourney.pdf). 
 Subequently, we developed some [mock-ups](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf) to get quick validation and user feedback. 
 With more user feedback we developed a [clickable prototype](https://invis.io/6VAJF25EK) using InVision to make sure the user journey worked as planned. We tested this prototype with real users. From there, we started building a Minimum Viable Product, and tested out our platform on several residents to make sure it was very user-friendly.
