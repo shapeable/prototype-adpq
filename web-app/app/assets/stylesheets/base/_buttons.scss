@@ -133,6 +133,18 @@
     margin-bottom: 30px;
     width: 210px;
   }
+
+  input[type="checkbox"]:disabled + label {
+    cursor: not-allowed;
+    background-color: $gray2;
+
+    // Overwrite parent's background
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .custom-checkbox-outside {

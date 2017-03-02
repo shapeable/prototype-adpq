@@ -18,6 +18,7 @@ es:
       email_placeholder: "ej. user@admin.com"
       mobile_app: "App Móvil"
       download: "Descarga la app"
+      wait_for_it: "Pronto estará disponible la aplicación para iPhone y Android."
       its_free: "¡Es totalmente gratuita!"
       information: "Información adicional (Opcional)"
       help_us:  "Ayúdenos a comprender quién está utilizando este servicio."
