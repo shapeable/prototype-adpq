@@ -19,6 +19,7 @@ RUN bundle install --deployment --without test development
 
 COPY . /app
 COPY config/application.yml /app/config/application.yml
+COPY config/database.yml /app/config/database.yml
 
 ENV SECRET_KEY_BASE $(openssl rand -base64 32)
 RUN rake assets:precompile
