@@ -33,6 +33,43 @@
       ]
     },
     {
+      "path": "/api/users/show",
+      "operations": [
+        {
+          "summary": "Fetches User and his alarms",
+          "notes": "This lists user and his alarms",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": null,
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "The request you made is not acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "user",
+              "name": "id",
+              "type": "integer",
+              "description": "User id",
+              "required": true
+            }
+          ],
+          "nickname": "Api::V1::Users#show",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "path": "/api/users/create",
       "operations": [
         {

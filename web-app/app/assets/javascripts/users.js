@@ -9,3 +9,8 @@ $(document).on('click', '.js-toggle-required', function() {
         currentInput.siblings('.required-field').toggle(100)
         }
 });
+
+function validateEmail($email) {
+  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  return emailReg.test( $email );
+}

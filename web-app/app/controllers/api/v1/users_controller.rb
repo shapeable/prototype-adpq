@@ -16,7 +16,23 @@ module Api
         def index
             users = User.all
             respond_to do |format|
-                format.json {render :json => generate_success({:users=> get_users(users), status: :ok})} 
+                format.json {render :json => generate_success({:users=> get_users(users)}), status: :ok} 
+            end
+        end
+
+        swagger_api :show do
+            summary "Fetches User and his alarms"
+            notes "This lists user and his alarms"
+            param :user, :id, :integer, :required, "User id"
+            response :ok, "Success"
+            response :unauthorized
+            response :not_acceptable, "The request you made is not acceptable"
+        end
+
+        def show
+           user = User.find(params[:id])
+            respond_to do |format|
+                format.json {render :json => generate_success({:user=> get_user(user)}), status: :ok} 
             end
         end
 
@@ -52,7 +68,7 @@ module Api
                         end
                     end
                     respond_to do |format|
-                        format.json {render :json => generate_success({:user_id=> user.id, :alarms=>get_alarms(user)}), status: :created} 
+                        format.json {render :json => generate_success({:user=> get_user(user)}), status: :created} 
                     end
                 end
             else
@@ -65,7 +81,12 @@ module Api
     private 
     def get_users(users)
         return users.collect do |user|
-            {id: user.id,
+            get_user(user)
+        end
+      end 
+
+    def get_user(user)
+     return {id: user.id,
             email: user.email,
             phone_number:  user.phone_number,
             gender: user.gender,
@@ -74,23 +95,19 @@ module Api
             email_actived: user.email_actived,
             sms_actived: user.sms_actived,
             created_at: user.created_at,
-            updated_at: user.updated_at
+            updated_at: user.updated_at,
+            alarms_activated: alarms_activated(user)
             }
-        end
-      end 
+    end
 
-    def get_alarms(users)
-        return Alarm.where(user_id, user.id).each do |alarm|
-            {id: alarm.id,
-            name: alarm.name,
-            description:  alarm.description,
-            end_point: alarm.end_point,
-            alarm_category_id: alarm.alarm_category_id,
-            created_at: alarm.created_at,
-            updated_at: alarm.updated_at
-            }
-        end
-      end 
+    def alarms_activated(user)
+      return UserAlarm.where(user_id: user.id).each do |alarm|
+        {
+            id: alarm.id,
+            alarm_id: alarm.alarm_id
+        }
+    end
+    end
 
     def users_params
         params.require(:user).permit(:email, :phone_number, :gender, :year_of_birth, :lenguage, :email_actived, :sms_actived)
