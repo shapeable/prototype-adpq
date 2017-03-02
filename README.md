@@ -14,6 +14,7 @@ Version 1.0 03/03/2017
 - COPYRIGHT
 
 ## PROTOTYPE URL
+https://california-alerts.shapeable.net/
 
 # OVERVIEW
 The California alerts platform is a prototype that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
@@ -90,15 +91,15 @@ Implementation
 + Creation of Mock ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups.pdf)
 + Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V1.pdf)
 + Final mock ups with the implementation of user feedback - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf)
-+ [Wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
-+ Changes from former feedback were incorporated to design a final prototype which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
 
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
 These included:
 + Creative approach: Inspiration, Ideation and Implementation.
-+ Creation of wireframes in Invision - [Link to Wireframes](https://invis.io/6VAJF25EK)
++ Creation of wireframes in Invision - [Link to clickable Wireframes](https://invis.io/6VAJF25EK)
 + Creation of "user stories" in Github issues  - [Link to user stories](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Userstories.pdf) 
 + Creating a Product Backlog list of prioritized "user stories" - [Link to product backlog](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Product%20Backlog.png)
 + Design style guide. The official US digital services playbook was used as a reference https://playbook.cio.gov/  - Link to the guide
@@ -110,6 +111,8 @@ These included:
 GitHub was used as the main documentation tool.  User Stories were created under the Issues to create a Product Backlog, a Project was generated to keep track of progress and all commits and comments were stored in the same repository.  All design decision history has been documented in the repo. - [Link to the master commits record](https://github.com/shapeable/prototype-web/commits/master) .
 
 #### F. Used Swagger to document the RESTful API, and provided a link to the Swagger API
+
+https://california-alerts.shapeable.net/api-docs.json
 
 #### G. Complied with Section 508 of the Americans with Disabilities Act and WCAG 2.0
 
@@ -177,9 +180,13 @@ After creating unit tests for each feature or functionality, rspec was used as t
 
 Other Unit tests can be found under: (https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules)[https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules]
 
+The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows you to see the relevant coverage, covered and missed lines, and the hits per line for each file.
+The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
+
+
 #### O. Setup or used a continuous integration system to automate the running of tests
 
-We used Travis CI (Continuous Integration) server to run automated tests every time code was deployed to our Heroku instance.  Travis CI is linked directly to the GitHub repo so it checks it automatically for any errors before being merged and deployed to production.
+We used Travis CI (Continuous Integration) server to run automated tests every time code was deployed to our Heroku instance.  Travis CI is linked directly to the GitHub repo so it checks it automatically for any errors before being merged and deployed to production. The dashboard can be found [here](https://travis-ci.org/shapeable/prototype-web)
 
 #### P. Setup or used configuration management
 
@@ -204,7 +211,7 @@ The README.md file written in the repository contains complete instructions for 
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
-The prototype is licensed under the MIT License. This license is permissive and free of charge.
+The prototype is licensed under the [MIT License](https://opensource.org/licenses/MIT). This license is permissive and free of charge.
 
 #### Examples of U.S. Digital Playbook usage
 
@@ -214,9 +221,12 @@ Shapeable
 2120 University Ave
 Berkeley, CA 94704
 c:  510-662-6152
+alan@shapeable.net
 
 
 # COPYRIGHT
+
+The prototype is licensed under the [MIT License](https://opensource.org/licenses/MIT). This license is permissive and free of charge.
 
 Copyright 2017 [Shapeable](https://www.shapeable.net/).
 
