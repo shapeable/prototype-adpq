@@ -16,13 +16,15 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'coveralls'
 Coveralls.wear!
+require_relative '../app/helpers/application_helper'
 
 RSpec.configure do |config|
-
+  config.include ApplicationHelper
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.expect_with :rspec do |expectations|
+    
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
     # defined using `chain`, e.g.:
