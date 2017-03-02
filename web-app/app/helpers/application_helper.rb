@@ -13,6 +13,10 @@ module ApplicationHelper
       I18n.locale == :en ?  ['English','Spanish'] : ['Ingles','Español']
   end
 
+  def get_name(model)
+    I18n.locale == :en ?  model.name : model.name_es
+  end
+
   def alert_class_for(flash_type)
   	case flash_type.to_sym
       when :success
