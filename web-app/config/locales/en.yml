@@ -34,4 +34,6 @@ en:
       button: "Send"
       placeholder: "Volcanic Activity, High Winds, Thunderstorms, etc"
       error: "Please write a valid comment"
+  comment:
+    created: "Comment sent"
       

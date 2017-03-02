@@ -34,3 +34,5 @@ es:
       button: "Enviar"
       placeholder: "Actividad Volcanica, Vientos fuertes, Tormetas electricas, etc."
       error: "Escribe un comentario válido"
+  comment:
+    created: "Comentario enviado"
