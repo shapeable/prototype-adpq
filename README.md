@@ -189,6 +189,7 @@ Other Unit tests can be found under: [https://github.com/shapeable/prototype-web
 The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows you to see the relevant coverage, covered and missed lines, and the hits per line for each file.
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
+Code climate was also integrated for an automated code review. The overall can be consulted [here.](https://codeclimate.com/github/shapeable/prototype-web)
 
 #### O. Setup or used a continuous integration system to automate the running of tests
 
@@ -200,10 +201,8 @@ We used Travis CI (Continuous Integration) server to run automated tests every t
 
 [Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immmediately alerts the team if there are any errors.
 
-Code climate was also integrated for an automated code review. The overall can be consulted [here](https://codeclimate.com/github/shapeable/prototype-web)
-
 #### R. Deployed their software in an open source container
-This project is deployed using Docker container technology. Some of the advantages of using Docker are:
+The production prototype is deployed on AWS server using Docker container technology. Some of the advantages of using Docker are:
 * Simplifying Configuration
 * Code pipeline management
 * Developer Productivity
