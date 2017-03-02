@@ -56,7 +56,7 @@ Start Sidekiq
 
 
 # TECHNICAL APPROACH
-Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.]()
+Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/USDS%20Playbook%20Checklist.md)
 
 #### A. Assigned a team leader
 Alan Mond, Product Owner
@@ -172,7 +172,9 @@ This is a list of the open-source technologies and the use given for the creatio
 
 #### M. Deployed the prototype on PaaS
 
-The prototype is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
+The prototype staging is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
+
+The prototype in production es deployed on AWS server. The instructions for deployment can be found here.
 
 #### N. Developed automated unit tests
 
