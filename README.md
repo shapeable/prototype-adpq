@@ -22,6 +22,37 @@ Resident user features include: Setting their preferences where he/she can choos
 
 The prototype was created following the playbooks provided as a guide, with the help of tools used in user centered design methodology which included regular feedback on the prototype in every stage developed. The prototype was also done following the agile development currently used in our company for all our products. This practices are reflected and detailed within this document.
 
+# INSTALLATION
+You can access the repository in [GitHub](https://github.com) of [California Alerts](https://github.com/shapeable/prototype-web)
+
+To clone the repository:
+    
+    git clone git@github.com:shapeable/prototype-web.git
+    
+Enter the folder: 
+
+	cd web-app
+	      
+Install and update the gems:
+    
+    bundle install
+    
+Create the migrations of the databases:
+    
+    rake db:setup
+​
+Start rails server:
+    
+    rails s
+
+Start Redis Server
+
+    redis-server
+
+Start Sidekiq
+
+    bundle exec sidekiq   
+
 
 # TECHNICAL APPROACH
 A more comprehensive description of our Technical Approach can be found [here]() 
