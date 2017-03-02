@@ -25,6 +25,7 @@ module Api
             return alarms.collect do |alarm|
                 {id: alarm.id,
                 name: alarm.name,
+                name_es: alarm.name_es,
                 description:  alarm.description,
                 created_at: alarm.created_at,
                 updated_at: alarm.updated_at

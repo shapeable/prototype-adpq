@@ -1,14 +1,15 @@
 %header
   .container
-    .app-logo=image_tag partial_logo, alt: 'broadcast logo'
+    =link_to root_path do
+      .app-logo=image_tag partial_logo, alt: 'broadcast logo'
     %nav.top-navbar
       .nav-js-trigger
         .nav-icon
       %ul
-        %li=link_to 'For residents', '#'
-        %li=link_to 'For government', '#'
-        %li=link_to 'About', '#'
+        %li=link_to t('navbar.residents'), new_user_path, id: "nav_residents"
+        %li=link_to t('navbar.government'), root_path, id: "nav_government"
+        %li=link_to t('navbar.about'), root_path(:anchor => "description-jump"), id: "nav_about"
         %li{class: "#{I18n.locale == :en ?  'lang-active' : 'lang'}"}
-          =link_to 'EN', { :locale=>'en' }
+          =link_to 'EN', { :locale=>'en' }, id: "nav_en"
         %li{class: "#{I18n.locale == :es ?  'lang-active' : 'lang'}"}
-          =link_to 'ES', { :locale=>'es' }
+          =link_to 'ES', { :locale=>'es' }, id: "nav_es"

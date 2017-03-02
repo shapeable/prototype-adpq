@@ -11,11 +11,11 @@
         -@alarm_categories.each_with_index do |alarm_category, index|
           .expander
             .expander-trigger{:class=>"#{index!=0 ? 'expander-hidden' : 'none'}"}
-              %h4=alarm_category.name
+              %h4=get_name(alarm_category)
             .expander-content
               -@alarms.where(alarm_category_id: alarm_category.id).each_with_index do |alarm, ind|
                 .register-option
-                  %p=alarm.name
+                  %p=get_name(alarm)
                   .custom-switch
                     =check_box("alarm", alarm.name, id: "alarm#{index}#{ind}")
                     %label{for: "alarm#{index}#{ind}"}
