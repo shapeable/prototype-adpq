@@ -10,6 +10,7 @@ $aqua: #01C9F5;
 $gray: #5E5E5E;
 $gray2: #E7E7E7;
 $light-gray: #C3C3C3;
+$clear-gray: #F3F3F3;
 
 
 //background-colors
@@ -30,6 +31,9 @@ $basic-text-color: $white;
 $secondary-bg-color: $dark-blue2;
 $secondary-bg-hover: $light-blue;
 $secondary-text-color: $white;
+
+$third-bg-color: $light-blue;
+$third-bg-hover: $light-blue2;
 
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');

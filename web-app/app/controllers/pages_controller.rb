@@ -13,4 +13,6 @@ class PagesController < ApplicationController
   def comments_params
     params.require(:comment).permit(:description)
   end
+  def dashboard
+  end
 end

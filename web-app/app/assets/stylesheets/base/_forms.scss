@@ -35,7 +35,6 @@
 
 .custom-select {
   display: inline-block;
-  width: 180px;
   select {
     @extend .general-input;
     background: url('/assets/down-arrow-gray.svg') 90% / 10% no-repeat;
@@ -43,3 +42,16 @@
   }
 }
 
+.custom-textarea {
+  textarea {
+  @extend .general-input;
+  resize: vertical;
+  width: 100% !important;
+  }
+}
+
+.custom-form {
+  .form-option {
+
+  }
+}

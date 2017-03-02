@@ -1,0 +1,11 @@
+.container
+  .dashboard
+    %nav.sidebar
+      =link_to 'Overview', '#'
+      =link_to 'Alert Categories', '#'
+    .main-content
+      .inactive-section#dashboard_overview
+        =render partial: 'overview'
+      .active-section#dashboard_alerts
+        =render partial: 'alert_categories'
+

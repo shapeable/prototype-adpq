@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   scope "(:locale)", :locale => /en|es/ do
     root 'pages#landing'
+    get 'dashboard', to: 'pages#dashboard'
     resources :users
     resources :pages
   end

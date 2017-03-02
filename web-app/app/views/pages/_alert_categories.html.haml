@@ -1,0 +1,52 @@
+.dashboard-section
+  .dashboard-titles
+    %h2 Alert Categories
+    %p Publish emergency and non-emergency alerts.
+  %h4 Emergency Alerts
+  %ul.config-panel
+    %li
+      %h5 Eartquake
+      %h6 Dept. of interior IGEMS
+      .config-controls
+        =link_to '#' do
+          =image_tag 'alert_bell.svg', alt: 'Force alert bell icon'
+        =link_to '#' do
+          =image_tag 'pencil_edit.svg', alt: 'Edit alert icon'
+        =link_to '#' do
+          =image_tag 'trash_delete.svg', alt: 'Delete alert icon'
+    %li
+      %h5 Wildfire
+      %h6 NOAA - Weather Hazards
+      .config-controls
+        =link_to '#' do
+          =image_tag 'alert_bell.svg', alt: 'Force alert bell icon'
+        =link_to '#' do
+          =image_tag 'pencil_edit.svg', alt: 'Edit alert icon'
+        =link_to '#' do
+          =image_tag 'trash_delete.svg', alt: 'Delete alert icon'
+    %li
+      %h5 Tsunami
+      %h6 NOAA - Tsunami
+      .config-controls
+        =link_to '#' do
+          =image_tag 'alert_bell.svg', alt: 'Force alert bell icon'
+        =link_to '#' do
+          =image_tag 'pencil_edit.svg', alt: 'Edit alert icon'
+        =link_to '#' do
+          =image_tag 'trash_delete.svg', alt: 'Delete alert icon'
+  .add-alert=link_to '+ Add Emergency Alert', '#'
+
+  %form.custom-form
+    %h4 Non-Emergency Alerts
+    .form-option
+      %p Alert Type:
+      .custom-select
+        %select
+          %option Collection Centers
+          %option Meeting points
+    .form-option
+      %p Write the message you want to send:
+      .custom-textarea
+        %textarea{rows: 8}
+      %p *All users with this alert will be notified.
+    %button.third-button Send Non-Emergency Alert

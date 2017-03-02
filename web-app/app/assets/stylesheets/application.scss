@@ -17,6 +17,10 @@
 @import 'base/color_classes';
 @import 'base/forms';
 @import 'base/icons';
+@import 'base/graphs';
+@import 'base/plot';
+@import 'base/bar_graph';
+@import 'base/panels';
 @import 'base/alerts';
 
 //components
@@ -28,4 +32,7 @@
 @import 'components/enrollment';
 @import 'components/expander';
 @import 'components/header';
+@import 'components/dashboard';
+@import 'components/overview';
+@import 'components/dashboard_section';
 @import 'components/modal';
