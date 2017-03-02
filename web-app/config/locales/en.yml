@@ -29,3 +29,9 @@ en:
     buttons:
       new_user: "Get started"
       new_survey: "Take a survey"
+    modal:
+      title: "Let us know the alerts you are interested on:"
+      button: "Send"
+      placeholder: "Volcanic Activity, High Winds, Thunderstorms, etc"
+      error: "Please write a valid comment"
+      
