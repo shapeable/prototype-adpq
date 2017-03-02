@@ -16,7 +16,6 @@ ENV RAILS_ENV production
 ENV NODE_ENV production
 
 RUN bundle install --deployment --without test development
-RUN bundle update
 
 COPY . /app
 COPY config/application.yml /app/config/application.yml
