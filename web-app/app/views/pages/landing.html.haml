@@ -37,7 +37,7 @@
 %section.survey-invite
   .container
     %h2=t("landing.survey")
-    %button.secondary-button{:onClick=>"open_modal()", :id=> "modal_btn"}
+    %button.secondary-button{:onClick=>"open_modal()", :id=> "modal_btn", data: { turbolinks: false }}
       =t("landing.buttons.new_survey")
 
 
