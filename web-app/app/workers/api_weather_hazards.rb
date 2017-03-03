@@ -44,17 +44,7 @@ class ApiWeatherHazards
             feature['geometry']['rings'].each do |ring|
                 ring.each do |coordenate|
                     if  GeographicManager.point_in_polygon(coordenate[0], coordenate[1])
-                        UserAlarm.all.each do |user_alert|
-                            if user_alert.alarm_id.to_s == alert_id.to_s
-                                user = User.find(user_alert.user_id)
-                                if user.email_actived
-                                    NotificationCenter.send_mail_message(user.email, "An alert concerning #{value} has been detected. Please wait for updated information", 'California Alert')
-                                end
-                                if user.sms_actived
-                                    NotificationCenter.send_sms_message(user.phone_number, "An alert concerning #{value} has been detected. Please wait for updated information")
-                                end
-                            end
-                        end
+                        send_message(value)
                     else
                       puts "#{value} has values but not in Cali"
                     end
@@ -65,4 +55,18 @@ class ApiWeatherHazards
         puts "#{value} has not values"
     end
   end
+  def send_message(value)
+    UserAlarm.all.each do |user_alert|
+        if (user_alert.alarm_id.to_s == Alert.find_by(name: value).id.to_s) && Message.find_by_user_id_and_alert_id(user_alert.user_id, user_alert.alert_id).nil?
+            user = User.find(user_alert.user_id)
+            if user.email_actived
+                NotificationCenter.send_mail_message(user.email, "An alert concerning #{value} has been detected. Please wait for updated information", 'California Alert')
+            end
+            if user.sms_actived
+                NotificationCenter.send_sms_message(user.phone_number, "An alert concerning #{value} has been detected. Please wait for updated information")
+            end
+            Message.create(user_id: user_alert.user_id, alert_id: user_alert.alert_id, date_send: Time.now)
+        end
+    end
+    end
 end
