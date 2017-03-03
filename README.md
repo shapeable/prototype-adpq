@@ -101,6 +101,9 @@ In the absence of actual government administrator user responsibilities, access,
 + A government administrator would have access to all alerts.
 + A government administrator can force alerts when needed.
 
+For the resident user , we worked with the following assumptions:
++ A resident doesn't have to create an account and log in to access a profile due to the lack of authentication requirement.
+
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
 These included:
@@ -140,7 +143,7 @@ Usability tests were performed at every step of the process.
 
 + Testing of initial concepts - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
 + Testing of initial [wireframes](https://invis.io/6VAJF25EK) - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
-+ Testing of final prototype - [Link to user testing tasks](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Testing of final prototype - [Link to user testing tasks](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/TasksforUsertesting.pdf)
 
 
 #### J. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
@@ -235,6 +238,8 @@ The production prototype is deployed on AWS server using Docker container techno
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
 The README.md file within the [web-app folder](https://github.com/shapeable/prototype-web/tree/master/web-app) contains complete instructions for deploying and running the prototype on any computer using Docker. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
+
+The url of the docker hub is the following link https://hub.docker.com/r/shapeable/california-alerts/
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
