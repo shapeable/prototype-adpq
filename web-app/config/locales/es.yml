@@ -12,7 +12,7 @@ es:
     government: "Para Gobiernos"
     about: "Acerca de"
     contact: "Contacto"
-    company: "Shaepable"
+    company: "Shapeable"
     street: "2120 University Ave"
     address: "Berkeley, CA 94704"
     phone_number: "510-662-6152"
@@ -22,26 +22,26 @@ es:
     About: "Acerca de"
   landing:
     title: "California Alerts"
-    subtitle: "Reciba notificaciones sobre alertas importantes en su región"
+    subtitle: "Recibe notificaciones sobre alertas importantes en su región"
     description:
-      title: "La mejor manera de mantener un registro de sus alertas"
-      section_one: 
+      title: "Lo mejor para dar seguimiento a tus alertas"
+      section_one:
         title: "Alertas en tiempo real"
         subtitle: "Infórmese y evite los riesgos relativos a peligros climáticos, tsunamis, terremotos y tornados."
       section_two:
-        title: "Puntos de reunión y centros de recolección"
-        subtitle: "Puntos de reunión y centros de recolección."
+        title: "Puntos de reunión y centros de acopio"
+        subtitle: "Puntos de reunión y centros de acopio."
       section_three:
         title: "Difusión importante"
-        subtitle: "Recibir instrucciones para evacuar o noticias de última hora sobre una contingencia."
-    survey: "¿Conoces una alerta que no se ve?, ¡Ayúdanos a mejorar con tus comentarios!"
+        subtitle: "Recibe instrucciones para evacuar o noticias de última hora sobre una contingencia."
+    survey: "¿Hay otra alerta que te gustaría recibir? ¡Ayúdanos a mejorar con tus comentarios!"
     buttons:
       new_user: "Comenzar"
       new_survey: "Participa en una encuesta"
     modal:
-      title: "Háganos saber que alertas que le interesan:"
+      title: "Coméntanos las alertas que más te interesan:"
       button: "Enviar"
-      placeholder: "Actividad Volcanica, Vientos fuertes, Tormetas electricas, etc."
+      placeholder: "Actividad Volcánica, Vientos fuertes, Tormentas eléctricas, etc."
       error: "Escribe un comentario válido"
   comment:
     created: "Comentario enviado"
