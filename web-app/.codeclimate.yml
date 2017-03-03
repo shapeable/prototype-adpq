@@ -1,27 +1,12 @@
 engines:
   rubocop:
-    enabled: true
-    #checks:
-    #	Rubocop/Metrics/ClassLength:
-    #  	enabled: false
-  brakeman:
-   	enabled: true
-    #exclude_fingerprints:
-    #- 08c185b3f764f262539a1f76997d3a89
-  eslint:
-    enabled: true
-  csslint:
-    enabled: true
-  duplication:
   	enabled: true
-    config:
-    	languages:
-      - ruby
-ratings:
-  paths:
-  - web-app/app/**
-  - web-app/lib/**
+    exclude_paths:
+    - "vendor/"
+   eslint:
+   	enabled: true
+## other configuration excluded from example...
 exclude_paths:
-- spec/*
-- "**/vendor/**/*"
-- assets/javascript/graphs/*
+- "tests/"
+- "spec/"
+- "assets/javascripts/graphs/"
