@@ -30,14 +30,14 @@ module NotificationCenter
         "uri": "/2010-04-01/Accounts/ACa392a3db6ddfec3e4c634c3b80a937a4/Messages/SMc728c48b3ad54e28bd0e28b94fd60cd6.json",
         "subresource_uris": {"media": "/2010-04-01/Accounts/ACa392a3db6ddfec3e4c634c3b80a937a4/Messages/SMc728c48b3ad54e28bd0e28b94fd60cd6/Media.json"}
         }'}
-      let(:number) {"+525530265963"}
+      let(:number) {"525530265963"}
       let(:msg) {"Hello World"}
       let(:client) {TestClient.new}
 
     it "send sms message" do
       allow(NotificationCenter).to receive(:twilio_connection) { client }
       allow(NotificationCenter).to receive(:create_sms).with(hash_including(from: '+17066230189', to: number, body: msg)){sms_response}
-      expect(NotificationCenter).to receive(:create_sms).with(hash_including(from: '+17066230189', to: number, body: msg))
+      expect(NotificationCenter).to receive(:create_sms).with(hash_including(from: '+17066230189', to: "+#{number}", body: msg))
       NotificationCenter.send_sms_message(number,msg)
     end
   end
