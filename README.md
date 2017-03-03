@@ -222,6 +222,8 @@ The prototype is licensed under the [MIT License](https://opensource.org/license
 
 #### Examples of U.S. Digital Playbook usage
 
+See file [USDS Playbook Checklist for ADPQ Alert System Prototype](prototype-web/supporting-documents/USDS Playbook Checklist.md)
+
 # CONTACT INFO
 
 Shapeable
