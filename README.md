@@ -132,6 +132,8 @@ Results of the accesibility audits for the application can be found under the [a
 
 A style guide was created by the UI designer with all the design elements present in the prototype. - [California Alerts Styleguide](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/styleguide_california.pdf)
 
+Other design elements and assets can be found [here](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/California%20Assets-20170303T031844Z-001.zip)
+
 #### I. Performed usability tests with people
 
 Usability tests were performed at every step of the process.
