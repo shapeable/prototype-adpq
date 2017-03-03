@@ -4,30 +4,50 @@
 }
 
   #category_text, #alerts_category_text {
-    font-family: 'Source Sans Pro';
     font-weight: bold;
     font-size: $subtitle-font-size;
     fill: $light-blue;
   }
 
   #num_text, #alerts_num_text {
-    font-family: 'Source Sans Pro';
     font-size: 42px;
     fill: gray;
   }
 
   #center_text, #alerts_center_text{
-    font-family: 'Source Sans Pro';
     font-size: $small-font-size;
     fill: gray;
   }
 
   .status_cases {
-    font-family: 'Source Sans Pro';
     font-size: 24px;
     fill: gray;
   }
 
   path:hover{
       fill-opacity:0.5;
+  }
+
+  .text-bar {
+    fill: gray;
+    font-size: 16px;
+  }
+
+  .axis path, .axis line {
+    stroke: #AFBABF !important;
+  }
+
+  .x.axis path {
+    stroke: #AFBABF !important;
+    display: block !important;
+  }
+
+  .y.axis path {
+    stroke: #AFBABF !important;
+    display: block !important;
+  }
+
+  .axis text{
+    font-size:18px !important;
+    font-family: SourceSansPro-Light !important;
   }

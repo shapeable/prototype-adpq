@@ -1,6 +1,6 @@
 function alertsTimeline() {
 //set the margins
-var margin = {top: 50, right: 160, bottom: 80, left: 50},
+var margin = {top: 50, right: 160, bottom: 80, left: 80},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -147,7 +147,8 @@ function redraw() {
       .scale(x)
       .orient("bottom")
       .tickPadding(8)
-      .ticks(xscaleticks);
+      .ticks(xscaleticks)
+      .tickSize(0.05*height);
 
     svg.append("svg:g")
       .attr("class", "x axis");
@@ -156,7 +157,8 @@ function redraw() {
   var yAxis = d3.svg.axis()
       .scale(y)
       .orient("left")
-      .tickPadding(8);
+      .tickPadding(8)
+      .tickSize(0.05*height);
 
     svg.append("svg:g")
       .attr("class", "y axis");
@@ -293,7 +295,7 @@ function redraw() {
 
   //actually add the circles to the created legend container
     legendEnter.append('circle')
-        .attr('cy', height+42.5)
+        .attr('cy', height+60)
         .attr('cx', function(d){return width/3+legendscale(d.values[d.values.length-1].value);})
         .attr('r', 7)
         .style('fill', function(d) {
@@ -302,7 +304,7 @@ function redraw() {
 
   //add the legend text
     legendEnter.append('text')
-        .attr('y', height+47)
+        .attr('y', height+65)
         .attr('x', function(d){return width/3+14+legendscale(d.values[d.values.length-1].value);})
         .text(function(d){ return d.name; });
 
