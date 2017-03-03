@@ -7,6 +7,15 @@ es:
     title: "Una nueva alerta ha sido creado con el siguiente mensaje:"
   api:
     error_params: "Error en parametros"
+  footer:
+    residents: "Para residentes"
+    government: "Para Gobiernos"
+    about: "Acerca de"
+    contact: "Contacto"
+    company: "Shaepable"
+    street: "2120 University Ave"
+    address: "Berkeley, CA 94704"
+    phone_number: "510-662-6152"
   navbar:
     residents: "Para residentes"
     government: "Para Gobiernos"

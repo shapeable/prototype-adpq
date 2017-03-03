@@ -15,6 +15,7 @@
     .primary-header
       = render partial: 'shared/header', locals: {partial_logo: 'logo-blue.svg'}
     = yield
+    = render partial: 'shared/footer'
     :javascript
       window.smartlook||(function(d) {
       var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
