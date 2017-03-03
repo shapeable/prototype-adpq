@@ -28,7 +28,7 @@ class AlarmsController < ApplicationController
   end
 
   def create
-    if get_alarm(params[:dashboard]
+    if get_alarm(params[:dashboard])
       alarm = Alarm.find(get_alarm(params[:dashboard][:message]))
       ApiGeneralHazards.perform_async(alarm.id, params[:dashboard][:description])
       flash[:notice] = t("alert.sent") 
