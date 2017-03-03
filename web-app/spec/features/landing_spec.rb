@@ -12,6 +12,16 @@ module LandingCenter
       expect(page).to have_content "EN ES"
     end
 
+     it "footer links activated" do
+      visit root_path
+      find('#nav_residents_footer', :visible => false).click
+      expect(page).to have_content I18n.t('user.form.title')
+
+      visit root_path
+      find('#nav_about_footer', :visible => false).click
+      expect(page).to have_content I18n.t("landing.description.title")
+    end
+
     it "navbar links activated" do
       visit root_path
       find('#nav_residents', :visible => false).click
