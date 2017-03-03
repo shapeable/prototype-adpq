@@ -8,7 +8,7 @@ module NotificationCenter
     def self.send_sms_message(number, message)
         require 'twilio-ruby'
         @client = twilio_connection
-        @message = create_sms({:from => sender_phone_number, :to => number, :body => message})
+        @message = create_sms({:from => sender_phone_number, :to => "+#{number}", :body => message})
     end 
 
     def self.sender_phone_number=(number)
