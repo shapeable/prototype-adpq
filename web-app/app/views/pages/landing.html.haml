@@ -4,7 +4,7 @@
     .main-titles
       %h1=t("landing.title")
       %h2=t("landing.subtitle")
-    =link_to new_user_path, :id=> "create_user_btn" do
+    =link_to login_pages_path, :id=> "create_user_btn" do
       %button.basic-button=t("landing.buttons.new_user")
     =link_to '#description-jump' do
       .down-arrow=image_tag 'down-arrow.svg'

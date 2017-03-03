@@ -6,7 +6,7 @@
       .nav-js-trigger
         .nav-icon
       %ul
-        %li=link_to t('navbar.residents'), new_user_path, id: "nav_residents", data: { turbolinks: false }
+        %li=link_to t('navbar.residents'), login_pages_path, id: "nav_residents", data: { turbolinks: false }
         %li=link_to t('navbar.government'), alarms_path, id: "nav_government", data: { turbolinks: false }
         %li=link_to t('navbar.about'), root_path(:anchor => "description-jump"), id: "nav_about", data: { turbolinks: false }
         %li{class: "#{I18n.locale == :en ?  'lang-active' : 'lang'}"}

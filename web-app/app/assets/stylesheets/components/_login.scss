@@ -1,0 +1,15 @@
+.login{
+  padding: 15% 0 9% 0 ;
+  .custom-form {
+    max-width: 500px;
+    margin: auto;
+    input[type=email], input[type=password] {
+      @extend .general-input;
+      width: 100%;
+    }
+    input[type=submit] {
+      @extend .third-button;
+      margin: 20px 0;
+    }
+  }
+}
