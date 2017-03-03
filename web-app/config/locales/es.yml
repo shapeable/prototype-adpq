@@ -7,6 +7,15 @@ es:
     title: "Una nueva alerta ha sido creado con el siguiente mensaje:"
   api:
     error_params: "Error en parametros"
+  footer:
+    residents: "Para residentes"
+    government: "Para Gobiernos"
+    about: "Acerca de"
+    contact: "Contacto"
+    company: "Shaepable"
+    street: "2120 University Ave"
+    address: "Berkeley, CA 94704"
+    phone_number: "510-662-6152"
   navbar:
     residents: "Para residentes"
     government: "Para Gobiernos"
@@ -20,12 +29,12 @@ es:
         title: "Alertas en tiempo real"
         subtitle: "Infórmese y evite los riesgos relativos a peligros climáticos, tsunamis, terremotos y tornados."
       section_two:
-        title: "Meeting Points & Collection Centers"
+        title: "Puntos de reunión y centros de recolección"
         subtitle: "Puntos de reunión y centros de recolección."
       section_three:
         title: "Difusión importante"
         subtitle: "Recibir instrucciones para evacuar o noticias de última hora sobre una contingencia."
-    survey: "Conoces una alerta que no se ve? Ayúdanos a mejorar con tus comentarios!"
+    survey: "¿Conoces una alerta que no se ve?, ¡Ayúdanos a mejorar con tus comentarios!"
     buttons:
       new_user: "Comenzar"
       new_survey: "Participa en una encuesta"

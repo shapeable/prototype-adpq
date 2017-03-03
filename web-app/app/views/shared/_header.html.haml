@@ -6,10 +6,10 @@
       .nav-js-trigger
         .nav-icon
       %ul
-        %li=link_to t('navbar.residents'), new_user_path, id: "nav_residents"
-        %li=link_to t('navbar.government'), root_path, id: "nav_government"
+        %li=link_to t('navbar.residents'), new_user_path, id: "nav_residents", data: { turbolinks: false }
+        %li=link_to t('navbar.government'), alarms_path, id: "nav_government", data: { turbolinks: false }
         %li=link_to t('navbar.about'), root_path(:anchor => "description-jump"), id: "nav_about"
         %li{class: "#{I18n.locale == :en ?  'lang-active' : 'lang'}"}
-          =link_to 'EN', { :locale=>'en' }, id: "nav_en"
+          =link_to 'EN', { :locale=>'en' }, id: "nav_en", data: { turbolinks: false }
         %li{class: "#{I18n.locale == :es ?  'lang-active' : 'lang'}"}
-          =link_to 'ES', { :locale=>'es' }, id: "nav_es"
+          =link_to 'ES', { :locale=>'es' }, id: "nav_es", data: { turbolinks: false }

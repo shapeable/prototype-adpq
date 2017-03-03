@@ -1,5 +1,6 @@
 function alertsTimeline() {
 //set the margins
+
 var margin = {top: 50, right: 220, bottom: 80, left: 80},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -63,7 +64,7 @@ var menu = d3.select("#menu select")
     .on("change", change);
 
 //suck in the data, store it in a value called formatted, run the redraw function
-d3.csv("alerts-stats.csv", function(data) {
+d3.csv(window.location.origin+"/alerts-stats.csv", function(data) {
                   formatted = data;
                       redraw();
                     });

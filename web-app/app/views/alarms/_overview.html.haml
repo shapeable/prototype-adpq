@@ -1,0 +1,37 @@
+.dashboard-section
+  .dashboard-titles
+    %h2=t('dashboard.title') 
+    %p=t('dashboard.subtitle')
+  .custom-select
+    =select("dashboard", "date", get_dashboard_dates, selected: "")
+  .custom-select
+    =select("dashboard", "region", get_dashboard_regions, selected: "")
+  .multi-panel
+    %ul
+      -get_dashboard_kpi.each do |kpi|
+        %li
+          %h2=kpi[0]
+          %p=kpi[1]
+  .cols
+    .half-col
+      .graph
+        .graph-title
+          %h4=t('dashboard.graph_donut_first')  
+        .users-graph
+    .half-col
+      .graph
+        .graph-title
+          %h4=t('dashboard.graph_donut_second') 
+          .alerts-donut-graph
+    .graph
+      .graph-title
+        %h4=t('dashboard.graph_points')   
+        .alerts-timeline-graph
+        %p#menu.menuchoice
+          %select{ :style=>"visibility:hidden;"}
+            %option{:value => "val1"} Value 1
+  .graph
+    .graph-title
+      %h4=t('dashboard.graph_bars')
+    .bar-graph
+

@@ -1,12 +1,21 @@
---- 
-en: 
-  mailers: 
+---
+en:
+  mailers:
     footer: "This message is informative, please don't respond to this email."
     greeting: "Hi"
     pd: "Thank you."
     title: "A new alert has been created with the following message:"
   api:
     error_params: "Parameter error"
+  footer:
+    residents: "For residents"
+    government: "For goverment"
+    about: "About"
+    contact: "Contact"
+    company: "Shaepable"
+    street: "2120 University Ave"
+    address: "Berkeley, CA 94704"
+    phone_number: "510-662-6152"
   navbar:
     residents: "For residents"
     government: "For government"
@@ -15,25 +24,24 @@ en:
     title: "California Alerts"
     subtitle: "Get notified about important alerts in your region"
     description:
-      title: "The best way to keeping track of your alerts"
-      section_one: 
+      title: "The best way to keep track of your alerts"
+      section_one:
         title: "Real time alerts & Forecast"
-        subtitle: "Get informed in advance and prevent risks concerning weather hazards, tsunamis, earthquakes and tornadoes."
+        subtitle: "Be the first to know about weather hazards, tsunamis, earthquakes and tornadoes."
       section_two:
-        title: "Meeting Points & Collection Centers"
-        subtitle: "Know about safe places for emergency and places for helping those in neeed."
+        title: "Meeting Points & Donation Centers"
+        subtitle: "Know where to go during an emergency and where to donate for those in need."
       section_three:
-        title: "Important Broadcast"
-        subtitle: "Receive live instructions to evacuate or breaking news about a contingency."
-    survey: "Did we miss an alert you are not seen? Help us improve with your feedback!"
+        title: "Important Broadcasts"
+        subtitle: "Get real-time instructions from a trusted source."
+    survey: "Did we miss an alert you are not seeing? Help us improve with your feedback!"
     buttons:
       new_user: "Get started"
       new_survey: "Take a survey"
     modal:
-      title: "Let us know the alerts you are interested on:"
+      title: "Let us know which alerts you are interested in:"
       button: "Send"
       placeholder: "Volcanic Activity, High Winds, Thunderstorms, etc"
       error: "Please write a valid comment"
   comment:
     created: "Comment sent"
-      

@@ -1,0 +1,94 @@
+footer {
+  overflow: hidden;
+  width: 100%;
+  background-color: $footer-background-color;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  .container {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 35px;
+        display: inline-block;
+        &:last-child {
+          float: right;
+          text-align: right;
+          color: $white;
+        }
+        a {
+          text-decoration: none;
+          color: $white;
+          display: inline-block;
+          &:hover, &:focus {
+            color: $hover-color;
+          }
+        }
+      }
+
+      .address { margin-top: 20px; }
+    }
+
+    .contact-info {
+      text-align: left;
+      float: left;
+      margin-left: 10px;
+      margin-top: 75px;
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        margin-top: 22px;
+        margin-right: 11px;
+      }
+    }
+  }
+}
+
+@include media(min-width 320px max-width 959px) {
+  footer {
+    text-align: center;
+    .container {
+      ul {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include media(min-width 320px max-width 779px) {
+  footer .container ul li:last-child {
+    margin-top: 25px;
+  }
+}
+
+@include media(min-width 320px max-width 489px) {
+  footer .container {
+    ul li {
+      display: block;
+      margin-right: 0;
+      margin-top: 20px;
+      &:last-child {
+        margin-top: 40px;
+        float: none;
+        text-align: center;
+      }
+    }
+
+    .address { margin-top: 5px; }
+
+    .contact-info {
+      float: none;
+      margin-top: 0px;
+    }
+  }
+}
