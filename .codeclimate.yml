@@ -1,0 +1,12 @@
+engines:
+  rubocop:
+  	enabled: true
+    exclude_paths:
+    - "vendor/"
+   eslint:
+   	enabled: true
+## other configuration excluded from example...
+exclude_paths:
+- "web-app/tests/"
+- "web-app/spec/"
+- "web-app/assets/javascripts/graphs/"
