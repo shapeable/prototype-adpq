@@ -20,7 +20,7 @@ $(document).ready(function() {
   //Nav-bar
 
   TopNavbar()
-  
+
   $(".alert").delay(6000).slideUp(200, function() {
     $(this).alert('close');
   });
