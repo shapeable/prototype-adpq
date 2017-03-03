@@ -1,5 +1,12 @@
 ---
 en:
+  login:
+    mail: 'Mail:'
+    pass: 'Password:'
+    placeholder:
+      email: 'name@mail.com'
+      password: 'xxxxxxxxxxx'
+    login: 'Login'
   mailers:
     footer: "This message is informative, please don't respond to this email."
     greeting: "Hi"
@@ -24,7 +31,7 @@ en:
     title: "California Alerts"
     subtitle: "Get notified about important alerts in your region"
     description:
-      title: "The best to keep track of your alerts"
+      title: "The best way to keep track of your alerts"
       section_one:
         title: "Real time alerts & Forecast"
         subtitle: "Be the first to know about weather hazards, tsunamis, earthquakes and tornadoes."

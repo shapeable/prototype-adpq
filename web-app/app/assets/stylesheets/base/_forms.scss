@@ -37,7 +37,8 @@
   display: inline-block;
   select {
     @extend .general-input;
-    background: url('/assets/down-arrow-gray.svg') 90% / 10% no-repeat;
+    padding: 5px 46px 5px 15px;
+    background: url('/assets/down-arrow-gray.svg') 92% / 15px no-repeat;
     width: 100%;
   }
 }

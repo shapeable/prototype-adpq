@@ -1,0 +1,28 @@
+version: '2'
+
+volumes:
+  db_data: {}
+  redis: {}
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  redis:
+    image: redis:3.2-alpine
+    volumes:
+      - redis:/var/lib/redis/data
+  web: &web
+    image: shapeable/california-alerts
+    command: rails s -p 3000 -b '0.0.0.0'
+    depends_on:
+      - db
+    environment:
+      - RAILS_ENV=production
+  sidekiq:
+    <<: *web
+    command: bundle exec sidekiq
+    depends_on:
+      - redis
+      - db

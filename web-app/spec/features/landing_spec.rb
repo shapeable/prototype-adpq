@@ -27,15 +27,19 @@ module LandingCenter
       find('#nav_residents', :visible => false).click
       expect(page).to have_content I18n.t('user.form.title')
 
-      visit root_path
-      find('#nav_about', :visible => false).click
-      expect(page).to have_content I18n.t("landing.description.title")
-
     end
 
     it "can visit create user" do
       visit root_path
       find('#create_user_btn', :visible => false).click
+      expect(page).to have_content I18n.t('user.form.title')
+    end
+
+    it "signin user" do
+     visit root_path
+      find('#nav_about', :visible => false).click
+      fill_in "user_email", with: "mail@test.com"
+      find('#submit_login', :visible => false).click
       expect(page).to have_content I18n.t('user.form.title')
     end
 

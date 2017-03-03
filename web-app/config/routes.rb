@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  
   scope "(:locale)", :locale => /en|es/ do
     root 'pages#landing'
     resources :users
-    resources :pages
+    resources :pages do
+      collection do
+        get 'login'
+      end
+    end
     resources :alarms do
       collection do
         get 'dasboard'

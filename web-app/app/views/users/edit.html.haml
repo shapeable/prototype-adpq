@@ -1,0 +1,112 @@
+%section.enrollment
+  .container
+    .main-titles
+      %h1=t('user.form.title')
+      %h2=t('user.form.subtitle')
+    =form_tag(user_path(:id=>@user), :method => "put",  :class=> "register", :id=>"form_user") do  |f|  
+      .register-section
+        .register-section-titles
+          %h3=t('user.form.notifications')
+          %p=t('user.form.notifications_about')
+        -@alarm_categories.each_with_index do |alarm_category, index|
+          .expander
+            .expander-trigger{:class=>"#{index!=0 ? 'expander-hidden' : 'none'}"}
+              %h4=get_name(alarm_category)
+            .expander-content
+              -@alarms.where(alarm_category_id: alarm_category.id).each_with_index do |alarm, ind|
+                .register-option
+                  %p=get_name(alarm)
+                  .custom-switch
+                    =check_box("alarm", alarm.name, id: "alarm#{index}#{ind}", checked: !@user_alarms.where(alarm_id: alarm.id).blank? )
+                    %label{for: "alarm#{index}#{ind}"}
+
+      .register-section
+        .register-section-titles
+          %h3=t('user.form.settings')
+          %p=t('user.form.settings_description')
+        .register-option
+          .custom-checkbox
+            =check_box("user", "sms_actived", id: "user_sms_actived")
+            %label.js-toggle-required{for: 'user_sms_actived'}
+          %h4=t('user.form.sms')
+          <br>
+          .custom-text-input
+            .required-field *
+            =text_field(:user, :phone_number, size: 20, placeholder: t('user.form.sms_placeholder'), type: "number", :maxlength => 10)
+        .register-option
+          .custom-checkbox
+            =check_box("user", "email_actived")
+            %label.js-toggle-required{for: 'user_email_actived'}
+          %h4=t('user.form.email')
+          <br>
+          .custom-text-input
+            .required-field *
+            =email_field(:user, :email, size: 20, placeholder: t('user.form.email_placeholder'))
+        .register-option
+          .custom-checkbox
+            %input{type: 'checkbox', id:'app', value: 'true', disabled: 'disabled'}
+            %label{for: 'app'}
+          %h4=t('user.form.mobile_app')
+          <br>
+          %span
+            %em=t('user.form.wait_for_it')
+      .register-section
+        .register-section-titles
+          %h3=t('user.form.information')
+          %p=t('user.form.help_us') 
+        .register-option
+          %span=t('user.form.gender')
+          .custom-radio-input
+            .custom-radio-button
+              =radio_button("user", "gender", "female")
+              %label{for: 'user_gender_female'}
+            %span=t('user.form.female')
+          .custom-radio-input
+            .custom-radio-button
+              =radio_button("user", "gender", "male")
+              %label{for: 'user_gender_male'}
+            %span=t('user.form.male')
+          .information-button
+            %p=t('user.form.gender_message')
+        .register-option
+          %p=t('user.form.year')
+          .custom-select
+            =select("user", "year_of_birth", get_years)
+          .information-button
+            %p=t('user.form.year_message')
+        .register-option
+          %p=t('user.form.language')
+          .custom-select
+            =select("user", "lenguage", get_lenguages)
+          .information-button
+            %p=t('user.form.language_message')
+        .center-button
+          %button.basic-button{:type=>"submit", :class=>"button", :id=> "submit_btn"}
+            =t('user.form.save')
+
+:javascript
+  $('.expander-trigger').click(function(){
+    $(this).toggleClass('expander-hidden');
+  });
+  
+  $( "form" ).submit(function( event ) {
+    if ($("#user_sms_actived").is(':checked') || $("#user_email_actived").is(':checked') ){
+        if($("#user_sms_actived").is(':checked') && $("#user_phone_number").val() == ""){
+          toastr.error("#{t('user.form.validations.bad_phone')}");
+        }else if($("#user_email_actived").is(':checked') && ( $("#user_email").val() == ""  || !validateEmail($("#user_email").val()))) {
+          toastr.error("#{t('user.form.validations.bad_email')}");
+        }else{
+          var checks = $("form input:checkbox");
+          for(var i =0; i<checks.length-3; i++){
+              if($("#"+checks[i].id).is(':checked')){
+                  return true;
+              }
+          }
+          toastr.error("#{t('user.form.validations.not_alarm')}");
+          return false;
+        }
+    }else{
+      toastr.error("#{t('user.form.validations.not_settings')}");
+    }
+    return false;
+  });

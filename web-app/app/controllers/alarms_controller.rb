@@ -14,6 +14,7 @@ class AlarmsController < ApplicationController
   end
 
   def destroy
+    UserAlarm.where(alarm_id: @alarm.id).delete_all
     @alarm.destroy
     respond_to do |format|
       flash[:notice] =t("alert.deleted")
@@ -24,6 +25,13 @@ class AlarmsController < ApplicationController
 
   def dasboard
     session['dashboard'] = params[:value]
+    redirect_to alarms_path
+  end
+
+  def force
+    alarm = Alarm.find(get_alarm(params[:value]))
+    ApiWeatherHazards.perform_async(alarm.end_point, alarm.description, alarm.name)
+    flash[:notice] = t("alert.sent") 
     redirect_to alarms_path
   end
 

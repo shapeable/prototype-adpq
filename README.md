@@ -92,7 +92,7 @@ Implementation
 + Creation of Mock-ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups.pdf)
 + Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V1.pdf)
 + Final mock-ups with the implementation of user feedback - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf)
-+ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/TasksforUsertesting.pdf)
 
 + Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
@@ -100,6 +100,8 @@ In the absence of actual government administrator user responsibilities, access,
 + A government administrator doesn't have to create an account and log in to access all functionality due to the lack of authentication requirement.
 + A government administrator would have access to all alerts.
 + A government administrator can force alerts when needed.
+
+The sig in tab is available for editing resident profile information, authentication is not required. 
 
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
@@ -132,13 +134,15 @@ Results of the accesibility audits for the application can be found under the [a
 
 A style guide was created by the UI designer with all the design elements present in the prototype. - [California Alerts Styleguide](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/styleguide_california.pdf)
 
+Other design elements and assets can be found [here](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/California%20Assets-20170303T031844Z-001.zip)
+
 #### I. Performed usability tests with people
 
 Usability tests were performed at every step of the process.
 
 + Testing of initial concepts - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
 + Testing of initial [wireframes](https://invis.io/6VAJF25EK) - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
-+ Testing of final prototype - [Link to user testing tasks](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ Testing of final prototype - [Link to user testing tasks](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/TasksforUsertesting.pdf)
 
 
 #### J. Used an iterative approach, where feedback informed subsequent work or versions of the prototype
@@ -233,6 +237,8 @@ The production prototype is deployed on AWS server using Docker container techno
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
 The README.md file within the [web-app folder](https://github.com/shapeable/prototype-web/tree/master/web-app) contains complete instructions for deploying and running the prototype on any computer using Docker. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
+
+The url of the docker hub is the following link https://hub.docker.com/r/shapeable/california-alerts/
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
