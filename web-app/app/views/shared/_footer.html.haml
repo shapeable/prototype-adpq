@@ -1,7 +1,7 @@
 %footer
   .container
     %ul
-      %li=link_to t('footer.residents'), new_user_path, id: "nav_residents_footer", data: { turbolinks: false }
+      %li=link_to t('footer.residents'), login_pages_path, id: "nav_residents_footer", data: { turbolinks: false }
       %li=link_to t('footer.government'), alarms_path, id: "nav_government_footer", data: { turbolinks: false }
       %li=link_to t('footer.about'), root_path(:anchor => "description-jump"), id: "nav_about_footer", data: { turbolinks: false }
       %li
