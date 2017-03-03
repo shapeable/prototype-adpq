@@ -1,8 +1,8 @@
 --- 
 es: 
   user: 
-    created: "Usuario creado correctamente"
-    updated: "Usuario actualizado correctamente"
+    created: "¡Gracias por registrarte! Ya hemos guardado tus datos en nuestro sistema de alertas. Puedes regregar editar tus datos cuando necesites."
+    updated: "Tu configuración fue guardada correctamente."
     not_updated: "Usuario NO actualizado"
     deleted: "Usuario eliminado correctamente"
     form:
