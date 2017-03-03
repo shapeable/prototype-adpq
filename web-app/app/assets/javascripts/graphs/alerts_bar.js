@@ -1,7 +1,10 @@
 function alertsBar() {
-    var margin = {top: 20, right: 20, bottom: 70, left: 40},
+
+    var color = ["#C3C3C3", "#E0E0E0", "#00BFE9","#147A91", "#144753"];
+
+    var margin = {top: 20, right: 20, bottom: 100, left: 40},
     width = 600 - margin.left - margin.right,
-    height = 300 - margin.top - margin.bottom;
+    height = 500 - margin.top - margin.bottom;
 
     // Parse the date / time
     var	parseDate = d3.time.format("%Y-%m").parse;
@@ -13,17 +16,20 @@ function alertsBar() {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-       .ticks(10);
+        .ticks(5)
+        .tickSize(.05*height)
+        .outerTickSize(0)
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("left")
-        .ticks(10);
+        .ticks(5)
+        .tickSize(.05*height);
 
     var svg = d3.select(".bar-graph").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
     .append("g")
-        .attr("transform", 
+        .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
     d3.csv("bar-data.csv", function(error, data) {
@@ -32,7 +38,7 @@ function alertsBar() {
             d.date = d.date;
             d.value = +d.value;
         });
-        
+
     x.domain(data.map(function(d) { return d.date; }));
     y.domain([0, d3.max(data, function(d) { return d.value; })]);
 
@@ -41,29 +47,38 @@ function alertsBar() {
         .attr("transform", "translate(0," + height + ")")
         .call(xAxis)
         .selectAll("text")
-        .style("text-anchor", "end")
-        .attr("dx", "-.8em")
-        .attr("dy", "-.55em")
-        .attr("transform", "rotate(-90)" );
+        .style("text-anchor", "middle")
+
 
     svg.append("g")
         .attr("class", "y axis")
         .call(yAxis)
-        .append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", ".71em")
-        .style("text-anchor", "end")
-        .text("Value ($)");
 
     svg.selectAll("bar")
         .data(data)
         .enter().append("rect")
-        .style("fill", "steelblue")
+        .style("fill", function(d,i){
+          return color[i]
+        })
         .attr("x", function(d) { return x(d.date); })
         .attr("width", x.rangeBand())
         .attr("y", function(d) { return y(d.value); })
-        .attr("height", function(d) { return height - y(d.value); });
+        .attr("height", function(d) { return height - y(d.value); })
+        .on("mouseover", function(d){
+          bar = d3.select(this)
+
+          svg.append("text")
+            .attr("x", function() {
+              return x(d.date)+ 0.5*x.rangeBand(); })
+            .attr("y", function() { return y(d.value)-5; })
+            .text(function(){
+              return(d.value)
+            })
+            .attr("class","text-bar")
+            })
+            .on("mouseout", function(){
+              d3.select(".text-bar").remove()
+            })
 
     });
 }
