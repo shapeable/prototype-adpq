@@ -5,7 +5,7 @@ es:
     pass: 'Password:'
     placeholder:
       email: 'nombre@correo.com'
-      pasword: 'xxxxxxxxxxx'
+      password: 'xxxxxxxxxxx'
     login: 'Ingresar'
   mailers: 
     footer: "Este mensaje es informativo, porfavor no responda este correo."

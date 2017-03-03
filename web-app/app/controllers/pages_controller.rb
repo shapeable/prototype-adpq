@@ -10,6 +10,7 @@ class PagesController < ApplicationController
   end
 
   def login
+    render layout: "user"
   end
 
   private
