@@ -140,6 +140,8 @@ The percentage of the code base covered by automated tests was defined using Cov
 
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
+Code climate was also integrated for an automated code review which grades code quality. See full results here.
+
 ## Play 11
 ### Manage security and privacy through reusable processes
 
