@@ -19,5 +19,5 @@ ratings:
 
 exclude_paths:
   - web-app/spec/**/*
-  - web-app/assets/javascripts/graphs/**/*
+  - web-app/app/assets/javascripts/graphs/**/*
   - "**/vendor/**/*"
