@@ -101,6 +101,8 @@ In the absence of actual government administrator user responsibilities, access,
 + A government administrator would have access to all alerts.
 + A government administrator can force alerts when needed.
 
+The sig in tab is available for editing resident profile information, authentication is not required. 
+
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
 These included:
