@@ -1,7 +1,7 @@
 Alarm.delete_all
 AlarmCategory.delete_all
 
-category_1 = AlarmCategory.create(name: 'Source: Dept of interior IGEMS ',name_es: "Fuente: Departamento IGEMS", description: 'Get informed in advance and prevent risks concerning weather hazards, tsunamis, earthquakes and tornadoes.')
+category_1 = AlarmCategory.create(name: 'Real time alerts and forecast',name_es: "Alertas en tiempo real y pronóstico", description: 'Get informed in advance and prevent risks concerning weather hazards, tsunamis, earthquakes and tornadoes.')
 category_2 = AlarmCategory.create(name: 'Meeting Points & Donation Centers',name_es: "Puntos de reunión y centros de acopio", description: 'Know about safe places for emergency and places for helping those in neeed.')
 category_3 = AlarmCategory.create(name: 'Important Broadcasts',name_es: "Transmisiones importantes", description: 'Receive live instructions to evacuate or breaking news about a contingency.')
 
