@@ -39,6 +39,12 @@
   text-align: center;
 }
 
+.forth-button {
+  @extend .basic-button;
+  font-size: $small-font-size;
+  padding: 20px 30px;
+}
+
 .button-top{
   margin-top: 20px;
 }

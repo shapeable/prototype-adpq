@@ -30,7 +30,7 @@
       .custom-text-input
         =text_field(:dashboard, :description, size: 340, placeholder: '', type: "text",class: "modal-input")
       %p=t('alert.message_warning')
-    %button.basic-button{:type=>"submit", :class=>"button", :id=> "submit_btn", data: { confirm: t('alert.confirm_send') }}
+    %button.forth-button{:type=>"submit", :class=>"button", :id=> "submit_btn", data: { confirm: t('alert.confirm_send') }}
       =t('alert.button.send')
 
 :javascript
