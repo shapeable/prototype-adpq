@@ -35,7 +35,7 @@ class ApiWeatherHazards
   end
 
   def parse_json_value(json_value, value, type)
-    if json_value['features'].count > 0
+    if !json_value['features'].nil? && json_value['features'].count > 0
         json_value['features'].each do |feature|
             if type == "weather"
                 end_date = feature['attributes']['end_date']
@@ -44,10 +44,7 @@ class ApiWeatherHazards
             feature['geometry']['rings'].each do |ring|
                 ring.each do |coordenate|
                     if  GeographicManager.point_in_polygon(coordenate[0], coordenate[1])
-                        puts "*****California ALERT*****"  
-                        puts "type: #{value}"
-                        puts "start_date: #{Time.at(start_date/1000)}" unless start_date.nil?
-                        puts "end_date: #{Time.at(end_date/1000)}" unless end_date.nil?
+                        send_message(value)
                     else
                       puts "#{value} has values but not in Cali"
                     end
@@ -58,4 +55,18 @@ class ApiWeatherHazards
         puts "#{value} has not values"
     end
   end
+  def send_message(value)
+    UserAlarm.all.each do |user_alarm|
+        if (user_alarm.alarm_id.to_s == Alarm.find_by(name: value).id.to_s) && Message.find_by_user_id_and_alarm_id(user_alarm.user_id, user_alarm.alarm_id).nil?
+            user = User.find(user_alarm.user_id)
+            if user.email_actived
+                NotificationCenter.send_mail_message(user.email, "An alert concerning #{value} has been detected. Please wait for updated information", 'California Alert')
+            end
+            if user.sms_actived
+                NotificationCenter.send_sms_message(user.phone_number, "An alert concerning #{value} has been detected. Please wait for updated information")
+            end
+            Message.create(user_id: user_alarm.user_id, alarm_id: user_alarm.alarm_id, date_send: Time.now)
+        end
+    end
+    end
 end

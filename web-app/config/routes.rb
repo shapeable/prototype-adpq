@@ -2,9 +2,14 @@ Rails.application.routes.draw do
   
   scope "(:locale)", :locale => /en|es/ do
     root 'pages#landing'
-    get 'dashboard', to: 'pages#dashboard'
     resources :users
     resources :pages
+    resources :alarms do
+      collection do
+        get 'dasboard'
+        get 'force'
+      end
+    end
   end
   namespace :api, defaults: { format: 'json' } do
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
@@ -28,6 +33,11 @@ Rails.application.routes.draw do
       resources :comments do
         collection do
           get 'index'
+          post 'create'
+        end
+      end
+      resources :messages do
+        collection do
           post 'create'
         end
       end

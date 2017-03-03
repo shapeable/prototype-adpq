@@ -36,7 +36,14 @@
   &:hover, &:focus {
     background-color: $third-bg-hover;
   }
+  text-align: center;
 }
+
+.button-top{
+  margin-top: 20px;
+}
+    
+  
 .information-button {
   display: inline-block;
   width: 24px;

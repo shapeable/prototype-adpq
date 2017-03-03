@@ -17,7 +17,7 @@ function alertsDonut() {
     .append("g")
     .attr("transform", "translate(" + (width - 40) / 2 + "," + (height -40) / 2 + ")");
 
-  d3.csv("open-unopen-stats.csv", type, function(error, data) {
+  d3.csv(window.location.origin+"/open-unopen-stats.csv", type, function(error, data) {
     if (error) throw error;
 
     var color = d3.scale.ordinal()
@@ -74,7 +74,7 @@ function alertsDonut() {
         }
         return "translate(" + distance + ",0)"; })
       .attr("xlink:href",function(d,i){
-        return d.data.status + ".svg"
+        return window.location.origin+"/"+d.data.status + ".svg"
       })
       .attr("width", 20)
       .attr("height", 20)

@@ -18,15 +18,19 @@
     {
       "path": "/api/v1/comments.{format}",
       "description": "Comments Management"
+    },
+    {
+      "path": "/api/v1/messages.{format}",
+      "description": "Messages Management"
     }
   ],
   "authorizations": null,
   "info": {
     "title": "California Alerts",
-    "description": "This is a sample description.",
-    "termsOfServiceUrl": "http://helloreverb.com/terms/",
-    "contact": "apiteam@wordnik.com",
-    "license": "Apache 2.0",
-    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    "description": "The California alerts platform is a prototype that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident. Government administrator user features include: a dashboard where the administrator may publish alerts, force alerts when needed, and analyze visually the generated notifications data. Resident user features include: Setting their preferences where he/she can choose how to be notified, on the alerts he/she wants to track or filling in a small survey to propose alerts of his/her interest.",
+    "termsOfServiceUrl": "http://california-alerts.shapeable.net",
+    "contact": "alan@shapeable,net",
+    "license": "MIT License",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
   }
 }

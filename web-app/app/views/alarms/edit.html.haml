@@ -1,0 +1,26 @@
+.container
+  = render partial: "shared/messages", flash: flash
+  .dashboard
+    %nav.sidebar
+      =link_to t('dashboard.overview'), dasboard_alarms_path(:value=>'overview'), data: { turbolinks: false }
+      =link_to t('dashboard.alert'), dasboard_alarms_path(:value=>'alert'), :class=> "current-section", data: { turbolinks: false }
+    .main-content
+      .sec{:id=>"dashboard_overview", :class=> " #{get_dasboard=='overview' ? 'active-section' : 'inactive-section'}"}
+        =render partial: 'overview'
+      .sec{:id=>"dashboard_alerts", :class=> "#{get_dasboard=='alert' ? 'active-section' : 'inactive-section'}"}
+        .section-section.sub-section#add_alert
+          .dashboard-section
+            .dashboard-titles
+              %h2=t('alert.edit.title')
+              - content_for :breadcrumbs do
+                %li
+                  =link_to '#' do
+                    %h5 Alert Categories
+                %li
+                  =link_to '#' do
+                    %h5 Real Time Alert and Forecast
+                %li
+                  =link_to '#' do
+                    %h5 New Emergency
+            =form_tag(alarm_path(@alarm), :method => "put", :id=>"custom-form") do  |f|
+              =render partial: 'add_alert'
