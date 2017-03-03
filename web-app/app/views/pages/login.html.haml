@@ -9,4 +9,4 @@
           %p=t('login.pass')
           = password_field :user, :password,placeholder: t('login.placeholder.password'), autocomplete: "off"
         .center-button
-          = f.submit t('login.login')
+          = f.submit t('login.login'), id: "submit_login"
