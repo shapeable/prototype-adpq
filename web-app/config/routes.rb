@@ -36,6 +36,11 @@ Rails.application.routes.draw do
           post 'create'
         end
       end
+      resources :messages do
+        collection do
+          post 'create'
+        end
+      end
     end
   end
 

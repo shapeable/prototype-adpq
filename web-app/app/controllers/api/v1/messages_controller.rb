@@ -1,9 +1,9 @@
 module Api
   module V1
-    class CommentsController < Api::BaseController
+    class MessagesController < Api::BaseController
         include JsonResponses
         skip_before_filter :verify_authenticity_token  
-        swagger_controller :messages, "Messages Management", resource_path: "/api/messages"
+        swagger_controller :messages, "Messages Management"
         
         swagger_api :create do
             summary "Create new message"
