@@ -13,7 +13,7 @@ en:
       settings: "Settings"
       settings_description: "How do you want to get notified?"
       sms: "SMS"
-      sms_placeholder: "i.e 123 456 789"
+      sms_placeholder: "i.e +15540406666"
       email: "E-mail"
       email_placeholder: "i.e name@mail.com"
       mobile_app: "Mobile App"

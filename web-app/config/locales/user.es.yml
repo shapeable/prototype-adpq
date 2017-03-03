@@ -13,7 +13,7 @@ es:
       settings: "Configuración"
       settings_description: "¿Cómo deseas recibir notificaciones?"
       sms: "SMS"
-      sms_placeholder: "ej. 123 456 789"
+      sms_placeholder: "ej. +525540406666"
       email: "Correo"
       email_placeholder: "ej. nombre@correo.com"
       mobile_app: "App Móvil"
