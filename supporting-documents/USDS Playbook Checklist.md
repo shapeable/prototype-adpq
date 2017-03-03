@@ -153,7 +153,14 @@ An SSL Certificate was used for the prototype. This certificate protect sensitiv
 ## Play 12
 ### Use data to drive decisions
 
-Key metrics were assessed with government administrators users to ensure the usefulness 
+Instead of using assumptions, we validated these assumptions with real data from interviewed users.  Both California residents and government administrators were interviewed to generate enough data to inform decisions.
+
+The key metrics based on government administrators interviews are:
+Reach - How many people will receive the message
+Quality of information - The alerts contain up to date information
+Send notifications for type of event
+
+Google analytics was implemented for the retrieve of useful data.
 
 
 ## Play 13
