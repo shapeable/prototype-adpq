@@ -94,7 +94,7 @@ Implementation
 + Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
 In the absence of actual government administrator user responsibilities, access, and organization, we worked with the following assumptions:
-+ A government administrator doesn´t have to create an account and log in to access all functionality due to the lack of authentication requirement.
++ A government administrator doesn't have to create an account and log in to access all functionality due to the lack of authentication requirement.
 + A government administrator would have access to all alerts.
 + A government administrator can force alerts when needed.
 
@@ -130,7 +130,7 @@ A style guide was created by the UI designer with all the design elements presen
 
 #### I. Performed usability tests with people
 
-Usability tests were performed at ever step of the process.
+Usability tests were performed at every step of the process.
 
 + Testing of initial concepts - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
 + Testing of initial [wireframes](https://invis.io/6VAJF25EK) - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
@@ -188,7 +188,7 @@ The percentage of the code base covered by automated tests was defined using Cov
 
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
-Code climate was also integrated for an automated code review which grades code quality. The overall result combining both scores can be consulted [here.](https://codeclimate.com/github/shapeable/prototype-web)
+Code climate was also integrated for an automated code review which grades code quality. Out of a maximum 4.0 code quality, our prototype is released with a 3.9 in code quality.  See full results [here.](https://codeclimate.com/github/shapeable/prototype-web)
 
 #### O. Setup or used a continuous integration system to automate the running of tests
 
