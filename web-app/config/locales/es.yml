@@ -1,5 +1,12 @@
 --- 
 es: 
+  login:
+    mail: 'Correo:'
+    pass: 'Password:'
+    placeholder:
+      email: 'nombre@correo.com'
+      pasword: 'xxxxxxxxxxx'
+    login: 'Ingresar'
   mailers: 
     footer: "Este mensaje es informativo, porfavor no responda este correo."
     greeting: "Hola"

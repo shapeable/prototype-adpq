@@ -1,0 +1,15 @@
+.login
+  .container
+    .custom-form
+      = form_for(User.new, :url=>{:controller=> "users", :action=>"new"}) do |f|
+        .form-option
+          %p=t('login.mail')
+          = email_field :email,
+            placeholder: t('login.placeholder.email')
+        .form-option
+          %p=t('login.pass')
+          = password_field :password,
+            placeholder: t('login.placeholder.password'),
+            autocomplete: "off"
+        .center-button
+          = f.submit t('login.login')

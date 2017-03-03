@@ -9,7 +9,10 @@ class PagesController < ApplicationController
     end
   end
 
-  private 
+  def login
+  end
+
+  private
   def comments_params
     params.require(:comment).permit(:description)
   end

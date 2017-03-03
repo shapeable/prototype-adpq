@@ -1,5 +1,12 @@
 ---
 en:
+  login:
+    mail: 'Mail:'
+    pass: 'Password:'
+    placeholder:
+      email: 'name@mail.com'
+      pasword: 'xxxxxxxxxxx'
+    login: 'Login'
   mailers:
     footer: "This message is informative, please don't respond to this email."
     greeting: "Hi"
