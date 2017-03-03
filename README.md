@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
-[![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 [![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
 # California Alerts
@@ -188,7 +187,7 @@ The percentage of the code base covered by automated tests was defined using Cov
 
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
-Code climate was also integrated for an automated code review which grades code quality. Out of a maximum 4.0 code quality, our prototype is released with a 3.9 in code quality.  See full results [here.](https://codeclimate.com/github/shapeable/prototype-web)
+Code climate was also integrated for an automated code review which grades code quality. See full results [here.](https://codeclimate.com/github/shapeable/prototype-web)
 
 #### O. Setup or used a continuous integration system to automate the running of tests
 
