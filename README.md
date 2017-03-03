@@ -101,9 +101,6 @@ In the absence of actual government administrator user responsibilities, access,
 + A government administrator would have access to all alerts.
 + A government administrator can force alerts when needed.
 
-For the resident user , we worked with the following assumptions:
-+ A resident doesn't have to create an account and log in to access a profile due to the lack of authentication requirement.
-
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
 These included:
