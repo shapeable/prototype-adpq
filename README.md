@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 [![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
-# prototype-adpq
+# California Alerts README file
 Version 1.0 03/03/2017
 
 #### Table of Contents
@@ -17,11 +17,10 @@ Version 1.0 03/03/2017
 https://california-alerts.shapeable.net/
 
 # DESCRIPTION
-The California alerts platform is a prototype that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
-Government administrator user features include: a dashboard where the administrator may publish alerts, force alerts when needed, and analyze visually the generated notifications data.
-Resident user features include: Setting their preferences where he/she can choose how to be notified, on the alerts he/she wants to track or filling in a small survey to propose alerts of his/her interest.
+The California Alerts platform is a prototype that notifies residents of California on emergencies happening near them. The platform is focused on two main users: A government administrator in charge of issuing alerts and the resident of California.
+ The government administrator has access to features such as: a dashboard to visualize alerts metrics as well as configure which alerts are made available to users.  California resident features include: Setting their notification preferences and selecting which alerts they'd like to receive.
 
-The prototype was created following the playbooks provided as a guide, with the help of tools used in user centered design methodology which included regular feedback on the prototype in every stage developed. The prototype was also done following the agile development currently used in our company for all our products. This practices are reflected and detailed within this document.
+Using the USDS Digital Playbooks as a guide, user centered design methodology and agile development techniques, a functional prototype is now available. These practices are reflected and detailed within this document.
 
 # INSTALLATION
 You can access the repository in [GitHub](https://github.com) of [California Alerts](https://github.com/shapeable/prototype-web)
@@ -220,9 +219,9 @@ The README.md file written in the repository contains complete instructions for 
 
 The prototype is licensed under the [MIT License](https://opensource.org/licenses/MIT). This license is permissive and free of charge.
 
-#### Examples of U.S. Digital Playbook usage
+#### U.S. Digital Playbook usage
 
-See file [USDS Playbook Checklist for ADPQ Alert System Prototype](prototype-web/supporting-documents/USDS Playbook Checklist.md)
+See file [USDS Playbook Checklist for ADPQ Alert System Prototype](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/USDS%20Playbook%20Checklist.md)
 
 # CONTACT INFO
 
