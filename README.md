@@ -53,6 +53,7 @@ Start Sidekiq
 
     bundle exec sidekiq   
 
+Complete instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 ## Technical approach
 Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/USDS%20Playbook%20Checklist.md)
@@ -77,7 +78,7 @@ Alan Mond, Product Owner
 User research and testing was divided into three main methods following the human-centered design approach:
 
 Inspiration phase
-+ Research of other platforms that offered similar solutions.
++ Research of other platforms that offered similar solutions - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Platforms%20research%20-%20Sheet1.pdf)
 + Initial interviews with potential users - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
 + Framing the design challenge - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Framing%20your%20design%20challenge.pdf)
 
