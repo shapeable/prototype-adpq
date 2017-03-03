@@ -2,48 +2,47 @@
 [![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 [![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
-# prototype-adpq
+# California Alerts
 Version 1.0 03/03/2017
 
 #### Table of Contents
-- PROTOTYPE URL
-- OVERVIEW
-- INSTALLATION
-- DOCUMENTATION
-- CONTACT INFO
-- COPYRIGHT
+- [Demo URL](#demo-url)
+- [Description](#description)
+- [How to install](#how-to-install)
+- [Technical approach](#technical-approach)
+- [Contact info](#contact-info)
+- [License](#license)
 
-## PROTOTYPE URL
+## Demo URL
 https://california-alerts.shapeable.net/
 
-# DESCRIPTION
-The California alerts platform is a prototype that notify residents of different regions in California on emergencies happening near them. The platform is focused on two main users: The Government administrator and the californian resident.
-Government administrator user features include: a dashboard where the administrator may publish alerts, force alerts when needed, and analyze visually the generated notifications data.
-Resident user features include: Setting their preferences where he/she can choose how to be notified, on the alerts he/she wants to track or filling in a small survey to propose alerts of his/her interest.
+## Description
+The California Alerts platform is a prototype that notifies residents of California on emergencies happening near them. The platform is focused on two main users: A government administrator in charge of issuing alerts and the resident of California.
+ The government administrator has access to features such as: a dashboard to visualize alerts metrics as well as configure which alerts are made available to users.  California resident features include: Setting their notification preferences and selecting which alerts they'd like to receive.
 
-The prototype was created following the playbooks provided as a guide, with the help of tools used in user centered design methodology which included regular feedback on the prototype in every stage developed. The prototype was also done following the agile development currently used in our company for all our products. This practices are reflected and detailed within this document.
+Using the USDS Digital Playbook as a guide, user centered design methodology and agile development techniques, a functional prototype is now available. These practices are reflected and detailed within this document.
 
-# INSTALLATION
-You can access the repository in [GitHub](https://github.com) of [California Alerts](https://github.com/shapeable/prototype-web)
+## How to install
+You can access our GitHub repository: [California Alerts](https://github.com/shapeable/prototype-web)
 
-To clone the repository:
-    
+First clone the repository:
+
     git clone git@github.com:shapeable/prototype-web.git
-    
-Enter the folder: 
+
+Enter the root folder for the application:
 
 	cd web-app
-	      
+
 Install and update the gems:
-    
+
     bundle install
-    
+
 Create the migrations of the databases:
-    
+
     rake db:setup
 ​
 Start rails server:
-    
+
     rails s
 
 Start Redis Server
@@ -55,8 +54,8 @@ Start Sidekiq
     bundle exec sidekiq   
 
 
-# TECHNICAL APPROACH
-Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.]()
+## Technical approach
+Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/USDS%20Playbook%20Checklist.md)
 
 #### A. Assigned a team leader
 Alan Mond, Product Owner
@@ -66,7 +65,7 @@ Alan Mond, Product Owner
 + Technical Architect: Rafael Cárdenas
 + Interaction Designer/User Researcher: Diana D´Herrera
 + Visual Designer: Sofía Moya
-+ Front End Developer: Isabel Anguiano 
++ Front End Developer: Isabel Anguiano
 + Back End Developer: Miguel Morán
 + Dev Ops Engineer: Giovanni Cortés
 + Security Engineer: Rafael Cárdenas
@@ -94,13 +93,17 @@ Implementation
 + The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 + Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
+In the absence of actual government administrator user responsibilities, access, and organization, we worked with the following assumptions:
++ A government administrator doesn´t have to create an account and log in to access all functionality due to the lack of authentication requirement.
++ A government administrator would have access to all alerts.
++ A government administrator can force alerts when needed.
 
 #### D. Used at least three “human-centered design” techniques or tools
 Multiple human-centered design techniques were used in the development of the prototype.
 These included:
 + Creative approach: Inspiration, Ideation and Implementation.
 + Creation of wireframes in Invision - [Link to clickable Wireframes](https://invis.io/6VAJF25EK)
-+ Creation of "user stories" in Github issues  - [Link to user stories](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Userstories.pdf) 
++ Creation of "user stories" in Github issues  - [Link to user stories](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Userstories.pdf)
 + Creating a Product Backlog list of prioritized "user stories" - [Link to product backlog](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Product%20Backlog.png)
 + Design style guide. The official US digital services playbook was used as a reference https://playbook.cio.gov/  - Link to the guide
 + Usability testing of wireframes - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
@@ -117,9 +120,9 @@ https://california-alerts.shapeable.net/api-docs.json
 #### G. Complied with Section 508 of the Americans with Disabilities Act and WCAG 2.0
 
 Accessibility Developer tools was used to determine the compliance for the requirements within Section 508. This Chrome extension adds an Accessibility audit, and an Accessibility sidebar pane in the Elements tab, to your Chrome Developer Tools.
-The audit results will appear as a list of rules which are violated by the page (if any), with one or more elements on the page shown as a result for each rule. If the inspected element has any properties relevant to accessibility, those properties will be displayed in the sidebar panel. 
+The audit results will appear as a list of rules which are violated by the page (if any), with one or more elements on the page shown as a result for each rule. If the inspected element has any properties relevant to accessibility, those properties will be displayed in the sidebar panel.
 
-The Section 508 website was consulted as a reference https://www.section508.gov/ 
+The Section 508 website was consulted as a reference https://www.section508.gov/
 
 #### H.Created or used a design style guide
 
@@ -163,16 +166,18 @@ Open-source technologies have been utilized in the development of the prototype 
 
 This is a list of the open-source technologies and the use given for the creation of the prototype.
 + Docker - Production deployment
-+ Swagger - Documentation of the API
 + Ruby on rails - Back end development
 + Rspec - Test
 + PostgreSQL - Database
++ Redis - In-memory database
 + Bourbon (for SCSS) - Style sheets
 
 
 #### M. Deployed the prototype on PaaS
 
-The prototype is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
+The staging prototype is deployed on a Heroku server which allows for quick deployments and all hardware updates and maintenance provided by Heroku.  Additionally many services such as continuous monitoring are native add-ons that further simplify implementation and maintenance.
+
+The production prototype is deployed on AWS server. The instructions for deployment can be found [here.](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 #### N. Developed automated unit tests
 
@@ -183,6 +188,7 @@ Other Unit tests can be found under: [https://github.com/shapeable/prototype-web
 The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows you to see the relevant coverage, covered and missed lines, and the hits per line for each file.
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
+Code climate was also integrated for an automated code review. The overall can be consulted [here.](https://codeclimate.com/github/shapeable/prototype-web)
 
 #### O. Setup or used a continuous integration system to automate the running of tests
 
@@ -195,7 +201,7 @@ We used Travis CI (Continuous Integration) server to run automated tests every t
 [Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immmediately alerts the team if there are any errors.
 
 #### R. Deployed their software in an open source container
-This project is deployed using Docker container technology. Some of the advantages of using Docker are:
+The production prototype is deployed on AWS server using Docker container technology. Some of the advantages of using Docker are:
 * Simplifying Configuration
 * Code pipeline management
 * Developer Productivity
@@ -207,15 +213,17 @@ This project is deployed using Docker container technology. Some of the advantag
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
-The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
+The README.md file within the web-app folder contains complete instructions for deploying and running the prototype on any computer using Docker. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
 The prototype is licensed under the [MIT License](https://opensource.org/licenses/MIT). This license is permissive and free of charge.
 
-#### Examples of U.S. Digital Playbook usage
+#### U.S. Digital Playbook usage
 
-# CONTACT INFO
+See file [USDS Playbook Checklist for ADPQ Alert System Prototype](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/USDS%20Playbook%20Checklist.md)
+
+## Contact Info
 
 Shapeable
 2120 University Ave
@@ -224,7 +232,7 @@ c:  510-662-6152
 alan@shapeable.net
 
 
-# COPYRIGHT
+## License
 
 The prototype is licensed under the [MIT License](https://opensource.org/licenses/MIT). This license is permissive and free of charge.
 

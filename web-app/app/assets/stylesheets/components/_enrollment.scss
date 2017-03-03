@@ -35,6 +35,7 @@ section.enrollment {
       }
       .custom-text-input {
         margin-top: 20px;
+        display: none;
       }
       .custom-radio-input {
         margin-left: 10px;
@@ -45,6 +46,7 @@ section.enrollment {
       }
       .custom-select {
         margin-top: 0px;
+        width: 180px;
       }
     }
     .basic-button {
