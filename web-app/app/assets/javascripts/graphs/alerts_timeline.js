@@ -1,6 +1,7 @@
 function alertsTimeline() {
 //set the margins
-var margin = {top: 50, right: 160, bottom: 80, left: 80},
+
+var margin = {top: 50, right: 220, bottom: 80, left: 80},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -131,16 +132,6 @@ function redraw() {
   var line = d3.svg.line()
       .x(function(d) { return x(d.date); })
       .y(function(d) { return y(d.value); });
-
-  //define the zoom
-  var zoom = d3.behavior.zoom()
-      .x(x)
-      .y(y)
-      .scaleExtent([1,8])
-      .on("zoom", zoomed);
-
-  //call the zoom on the SVG
-    svg.call(zoom);
 
   //create and draw the x axis
   var xAxis = d3.svg.axis()
@@ -350,21 +341,6 @@ function redraw() {
   //make my tooltips work
   $('circle').tipsy({opacity:.9, gravity:'n', html:true})//1e-6;
 
-
-  //define the zoom function
-  function zoomed() {
-
-      svg.select(".x.axis").call(xAxis);
-      svg.select(".y.axis").call(yAxis);
-
-    svg.selectAll(".tipcircle")
-      .attr("cx", function(d,i){return x(d.date)})
-      .attr("cy",function(d,i){return y(d.value)});
-
-    svg.selectAll(".line")
-        .attr("class","line")
-          .attr("d", function (d) { return line(d.values)});
-  }
 
 //end of the redraw function
 }

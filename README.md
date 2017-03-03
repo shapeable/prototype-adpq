@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
-[![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 [![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
 # California Alerts
@@ -61,9 +60,9 @@ Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vend
 Alan Mond, Product Owner
 
 #### B. Team Members (and corresponding ADPQ labor categories)
-+ Product Manager: Diana D´Herrera
++ Product Manager: Diana D'Herrera
 + Technical Architect: Rafael Cárdenas
-+ Interaction Designer/User Researcher: Diana D´Herrera
++ Interaction Designer/User Researcher: Diana D'Herrera
 + Visual Designer: Sofía Moya
 + Front End Developer: Isabel Anguiano
 + Back End Developer: Miguel Morán
@@ -87,10 +86,12 @@ Ideation phase
 + Definition of an initial 'core features' list and a customer journey.
 
 Implementation
-+ Creation of Mock ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups.pdf)
-+ Initial mock ups reviewed with unassociated staff members to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V1.pdf)
-+ Final mock ups with user feedback implementation - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf)
-+ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested with potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
+
++ Creation of Mock-ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups.pdf)
++ Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V1.pdf)
++ Final mock-ups with the implementation of user feedback - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf)
++ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
+
 + Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
 In the absence of actual government administrator user responsibilities, access, and organization, we worked with the following assumptions:
@@ -115,6 +116,7 @@ GitHub was used as the main documentation tool.  User Stories were created under
 
 #### F. Used Swagger to document the RESTful API, and provided a link to the Swagger API
 
+Swagger was used to document the API in json format and are available in the following link:
 https://california-alerts.shapeable.net/api-docs.json
 
 #### G. Complied with Section 508 of the Americans with Disabilities Act and WCAG 2.0
@@ -145,8 +147,7 @@ Our iterative approach worked as follows:
 + Set up of sprints and daily standups
 + Regular team demos for feedback
 + User testing and user feedback
-+ Fast iteration of design process based on feedback
-+ Single sprint for development
++ Fast iteration in the design process as feedback was given
 + Review by Product Owner
 
 #### K. Created a prototype that works on multiple devices and presents a responsive design
@@ -188,7 +189,7 @@ The percentage of the code base covered by automated tests was defined using Cov
 
 The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
-Code climate was also integrated for an automated code review which grades code quality. Out of a maximum 4.0 code quality, our prototype is released with a 3.9 in code quality.  See full results [here.](https://codeclimate.com/github/shapeable/prototype-web)
+Code climate was also integrated for an automated code review which grades code quality. See full results [here.](https://codeclimate.com/github/shapeable/prototype-web)
 
 #### O. Setup or used a continuous integration system to automate the running of tests
 
@@ -236,10 +237,4 @@ alan@shapeable.net
 
 The prototype is licensed under the [MIT License](https://opensource.org/licenses/MIT). This license is permissive and free of charge.
 
-Copyright 2017 [Shapeable](https://www.shapeable.net/).
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Copyright 2017 [Shapeable](https://www.shapeable.net/)

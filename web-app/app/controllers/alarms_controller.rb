@@ -43,7 +43,7 @@ class AlarmsController < ApplicationController
   end
 
   def get_alarm(id)
-    if id=="1" || id == "2"
+    if id.to_s=="1" || id.to_s == "2"
       Alarm.where('description=?', 'meeting').first
     else
       Alarm.where('description=?', 'risks').first

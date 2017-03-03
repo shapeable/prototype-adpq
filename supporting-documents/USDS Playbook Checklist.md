@@ -42,11 +42,11 @@ Selected alerts for demo
 
 Through our research and [initial interviews] (https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing) with potential users, we learned which features were absolutely necessary for the platform. Due to the lack of the authentication requirement, a sign-in/sign-up was not implemented for residents and government administrators.  In the released prototype user flows there are no requests to create an account.
 
-Using functional mock ups and [wireframes] (https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) we reached out to four different government administrators.  An example is Kelly Hudson, the Public Information Office with California's Office of Emergency Services (Cal OES).  Mr. Hudson was involved in the Oroville Spillway Incident and provided eye-opening feedback. The feedback of people directly involved with emergency situations helped us gain a deeper understanding of challenges and solutions to existing systems.
+Using functional mock-ups and [wireframes] (https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) we reached out to four different government administrators.  An example is Kelly Houston, the Public Information Office with California's Office of Emergency Services (Cal OES).  Mr. Houston was involved in the Oroville Spillway Incident and provided eye-opening feedback. The feedback of people directly involved with emergency situations helped us gain a deeper understanding of challenges and solutions to existing systems.
 
 We interviewed more than 11 California residents to get a sense of what is most important to them as users.  We wanted to get feedback on the most effective notifications. Based on this research, we decided to keep the platform as a web only application that allowed residents to configure how they wanted to receive notifications. 
 
-One of the toughest problems to tackle was the to define the assumptions for the analytics dashboard intended for government administrators.  Thanks to our user feedback we were able to distill the most critical metrics and discard the rest.
+One of the toughest problems to tackle was to define the assumptions for the analytics dashboard intended for government administrators.  Thanks to our user feedback we were able to distill the most critical metrics and discard the rest.
 
 In the absence of actual government administrator user responsibilities, level of access, and organization for the usage of the platform, we worked with the following assumptions:
 + A government administrator doesn't have to create an account and log in to access all functionality due to the lack of authentication requirement.
@@ -83,7 +83,7 @@ Below is a list of some of the agile development characteristics of the developm
 ## Play 5
 ### Structure budgets and contracts to support delivery 
 
-Due to the nature of this prototype, this requirement is not applicable to the project. However, our team has a lot of experience making proposals and contracts for NGOs and Government agencies.
+Due to the nature of this prototype, this requirement is not applicable to the project. However, our team has a lot of experience making proposals and contracts for NGOs and Government Agencies.
 
 ## Play 6
 ### Assign one leader and hold that person accountable
@@ -134,16 +134,11 @@ The production prototype is deployed on AWS server using Docker container techno
 
 After creating unit tests for each feature or functionality, rspec was used as the automated unit tester.  For example to test SMS (text messages) functionality, a specific unit test was created for that purpose: (Send SMS Messages code)[https://github.com/shapeable/prototype-web/blob/master/web-app/spec/modules/send_sms_messages_spec.rb]
 
-Other Unit tests can be found under: https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules
+Other Unit tests can be found under: [https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules](https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules)
 
-The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows you to see the relevant coverage, covered and missed lines, and the hits per line for each file.
-The Coveralls dashboard could be found [here] (https://coveralls.io/github/shapeable/prototype-web?branch=master)
+The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows one to see the relevant coverage, covered and missed lines, and the hits per line for each file.  A higher percentage means a higher percentage of lines of code written are verified by a unit test. 
 
-[Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immediately alerts the team if there are any errors.
-
-Code climate was also integrated for the an automated code review. The overall can be consulted [here](https://codeclimate.com/github/shapeable/prototype-web)
-
-
+The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
 ## Play 11
 ### Manage security and privacy through reusable processes
