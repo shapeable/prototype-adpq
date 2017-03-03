@@ -1,0 +1,39 @@
+--- 
+es: 
+  dashboard: 
+    overview: "Panel general"
+    alert: "Categoria de alertas"
+    title: "Estadisticas generales"
+    subtitle: "Estadísticas rápidas sobre la actividad de los usuarios"
+    graph_donut_first: "Usuarios Activos / Registrados"
+    graph_donut_second: "Abierto / Sin abrir"
+    graph_points: "Alertas enviadas / abiertas / regresadas"
+    graph_bars: "Tipo de Eventos"
+  alert:
+    title: "Categoria de alertas"
+    subtitle: "Publicar alertas de emergencia y de no emergencia."
+    alerts: "Alertas de emergencia"
+    confirm_delete: "¿Está seguro que quiere borrar esta alerta?"
+    deleted: "Alarma borrada correctamente"
+    confirm_send: "¿Está seguro que quiere enviar esta alerta?"
+    sent: "Alarma enviada correctamente"
+    new_alert: "+ Añadir alertas de emergencia"
+    non_emergency: "Alertas que no son de emergencia"
+    type: "Tipo de alerta"
+    message_title: "Escriba el mensaje que desea enviar"
+    message_warning: " *Todos los usuarios con esta alerta serán notificados."
+    error: "Por favor coloque un mensaje correctamente"
+    button:
+      send: "Enviar alerta no urgente"
+    new:
+      title: "Nueva Alerta de Emergencia"
+    edit:
+      title: "Editar Alerta de Emergencia"
+    form:
+      name: "Nombre de la alerta"
+      cause: "Causa de la emergencia"
+      call: "Acción"
+      information: "Fuente de información"
+      url: "URL"
+      link: "Puede encontrar esta información aquí"
+      save: "Crear alerta de emergencia"

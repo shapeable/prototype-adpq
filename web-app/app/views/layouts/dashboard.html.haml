@@ -5,15 +5,18 @@
     %meta{:charset => 'utf-8'}
     %meta{:content => 'IE=8, IE=9, IE=11 IE=edge, chrome=1', :http => {equiv: 'X-UA-Compatible'}}
     %meta{:name => 'viewport', :content => 'initial-scale=1, maximum-scale=1'}
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+
     = csrf_meta_tags
 
     = stylesheet_link_tag    'application', 'media' => 'all', 'data-turbolinks-track' => 'reload'
     = javascript_include_tag 'application'
+    %script{:src => "//d3js.org/d3.v3.min.js"}
+    %script{:charset => "utf-8", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "jquery.tipsy.js", :type => "text/javascript"}
 
   %body
-    .login-header
-      = render partial: 'shared/header', locals: {partial_logo: 'logo-white.svg'}
+    .primary-header
+      = render partial: 'shared/header', locals: {partial_logo: 'logo-blue.svg'}
     = yield
     = render partial: 'shared/footer'
     :javascript
@@ -23,14 +26,3 @@
       c.charset='utf-8';c.src='//rec.smartlook.com/recorder.js';h.appendChild(c);
       })(document);
       smartlook('init', 'cb3f4a9d51c16c0f0ef4ad8d1f4f1a41c51ce2dd');
-
-      ;(function(o,l,a,r,k,y){if(o.olark)return;
-      r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0];
-      y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r);
-      y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)};
-      y.extend=function(i,j){y("extend",i,j)};
-      y.identify=function(i){y("identify",k.i=i)};
-      y.configure=function(i,j){y("configure",i,j);k.c[i]=j};
-      k=y._={s:[],t:[+new Date],c:{},l:a};
-      })(window,document,"static.olark.com/jsclient/loader.js");
-      olark.identify('5238-269-10-6433');

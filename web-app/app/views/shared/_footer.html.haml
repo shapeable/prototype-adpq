@@ -1,9 +1,9 @@
 %footer
   .container
     %ul
-      %li=link_to t('footer.residents'), new_user_path, id: "nav_residents"
-      %li=link_to t('footer.government'), root_path, id: "nav_government"
-      %li=link_to t('footer.about'), root_path(:anchor => "description-jump"), id: "nav_about"
+      %li=link_to t('footer.residents'), new_user_path, id: "nav_residents_footer"
+      %li=link_to t('footer.government'), alarms_path, id: "nav_government_footer"
+      %li=link_to t('footer.about'), root_path(:anchor => "description-jump"), id: "nav_about_footer"
       %li
         %span
           %strong=t('footer.contact')

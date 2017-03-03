@@ -32,7 +32,7 @@ function alertsBar() {
         .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv("bar-data.csv", function(error, data) {
+    d3.csv(window.location.origin+"/bar-data.csv", function(error, data) {
 
         data.forEach(function(d) {
             d.date = d.date;

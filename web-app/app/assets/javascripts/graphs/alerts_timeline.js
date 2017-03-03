@@ -63,7 +63,7 @@ var menu = d3.select("#menu select")
     .on("change", change);
 
 //suck in the data, store it in a value called formatted, run the redraw function
-d3.csv("alerts-stats.csv", function(data) {
+d3.csv(window.location.origin+"/alerts-stats.csv", function(data) {
                   formatted = data;
                       redraw();
                     });
