@@ -22,7 +22,7 @@ module Api
 
         swagger_api :create do
             summary "Create new comment"
-            notes "This lists all the active users"
+            notes "This creates a new user"
             param :comment, :description, :string, :required, "comment"
             response :created, "Created"
             response :unauthorized
