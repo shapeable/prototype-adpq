@@ -197,6 +197,22 @@ We used Travis CI (Continuous Integration) server to run automated tests every t
 
 #### P. Setup or used configuration management
 
+We used Ansible as configuration management tool.
+Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.
+
+Designed for multi-tier deployments since day one, Ansible models your IT infrastructure by describing how all of your systems inter-relate, rather than just managing one system at a time.
+
+It uses no agents and no additional custom security infrastructure, so it's easy to deploy - and most importantly, it uses a very simple language (YAML, in the form of Ansible Playbooks)
+
+Some of the advantages are
+
+1. Agentless
+2. Free and Open Source Software (FOSS)
+3. Extensible
+4. Integrating into Existing DevOps Workflows
+5. Idempotency
+6. Network-Wide and Ad Hoc Changes
+
 #### Q. Setup or used continuous monitoring
 
 [Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immmediately alerts the team if there are any errors.
