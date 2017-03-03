@@ -1,81 +1,76 @@
-#California Alerts
+# California Alerts
 ===
  ([EN ESPAÑOL](./LEEME.md))
 ___
 ​
-Made in [Ruby on Rails](http://rubyonrails.org/) with Rails '5.0.1'
+Made in [Ruby on Rails](http://rubyonrails.org/) v5.0.1.
 ​
-##Dependencies:
+## Dependencies:
 ​
-**[Sendgrid](https://sendgrid.com/)**: for managing MAIL.
-
-**[Twilio](https://www.twilio.com/)**: for managing SMS.
-
-**[Swagger](http://swagger.io/)**: Framework for APIs.
-
-**[Sidekiq](http://sidekiq.org/)**: for background jobs.
+* **[Sendgrid](https://sendgrid.com/)**: for transactional email.
+* **[Twilio](https://www.twilio.com/)**: for managing SMS.
+* **[Swagger](http://swagger.io/)**: Framework for APIs.
+* **[Sidekiq](http://sidekiq.org/)**: for background jobs.
 
 ===
 
-## Database PostgreSQL
+## Database schema in PostgreSQL
 <img src="https://cdn.rawgit.com/shapeable/prototype-web/dev/diagrams/relational.png" alt="DP" height="300" width="500"/>
 
 ===
 ​
-##Environments:
+## Environment variables
 ​
-​The following keys are required:
+​The following keys are required as environment variables. Place them in `config/application.yml`:
 ​
-###Twilio
+### Twilio
 
     FRIENDLY_NAME: ''
     TWILIO_ACCOUNT_SID: ''
     TWILIO_AUTH_TOKEN: ''
     SENDER_PHONE_NUMBER: ''
 
-###Sengrid
+### Sendgrid
 
     SENDER_EMAIL: ''
-   
+
 ===
 
-##Instalation:
+## Installation
 ​
-You can access the repository in [GitHub](https://github.com) of [California Alerts](https://github.com/shapeable/prototype-web)
+Clone the repository:
 
-We clone the repository:
-    
     git@github.com:shapeable/prototype-web.git
-    
-Enter the folder: 
+
+Enter the folder:
 
 	cd web-app
-	      
+
 Install and update the gems:
-    
+
     bundle install
-    
+
 Create the migrations of the databases:
-    
+
     rake db:setup
 ​
-We start the server:
-    
+Start the server:
+
     rails s
 
- We start Redis Server
+ Start Redis Server:
 
     redis-server
 
-We start Sidekiq
+Start Sidekiq:
 
     bundle exec sidekiq   
 
 ===
 
-##Deployment
+## Deployment
 
-###Setup and running
+### Setup and running
 
 > You need to install Docker in you machine.
 
@@ -169,13 +164,13 @@ server {
 ```
 
 ===
- 
-##Questions or problems?
+
+## Questions or problems?
 ​
-We keep the proyect conversation in our issue page in GitHub [issues](https://github.com/shapeable/prototype-web/issues). If you have any other questions, you can contact us <alan@shapeable.net>.
+We keep the project's conversation in our issue page in GitHub [issues](https://github.com/shapeable/prototype-web/issues). If you have any other question, you can contact us <alan@shapeable.net>.
 
 
-##License
+## License
 ​
 Licensed under the MIT License. Read the document [LICENSE](https://opensource.org/licenses/MIT) for more information
 ​
