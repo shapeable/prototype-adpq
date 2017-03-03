@@ -1,26 +1,27 @@
-engines:
-  rubocop:
+--- 
+engines: 
+  csslint: 
     enabled: true
-    #checks:
-    #	Rubocop/Metrics/ClassLength:
-    #  	enabled: false
-  brakeman:
-   	enabled: true
-    #exclude_fingerprints:
-    #- 08c185b3f764f262539a1f76997d3a89
-  eslint:
+  duplication: 
+    config: 
+      languages: 
+        - 
+          mass_threshold: 30
+          ruby: ~
+        - javascript
     enabled: true
-  csslint:
+  eslint: 
     enabled: true
-  duplication:
-  	enabled: true
-    config:
-    	languages:
-      - ruby
-ratings:
-  paths:
-  - web-app/app/**
-  - web-app/lib/**
-exclude_paths:
-- web-app/spec/**/*
-- "**/vendor/**/*"
+  golint: 
+    enabled: true
+  rubocop: 
+    enabled: true
+exclude_paths: 
+  - web-app/spec/**/*
+  - "**/vendor/**/*"
+  - web-app/assets/javascripts/graphs/
+ratings: 
+  paths: 
+    - web-app/app/**
+    - web-app/lib/**
+    - "**.rb"

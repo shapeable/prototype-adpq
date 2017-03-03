@@ -1,0 +1,24 @@
+.form-option
+  %p=t('alert.form.name') 
+  .custom-text-input
+    =text_field(:alarm, :name, size: 40, placeholder: '', type: "text")
+.form-option
+  %p=t('alert.form.cause')
+  .custom-text-input
+    %input{type: 'text'}
+.form-option
+  %p=t('alert.form.call')
+  .custom-text-input
+    %input{type: 'text'}
+.form-option
+  %p=t('alert.form.information')
+  .custom-select
+    =select("alert", "description", get_alert_type, selected: "")
+.form-option
+  %p=t('alert.form.url') 
+  .custom-text-input
+    %input{type: 'text'}
+  .reference-info
+    =link_to 'https://idpgis.ncep.noaa.gov', target:"_blank" do
+      %span=t('alert.form.link')
+%button.third-button.button-top{disabled: true}=t('alert.form.save')

@@ -1,6 +1,7 @@
 function alertsTimeline() {
 //set the margins
-var margin = {top: 50, right: 160, bottom: 80, left: 50},
+
+var margin = {top: 50, right: 220, bottom: 80, left: 80},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -63,7 +64,7 @@ var menu = d3.select("#menu select")
     .on("change", change);
 
 //suck in the data, store it in a value called formatted, run the redraw function
-d3.csv("alerts-stats.csv", function(data) {
+d3.csv(window.location.origin+"/alerts-stats.csv", function(data) {
                   formatted = data;
                       redraw();
                     });
@@ -132,22 +133,13 @@ function redraw() {
       .x(function(d) { return x(d.date); })
       .y(function(d) { return y(d.value); });
 
-  //define the zoom
-  var zoom = d3.behavior.zoom()
-      .x(x)
-      .y(y)
-      .scaleExtent([1,8])
-      .on("zoom", zoomed);
-
-  //call the zoom on the SVG
-    svg.call(zoom);
-
   //create and draw the x axis
   var xAxis = d3.svg.axis()
       .scale(x)
       .orient("bottom")
       .tickPadding(8)
-      .ticks(xscaleticks);
+      .ticks(xscaleticks)
+      .tickSize(0.05*height);
 
     svg.append("svg:g")
       .attr("class", "x axis");
@@ -156,7 +148,8 @@ function redraw() {
   var yAxis = d3.svg.axis()
       .scale(y)
       .orient("left")
-      .tickPadding(8);
+      .tickPadding(8)
+      .tickSize(0.05*height);
 
     svg.append("svg:g")
       .attr("class", "y axis");
@@ -293,7 +286,7 @@ function redraw() {
 
   //actually add the circles to the created legend container
     legendEnter.append('circle')
-        .attr('cy', height+42.5)
+        .attr('cy', height+60)
         .attr('cx', function(d){return width/3+legendscale(d.values[d.values.length-1].value);})
         .attr('r', 7)
         .style('fill', function(d) {
@@ -302,7 +295,7 @@ function redraw() {
 
   //add the legend text
     legendEnter.append('text')
-        .attr('y', height+47)
+        .attr('y', height+65)
         .attr('x', function(d){return width/3+14+legendscale(d.values[d.values.length-1].value);})
         .text(function(d){ return d.name; });
 
@@ -348,21 +341,6 @@ function redraw() {
   //make my tooltips work
   $('circle').tipsy({opacity:.9, gravity:'n', html:true})//1e-6;
 
-
-  //define the zoom function
-  function zoomed() {
-
-      svg.select(".x.axis").call(xAxis);
-      svg.select(".y.axis").call(yAxis);
-
-    svg.selectAll(".tipcircle")
-      .attr("cx", function(d,i){return x(d.date)})
-      .attr("cy",function(d,i){return y(d.value)});
-
-    svg.selectAll(".line")
-        .attr("class","line")
-          .attr("d", function (d) { return line(d.values)});
-  }
 
 //end of the redraw function
 }
