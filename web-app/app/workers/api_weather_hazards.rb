@@ -44,10 +44,17 @@ class ApiWeatherHazards
             feature['geometry']['rings'].each do |ring|
                 ring.each do |coordenate|
                     if  GeographicManager.point_in_polygon(coordenate[0], coordenate[1])
-                        puts "*****California ALERT*****"  
-                        puts "type: #{value}"
-                        puts "start_date: #{Time.at(start_date/1000)}" unless start_date.nil?
-                        puts "end_date: #{Time.at(end_date/1000)}" unless end_date.nil?
+                        UserAlarm.all.each do |user_alert|
+                            if user_alert.alarm_id.to_s == alert_id.to_s
+                                user = User.find(user_alert.user_id)
+                                if user.email_actived
+                                    NotificationCenter.send_mail_message(user.email, "An alert concerning #{value} has been detected. Please wait for updated information", 'California Alert')
+                                end
+                                if user.sms_actived
+                                    NotificationCenter.send_sms_message(user.phone_number, "An alert concerning #{value} has been detected. Please wait for updated information")
+                                end
+                            end
+                        end
                     else
                       puts "#{value} has values but not in Cali"
                     end

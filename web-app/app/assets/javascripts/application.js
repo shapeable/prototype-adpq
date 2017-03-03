@@ -20,14 +20,6 @@ $(document).ready(function() {
   //Nav-bar
 
   TopNavbar()
-
-  //graph functions
-  usersDonut()
-  alertsDonut()
-  alertsTimeline()
-  alertsBar()
-
-  TopNavbar();
   
   $(".alert").delay(6000).slideUp(200, function() {
     $(this).alert('close');

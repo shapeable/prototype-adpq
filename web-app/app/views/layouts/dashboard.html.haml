@@ -10,6 +10,9 @@
 
     = stylesheet_link_tag    'application', 'media' => 'all', 'data-turbolinks-track' => 'reload'
     = javascript_include_tag 'application'
+    %script{:src => "//d3js.org/d3.v3.min.js"}
+    %script{:charset => "utf-8", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "jquery.tipsy.js", :type => "text/javascript"}
 
   %body
     .primary-header

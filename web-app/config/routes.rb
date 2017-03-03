@@ -4,9 +4,10 @@ Rails.application.routes.draw do
     root 'pages#landing'
     resources :users
     resources :pages
-    resources :governments do
+    resources :alarms do
       collection do
         get 'dasboard'
+        get 'force'
       end
     end
   end

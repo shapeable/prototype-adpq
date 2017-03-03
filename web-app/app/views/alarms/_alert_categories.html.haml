@@ -1,0 +1,42 @@
+.dashboard-section
+  .dashboard-titles
+    %h2=t('alert.title')
+    %p=t('alert.subtitle')
+  %h4=t('alert.alerts')
+  %ul.config-panel
+    -@alarms.each_with_index do |alarm, index|
+      %li
+        %h5=get_name(alarm)
+        %h6=get_name(AlarmCategory.find(alarm.alarm_category_id))
+        .config-controls
+          =link_to force_alarms_path(:value=>alarm.id), data: { confirm: t('alert.confirm_send') } do
+            =image_tag 'alert_bell.svg', alt: 'Force alert bell icon'
+          =link_to '#' do
+            =image_tag 'pencil_edit.svg', alt: 'Edit alert icon'
+          =link_to alarm_path(:id=>alarm), method: :delete, data: { confirm: t('alert.confirm_delete') } do
+            =image_tag 'trash_delete.svg', alt: 'Delete alert icon'
+    
+
+  .add-alert=link_to t('alert.new_alert'), '#'
+
+  =form_tag({:controller => "alarms", :action => "create", :method => "post"},  {:class=> "custom-form", :id=>"form_user"}) do  |f|
+    %h4=t('alert.non_emergency')
+    .form-option
+      %p=t('alert.type')
+      .custom-select
+        =select("dashboard", "message", get_messages_type, selected: "")
+    .form-option
+      %p=t('alert.message_title')
+      .custom-text-input
+        =text_field(:dashboard, :description, size: 340, placeholder: '', type: "text",class: "modal-input")
+      %p=t('alert.message_warning')
+    %button.basic-button{:type=>"submit", :class=>"button", :id=> "submit_btn", data: { confirm: t('alert.confirm_send') }}
+      =t('alert.button.send')
+
+:javascript
+  $( "form" ).submit(function( event ) {
+    if ($("#dashboard_description").val() == ""){
+      toastr.error("#{t('alert.error')}");
+      return false
+    }
+  });

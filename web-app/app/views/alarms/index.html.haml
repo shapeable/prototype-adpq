@@ -1,0 +1,23 @@
+.container
+  = render partial: "shared/messages", flash: flash
+  .dashboard
+    %nav.sidebar
+      =link_to t('dashboard.overview'), dasboard_alarms_path(:value=>'overview'), :class=> "#{get_dasboard=='overview' ? 'current-section' : ''}", data: { turbolinks: false }
+      =link_to t('dashboard.alert'), dasboard_alarms_path(:value=>'alert'), :class=> "#{get_dasboard=='alert' ? 'current-section' : ''}", data: { turbolinks: false }
+    .main-content
+      .sec{:id=>"dashboard_overview", :class=> " #{get_dasboard=='overview' ? 'active-section' : 'inactive-section'}"}
+        =render partial: 'overview'
+      .sec{:id=>"dashboard_overview", :class=> "#{get_dasboard=='alert' ? 'active-section' : 'inactive-section'}"}
+        =render partial: 'alert_categories'
+
+
+
+:javascript
+$(document).ready(function() {
+//graph functions
+  usersDonut();
+  alertsDonut();
+  alertsTimeline();
+  alertsBar();
+});
+

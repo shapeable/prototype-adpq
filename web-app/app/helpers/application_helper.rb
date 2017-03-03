@@ -33,6 +33,10 @@ module ApplicationHelper
     I18n.locale == :en ? {'Users'=>'120,000', 'Users reached'=> '25%', 'Active events'=>'5'} : {'Usuarios'=>'120,000', 'Alcanzados'=> '25%', 'Eventos activos'=>'5'}
   end
 
+  def get_messages_type
+     I18n.locale == :en ?  {'Collection Centers'=>'1','Meeting points'=>'2', 'Important Broadcast'=>'3'} : {'Centros de acopio'=>'1','Puntos de reunión'=>'2', 'Transmisión importante'=>'3'}
+  end
+
   def alert_class_for(flash_type)
   	case flash_type.to_sym
       when :success
