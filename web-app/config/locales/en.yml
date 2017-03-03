@@ -1,12 +1,21 @@
---- 
-en: 
-  mailers: 
+---
+en:
+  mailers:
     footer: "This message is informative, please don't respond to this email."
     greeting: "Hi"
     pd: "Thank you."
     title: "A new alert has been created with the following message:"
   api:
     error_params: "Parameter error"
+  footer:
+    residents: "For residents"
+    government: "For goverment"
+    about: "About"
+    contact: "Contact"
+    company: "Shaepable"
+    street: "2120 University Ave"
+    address: "Berkeley, CA 94704"
+    phone_number: "510-662-6152"
   navbar:
     residents: "For residents"
     government: "For government"
@@ -16,7 +25,7 @@ en:
     subtitle: "Get notified about important alerts in your region"
     description:
       title: "The best way to keep track of your alerts"
-      section_one: 
+      section_one:
         title: "Real time alerts & Forecast"
         subtitle: "Be the first to know about weather hazards, tsunamis, earthquakes and tornadoes."
       section_two:
@@ -36,4 +45,3 @@ en:
       error: "Please write a valid comment"
   comment:
     created: "Comment sent"
-      
