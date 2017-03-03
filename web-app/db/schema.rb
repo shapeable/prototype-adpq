@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170303092213) do
+ActiveRecord::Schema.define(version: 20170303094158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20170303092213) do
 
   create_table "messages", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "alert_id"
+    t.integer  "alarm_id"
     t.datetime "date_send"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -35,7 +35,7 @@ class ApiWeatherHazards
   end
 
   def parse_json_value(json_value, value, type)
-    if json_value['features'].count > 0
+    if !json_value['features'].nil? && json_value['features'].count > 0
         json_value['features'].each do |feature|
             if type == "weather"
                 end_date = feature['attributes']['end_date']
@@ -56,16 +56,16 @@ class ApiWeatherHazards
     end
   end
   def send_message(value)
-    UserAlarm.all.each do |user_alert|
-        if (user_alert.alarm_id.to_s == Alert.find_by(name: value).id.to_s) && Message.find_by_user_id_and_alert_id(user_alert.user_id, user_alert.alert_id).nil?
-            user = User.find(user_alert.user_id)
+    UserAlarm.all.each do |user_alarm|
+        if (user_alarm.alarm_id.to_s == Alarm.find_by(name: value).id.to_s) && Message.find_by_user_id_and_alarm_id(user_alarm.user_id, user_alarm.alarm_id).nil?
+            user = User.find(user_alarm.user_id)
             if user.email_actived
                 NotificationCenter.send_mail_message(user.email, "An alert concerning #{value} has been detected. Please wait for updated information", 'California Alert')
             end
             if user.sms_actived
                 NotificationCenter.send_sms_message(user.phone_number, "An alert concerning #{value} has been detected. Please wait for updated information")
             end
-            Message.create(user_id: user_alert.user_id, alert_id: user_alert.alert_id, date_send: Time.now)
+            Message.create(user_id: user_alarm.user_id, alarm_id: user_alarm.alarm_id, date_send: Time.now)
         end
     end
     end
