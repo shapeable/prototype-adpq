@@ -7,7 +7,7 @@ module Api
         
         swagger_api :create do
             summary "Create new message"
-            notes "This lists all the active messages"
+            notes "This creates a new message"
             param :message, :type, :string, :required, "type"
             param :comment, :description, :string, :required, "description"
             response :created, "Created"

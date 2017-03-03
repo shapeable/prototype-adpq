@@ -7,7 +7,7 @@ module Api
         
         swagger_api :index do
             summary "Fetches all Alarm categories items"
-            notes "This lists all the alarm categories type"
+            notes "This lists all the alarm categories"
             response :ok, "Success"
             response :unauthorized
             response :not_acceptable, "The request you made is not acceptable"
