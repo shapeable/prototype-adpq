@@ -2,7 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 [![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
-# California Alerts README file
+# California Alerts
 Version 1.0 03/03/2017
 
 #### Table of Contents
@@ -213,7 +213,7 @@ The production prototype is deployed on AWS server using Docker container techno
 
 #### S. Provided sufficient documentation to install and run their prototype on another machine
 
-The README.md file written in the repository contains complete instructions for deploying and running the prototype on any computer. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
+The README.md file within the web-app folder contains complete instructions for deploying and running the prototype on any computer using Docker. The instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 #### T. Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
