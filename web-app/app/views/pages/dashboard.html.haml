@@ -7,5 +7,7 @@
       .inactive-section#dashboard_overview
         =render partial: 'overview'
       .active-section#dashboard_alerts
-        =render partial: 'alert_categories'
-
+        .inactive-section.sub-section#alerts_index
+          =render partial: 'alert_categories'
+        .active-section.sub-section#add_alert
+          =render partial: 'add_alert'
