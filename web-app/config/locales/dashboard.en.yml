@@ -1,0 +1,11 @@
+--- 
+en: 
+  dashboard: 
+    overview: "Overview"
+    alert: "Alert Categories"
+    title: "Statistics Overview"
+    subtitle: "Quick statistics about users activity"
+    graph_donut_first: "Active / Registered Users"
+    graph_donut_second: "Open / Unopened"
+    graph_points: "Sent / Open /Rebounded Alerts"
+    graph_bars: "Type of Events"

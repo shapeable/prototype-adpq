@@ -1,0 +1,11 @@
+--- 
+es: 
+  dashboard: 
+    overview: "Panel general"
+    alert: "Categoria de alertas"
+    title: "Estadisticas generales"
+    subtitle: "Estadísticas rápidas sobre la actividad de los usuarios"
+    graph_donut_first: "Usuarios Activos / Registrados"
+    graph_donut_second: "Abierto / Sin abrir"
+    graph_points: "Alertas enviadas / abiertas / regresadas"
+    graph_bars: "Tipo de Eventos"
