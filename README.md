@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/shapeable/prototype-web.svg?branch=master)](https://travis-ci.org/shapeable/prototype-web)
 [![Coverage Status](https://coveralls.io/repos/github/shapeable/prototype-web/badge.svg?branch=master)](https://coveralls.io/github/shapeable/prototype-web?branch=master)
+[![Code Climate](https://codeclimate.com/github/shapeable/prototype-web/badges/gpa.svg)](https://codeclimate.com/github/shapeable/prototype-web)
 
 # California Alerts
 Version 1.0 03/03/2017
@@ -52,6 +53,7 @@ Start Sidekiq
 
     bundle exec sidekiq   
 
+Complete instructions can be found [here](https://github.com/shapeable/prototype-web/blob/master/web-app/README.md)
 
 ## Technical approach
 Each of the Technical Approach requirements outlined in Attachment B - ADPQ Vendor Pool Submission Requirements are addressed in the following document. We also followed the U.S. Digital Services playbook. The detailed notes of each play can be found [here.](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/USDS%20Playbook%20Checklist.md)
@@ -76,7 +78,7 @@ Alan Mond, Product Owner
 User research and testing was divided into three main methods following the human-centered design approach:
 
 Inspiration phase
-+ Research of other platforms that offered similar solutions.
++ Research of other platforms that offered similar solutions - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Platforms%20research%20-%20Sheet1.pdf)
 + Initial interviews with potential users - [Link to interviews](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/Initial%20interviews.pdf).
 + Framing the design challenge - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/Framing%20your%20design%20challenge.pdf)
 
@@ -90,7 +92,7 @@ Implementation
 + Creation of Mock-ups - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups.pdf)
 + Initial mock ups reviewed with unassociated staff member to provide additional feedback on application behavior - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V1.pdf)
 + Final mock-ups with the implementation of user feedback - [Link](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20mock%20ups%20V2.pdf)
-+ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
++ The [clickable wireframes](https://invis.io/6VAJF25EK) were tested by potential government and resident users. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/user-testing/TasksforUsertesting.pdf)
 
 + Changes from former feedback were incorporated to design a [final prototype design](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/Prototype%20wireframes.pdf) which was tested again in another focus group for validation. The design of the tests included 4 main tasks. - [Link to user testing](https://github.com/shapeable/prototype-web/tree/master/supporting-documents/user-testing)
 
@@ -129,6 +131,8 @@ Results of the accesibility audits for the application can be found under the [a
 #### H.Created or used a design style guide
 
 A style guide was created by the UI designer with all the design elements present in the prototype. - [California Alerts Styleguide](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/styleguide_california.pdf)
+
+Other design elements and assets can be found [here](https://github.com/shapeable/prototype-web/blob/master/supporting-documents/design/California%20Assets-20170303T031844Z-001.zip)
 
 #### I. Performed usability tests with people
 
@@ -196,6 +200,22 @@ Code climate was also integrated for an automated code review which grades code 
 We used Travis CI (Continuous Integration) server to run automated tests every time code was deployed to our Heroku staging instance.  Travis CI is linked directly to the GitHub repo so it checks it automatically for any errors before being merged and deployed to production. The dashboard can be found [here](https://travis-ci.org/shapeable/prototype-web)
 
 #### P. Setup or used configuration management
+
+We used Ansible as configuration management tool.
+Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs.
+
+Designed for multi-tier deployments since day one, Ansible models your IT infrastructure by describing how all of your systems inter-relate, rather than just managing one system at a time.
+
+It uses no agents and no additional custom security infrastructure, so it's easy to deploy - and most importantly, it uses a very simple language (YAML, in the form of Ansible Playbooks)
+
+Some of the advantages are
+
+1. Agentless
+2. Free and Open Source Software (FOSS)
+3. Extensible
+4. Integrating into Existing DevOps Workflows
+5. Idempotency
+6. Network-Wide and Ad Hoc Changes
 
 #### Q. Setup or used continuous monitoring
 

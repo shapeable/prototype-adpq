@@ -7,7 +7,7 @@
     =link_to login_pages_path, :id=> "create_user_btn" do
       %button.basic-button=t("landing.buttons.new_user")
     =link_to '#description-jump' do
-      .down-arrow=image_tag 'down-arrow.svg'  
+      .down-arrow=image_tag 'down-arrow.svg'
 %section.description
   .container
     .main-titles#description-jump
@@ -37,7 +37,7 @@
 %section.survey-invite
   .container
     %h2=t("landing.survey")
-    %button.secondary-button{:onClick=>"open_modal()", :id=> "modal_btn"}
+    %button.secondary-button{:onClick=>"open_modal()", :id=> "modal_btn", data: { turbolinks: false }}
       =t("landing.buttons.new_survey")
 
 

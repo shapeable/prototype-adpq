@@ -16,7 +16,7 @@ en:
     error_params: "Parameter error"
   footer:
     residents: "For residents"
-    government: "For goverment"
+    government: "For government"
     about: "About"
     contact: "Contact"
     company: "Shapeable"
@@ -31,7 +31,7 @@ en:
     title: "California Alerts"
     subtitle: "Get notified about important alerts in your region"
     description:
-      title: "The best way to keep track of your alerts"
+      title: "The best to keep track of your alerts"
       section_one:
         title: "Real time alerts & Forecast"
         subtitle: "Be the first to know about weather hazards, tsunamis, earthquakes and tornadoes."
@@ -48,7 +48,7 @@ en:
     modal:
       title: "Let us know which alerts you are interested in:"
       button: "Send"
-      placeholder: "Volcanic Activity, High Winds, Thunderstorms, etc"
+      placeholder: "Volcanic Activity, High Winds, Thunderstorms, etc."
       error: "Please write a valid comment"
   comment:
     created: "Comment sent"

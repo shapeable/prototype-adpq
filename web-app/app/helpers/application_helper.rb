@@ -22,7 +22,7 @@ module ApplicationHelper
   end
 
   def get_dashboard_dates
-    I18n.locale == :en ?  ['Last Month','Current Month', '2 Months before'] : ['Último mes','Mes actual','2 Meses atras']
+    I18n.locale == :en ?  ['Last month','Current month', '2 Months before'] : ['Último mes','Mes actual','2 meses atrás']
   end
 
   def get_dashboard_regions
@@ -30,15 +30,15 @@ module ApplicationHelper
   end
 
   def get_dashboard_kpi
-    I18n.locale == :en ? {'Users'=>'120,000', 'Users reached'=> '25%', 'Active events'=>'5'} : {'Usuarios'=>'120,000', 'Alcanzados'=> '25%', 'Eventos activos'=>'5'}
+    I18n.locale == :en ? {'Users'=>'120,000', 'Users reached'=> '25%', 'Active events'=>'5'} : {'Usuarios'=>'120,000', 'Alcance'=> '25%', 'Eventos activos'=>'5'}
   end
 
   def get_messages_type
-     I18n.locale == :en ?  {'Collection Centers'=>'1','Meeting points'=>'2', 'Important Broadcast'=>'3'} : {'Centros de acopio'=>'1','Puntos de reunión'=>'2', 'Transmisión importante'=>'3'}
+     I18n.locale == :en ?  {'Donation centers'=>'1','Meeting points'=>'2', 'Important Broadcast'=>'3'} : {'Centros de acopio'=>'1','Puntos de reunión'=>'2', 'Transmisión importante'=>'3'}
   end
 
   def get_alert_type
-    I18n.locale == :en ?  ['Dept of interior IGEMS','Other'] : ['Departamento de IGEMS','Otro']
+    I18n.locale == :en ?  ['Dept of interior IGEMS','Weather hazards', 'Other'] : ['Departamento de IGEMS', 'Alertas de clima','Otro']
   end
 
   def alert_class_for(flash_type)

@@ -1,17 +1,17 @@
 --- 
 es: 
-  dashboard: 
+  dashboard:
     overview: "Panel general"
-    alert: "Categoria de alertas"
-    title: "Estadisticas generales"
-    subtitle: "Estadísticas rápidas sobre la actividad de los usuarios"
+    alert: "Publicación de alertas"
+    title: "Estadísticas"
+    subtitle: "Métricas sobre la actividad de los usuarios y notificaciones enviadas"
     graph_donut_first: "Usuarios Activos / Registrados"
-    graph_donut_second: "Abierto / Sin abrir"
-    graph_points: "Alertas enviadas / abiertas / regresadas"
-    graph_bars: "Tipo de Eventos"
+    graph_donut_second: "Alertas Abiertas / Sin abrir"
+    graph_points: "Alertas Enviadas / Abiertas / Regresadas"
+    graph_bars: "Tipo de Evento"
   alert:
-    title: "Categoria de alertas"
-    subtitle: "Publicar alertas de emergencia y de no emergencia."
+    title: "Publicación de alertas"
+    subtitle: "Publica alertas de emergencia y de no emergencia."
     alerts: "Alertas de emergencia"
     confirm_delete: "¿Está seguro que quiere borrar esta alerta?"
     deleted: "Alarma borrada correctamente"
@@ -36,4 +36,4 @@ es:
       information: "Fuente de información"
       url: "URL"
       link: "Puede encontrar esta información aquí"
-      save: "Crear alerta de emergencia"
+      save: "Guardar alerta"

@@ -1,0 +1,23 @@
+engines:
+  rubocop:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - ruby
+        - javascript
+ratings:
+  paths:
+    - web-app/app/**
+    - web-app/lib/**
+    - "**.rb"
+
+exclude_paths:
+  - web-app/spec/**/*
+  - web-app/app/assets/javascripts/graphs/**/*
+  - "**/vendor/**/*"

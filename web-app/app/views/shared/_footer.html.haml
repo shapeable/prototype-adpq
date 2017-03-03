@@ -1,9 +1,9 @@
 %footer
   .container
     %ul
-      %li=link_to t('footer.residents'), login_pages_path, id: "nav_residents_footer"
-      %li=link_to t('footer.government'), alarms_path, id: "nav_government_footer"
-      %li=link_to t('footer.about'), root_path(:anchor => "description-jump"), id: "nav_about_footer"
+      %li=link_to t('footer.residents'), new_user_path, id: "nav_residents_footer", data: { turbolinks: false }
+      %li=link_to t('footer.government'), alarms_path, id: "nav_government_footer", data: { turbolinks: false }
+      %li=link_to t('footer.about'), root_path(:anchor => "description-jump"), id: "nav_about_footer", data: { turbolinks: false }
       %li
         %span
           %strong=t('footer.contact')
@@ -16,7 +16,7 @@
     .contact-info
       = link_to 'mailto:hello@californiaalert.ca', target: '_blank' do
         = image_tag 'mail.svg', alt: 'email'
-      = link_to '#', target: '_blank' do
+      = link_to 'https://www.facebook.com/Shapeable-1647853382188439/', target: '_blank' do
         = image_tag 'Facebook.svg', alt: 'facebook'
-      = link_to '#', target: '_blank' do
+      = link_to 'https://twitter.com/shapeable9', target: '_blank' do
         = image_tag 'Twitter.svg', alt: 'twitter'

@@ -1,16 +1,16 @@
---- 
-en: 
-  dashboard: 
-    overview: "Overview"
-    alert: "Alert Categories"
-    title: "Statistics Overview"
-    subtitle: "Quick statistics about users activity"
+---
+en:
+  dashboard:
+    overview: "Dashboard"
+    alert: "Publish Alerts"
+    title: "Analytics"
+    subtitle: "Metrics about users activity and sent notifications"
     graph_donut_first: "Active / Registered Users"
-    graph_donut_second: "Open / Unopened"
-    graph_points: "Sent / Open /Rebounded Alerts"
-    graph_bars: "Type of Events"
+    graph_donut_second: "Open / Unopened Alerts"
+    graph_points: "Sent / Open / Bounced Alerts"
+    graph_bars: "Type of Event"
   alert:
-    title: "Alert Categories"
+    title: "Publish alerts"
     subtitle: "Publish emergency and non-emergency alerts."
     alerts: "Emergency Alerts"
     confirm_delete: "Are you sure you want to delete this alert?"
@@ -36,4 +36,4 @@ en:
       information: "Information Source"
       url: "URL"
       link: "You can find this information here"
-      save: "Create Emergency Alert"
+      save: "Save alert"

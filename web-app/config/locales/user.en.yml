@@ -1,21 +1,21 @@
 --- 
 en: 
   user: 
-    created: "User created successfully"
-    updated: "User updated successfully"
+    created: "Great! You're now on our alerting system. You can come back and update your settings any time."
+    updated: "Your settings have been updated successfully."
     not_updated: "User NOT updated"
     deleted: "User deleted successfully"
     form:
       title: "Get Started"
-      subtitle: "Fill this form and get notified when it matters"
+      subtitle: "Fill in this form and get notified when it matters"
       notifications: "Notifications"
-      notifications_about: "Which emergency alerts do you want to get notified about?"
+      notifications_about: "Choose the alerts you'd like to receive"
       settings: "Settings"
       settings_description: "How do you want to get notified?"
       sms: "SMS"
       sms_placeholder: "i.e 123 456 789"
       email: "E-mail"
-      email_placeholder: "i.e user@admin.com"
+      email_placeholder: "i.e name@mail.com"
       mobile_app: "Mobile App"
       download: "Download the app for"
       wait_for_it: "We are working hard to release the Android and iPhone app soon."

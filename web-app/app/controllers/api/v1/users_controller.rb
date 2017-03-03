@@ -22,7 +22,7 @@ module Api
 
         swagger_api :show do
             summary "Fetches User and his alarms"
-            notes "This lists user and his alarms"
+            notes "This lists a user and his alarms"
             param :user, :id, :integer, :required, "User id"
             response :ok, "Success"
             response :unauthorized
@@ -37,8 +37,8 @@ module Api
         end
 
         swagger_api :create do
-            summary "Fetches all User items"
-            notes "This lists all the active users"
+            summary "Create new alarm"
+            notes "This creates a new alarm"
             param :user, :email, :string, :required, "User email"
             param :user, :phone_number, :string, :required, "User phone number"
             param :user, :gender, :string, :required, "User gender"
