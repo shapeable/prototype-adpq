@@ -134,16 +134,11 @@ The production prototype is deployed on AWS server using Docker container techno
 
 After creating unit tests for each feature or functionality, rspec was used as the automated unit tester.  For example to test SMS (text messages) functionality, a specific unit test was created for that purpose: (Send SMS Messages code)[https://github.com/shapeable/prototype-web/blob/master/web-app/spec/modules/send_sms_messages_spec.rb]
 
-Other Unit tests can be found under: https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules
+Other Unit tests can be found under: [https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules](https://github.com/shapeable/prototype-web/tree/master/web-app/spec/modules)
 
-The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows you to see the relevant coverage, covered and missed lines, and the hits per line for each file.
-The Coveralls dashboard could be found [here] (https://coveralls.io/github/shapeable/prototype-web?branch=master)
+The percentage of the code base covered by automated tests was defined using Coveralls. Coveralls breaks down the test coverage on a file by file basis and allows one to see the relevant coverage, covered and missed lines, and the hits per line for each file.  A higher percentage means a higher percentage of lines of code written are verified by a unit test. 
 
-[Rollbar](https://www.rollbar.com) was implemented as the continuous monitoring tool.  Rollbar can be quickly added to any Ruby application as a gem and is also a standard add-on for Heroku deployments.  It has a notification system built in that immediately alerts the team if there are any errors.
-
-Code climate was also integrated for the an automated code review. The overall can be consulted [here](https://codeclimate.com/github/shapeable/prototype-web)
-
-
+The Coveralls dashboard could be found [here](https://coveralls.io/github/shapeable/prototype-web?branch=master)
 
 ## Play 11
 ### Manage security and privacy through reusable processes
