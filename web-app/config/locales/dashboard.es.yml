@@ -25,3 +25,15 @@ es:
     error: "Por favor coloque un mensaje correctamente"
     button:
       send: "Enviar alerta no urgente"
+    new:
+      title: "Nueva Alerta de Emergencia"
+    edit:
+      title: "Editar Alerta de Emergencia"
+    form:
+      name: "Nombre de la alerta"
+      cause: "Causa de la emergencia"
+      call: "Acción"
+      information: "Fuente de información"
+      url: "URL"
+      link: "Puede encontrar esta información aquí"
+      save: "Crear alerta de emergencia"

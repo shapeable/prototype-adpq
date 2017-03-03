@@ -10,6 +10,9 @@ class AlarmsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
   def destroy
     @alarm.destroy
     respond_to do |format|
@@ -25,9 +28,13 @@ class AlarmsController < ApplicationController
   end
 
   def create
-    alarm = Alarm.find(get_alarm(params[:dashboard][:message]))
-    ApiGeneralHazards.perform_async(alarm.id, params[:dashboard][:description])
-    flash[:notice] = t("alert.sent") 
+    if get_alarm(params[:dashboard]
+      alarm = Alarm.find(get_alarm(params[:dashboard][:message]))
+      ApiGeneralHazards.perform_async(alarm.id, params[:dashboard][:description])
+      flash[:notice] = t("alert.sent") 
+    else
+      redirect_to alarms_path
+    end
   end
 
   private 

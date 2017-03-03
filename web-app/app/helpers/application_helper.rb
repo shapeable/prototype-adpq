@@ -37,6 +37,10 @@ module ApplicationHelper
      I18n.locale == :en ?  {'Collection Centers'=>'1','Meeting points'=>'2', 'Important Broadcast'=>'3'} : {'Centros de acopio'=>'1','Puntos de reunión'=>'2', 'Transmisión importante'=>'3'}
   end
 
+  def get_alert_type
+    I18n.locale == :en ?  ['Dept of interior IGEMS','Other'] : ['Departamento de IGEMS','Otro']
+  end
+
   def alert_class_for(flash_type)
   	case flash_type.to_sym
       when :success

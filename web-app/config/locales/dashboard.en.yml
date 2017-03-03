@@ -25,3 +25,15 @@ en:
     error: "Please write a valid message"
     button:
       send: "Send Non-Emergency Alert"
+    new:
+      title: "New Emergency Alert"
+    edit:
+      title: "Edit Emergency Alert"
+    form:
+      name: "Alert Name"
+      cause: "Emergency Cause"
+      call: "Call to Action"
+      information: "Information Source"
+      url: "URL"
+      link: "You can find this information here"
+      save: "Create Emergency Alert"

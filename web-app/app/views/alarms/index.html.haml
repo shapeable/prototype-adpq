@@ -7,17 +7,20 @@
     .main-content
       .sec{:id=>"dashboard_overview", :class=> " #{get_dasboard=='overview' ? 'active-section' : 'inactive-section'}"}
         =render partial: 'overview'
-      .sec{:id=>"dashboard_overview", :class=> "#{get_dasboard=='alert' ? 'active-section' : 'inactive-section'}"}
-        =render partial: 'alert_categories'
+      .sec{:id=>"dashboard_alerts", :class=> "#{get_dasboard=='alert' ? 'active-section' : 'inactive-section'}"}
+        .active-section.sub-section#alerts_index
+          =render partial: 'alert_categories'
+        .inactive-section.sub-section#add_alert
+          =render partial: 'add_alert'
 
 
 
 :javascript
-$(document).ready(function() {
-//graph functions
-  usersDonut();
-  alertsDonut();
-  alertsTimeline();
-  alertsBar();
-});
+  $(document).ready(function() {
+  //graph functions
+    usersDonut();
+    alertsDonut();
+    alertsTimeline();
+    alertsBar();
+  });
 
