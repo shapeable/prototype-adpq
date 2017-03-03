@@ -166,5 +166,4 @@ Google analytics was implemented for the retrieve of useful data.
 ## Play 13
 ### Default to open
 
-As a team that works implementing open source tools and delivering value through open data 
-we understand the importance of developing software that allows for a community of developers from around the world to improve by providing enhancements and bug fixes. We look forward to interact responding any comment about the created project.
+Since the prototype consumes data provided by open APIs, it is open by default.  However, internally, the application also uses APIs that are exposed to be integrated with other applications.
